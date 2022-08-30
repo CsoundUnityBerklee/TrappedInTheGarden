@@ -1,0 +1,4482 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &864352996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 864352999}
+  - component: {fileID: 864352998}
+  - component: {fileID: 864352997}
+  m_Layer: 0
+  m_Name: Trapped05
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &864352997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864352996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logCsoundOutput: 0
+  mute: 0
+  processClipAudio: 0
+  loudVolumeWarning: 1
+  loudWarningThreshold: 10
+  csoundScore: 
+  environmentSettings: []
+  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
+    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
+    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
+    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
+    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
+    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
+    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
+    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
+    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
+    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
+    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
+    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
+    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
+    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
+    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
+    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
+    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
+    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
+    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
+    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
+    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
+    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
+    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
+    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
+    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
+    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
+    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
+    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
+    = chnget:i(\"sweepRate\")\r\n                                                                                      
+    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
+    25 = ARPEGGIO SPEED\r\n                                                          
+    \r\nk1             randi     1, 30                              \r\nk2            
+    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
+    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
+    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
+    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
+    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
+    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
+    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
+    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
+    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
+    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
+    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
+    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
+    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
+    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
+    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
+    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
+    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
+  _csoundFileName: CAB-Trapped02.csd
+  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+  _channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped02
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 2
+    max: 9
+    value: 3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Amp
+    caption: 
+    min: 0
+    max: 1
+    value: 0.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: note
+    text: Note
+    caption: 
+    min: 10
+    max: 100
+    value: 60
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndNote
+    text: RandNote
+    caption: 
+    min: -4
+    max: 4
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: shakeRate
+    text: Shaker
+    caption: 
+    min: 0
+    max: 15
+    value: 6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: numHarmonics
+    text: Harmonics
+    caption: 
+    min: 5
+    max: 15
+    value: 10
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: sweepRate
+    text: SweepRate
+    caption: 
+    min: 0.015
+    max: 0.75
+    value: 0.3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.15
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0.001
+    max: 9
+    value: 0.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _availableAudioChannels: []
+  _drawCsoundString: 0
+  _drawTestScore: 0
+  _drawSettings: 0
+  _drawChannels: 1
+  _drawAudioChannels: 0
+  _drawPresets: 1
+  _drawPresetsLoad: 1
+  _drawPresetsSave: 1
+  _showRuntimeEnvironmentPath: 0
+  _currentPreset: 
+  _currentPresetSaveFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped05/Presets
+  _currentPresetLoadFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped05/Presets
+--- !u!82 &864352998
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864352996}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &864352999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864352996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &876743366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 876743368}
+  - component: {fileID: 876743367}
+  - component: {fileID: 876743369}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &876743367
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876743366}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &876743368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876743366}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &876743369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876743366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1 &909355914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 909355917}
+  - component: {fileID: 909355916}
+  - component: {fileID: 909355915}
+  m_Layer: 0
+  m_Name: Trapped10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &909355915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909355914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logCsoundOutput: 0
+  mute: 0
+  processClipAudio: 0
+  loudVolumeWarning: 1
+  loudWarningThreshold: 10
+  csoundScore: 
+  environmentSettings: []
+  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
+    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
+    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
+    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
+    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
+    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
+    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
+    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
+    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
+    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
+    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
+    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
+    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
+    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
+    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
+    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
+    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
+    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
+    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
+    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
+    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
+    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
+    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
+    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
+    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
+    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
+    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
+    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
+    = chnget:i(\"sweepRate\")\r\n                                                                                      
+    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
+    25 = ARPEGGIO SPEED\r\n                                                          
+    \r\nk1             randi     1, 30                              \r\nk2            
+    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
+    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
+    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
+    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
+    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
+    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
+    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
+    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
+    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
+    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
+    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
+    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
+    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
+    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
+    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
+    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
+    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
+  _csoundFileName: CAB-Trapped02.csd
+  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+  _channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped02
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 2
+    max: 9
+    value: 3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Amp
+    caption: 
+    min: 0
+    max: 1
+    value: 0.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: note
+    text: Note
+    caption: 
+    min: 10
+    max: 100
+    value: 60
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndNote
+    text: RandNote
+    caption: 
+    min: -4
+    max: 4
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: shakeRate
+    text: Shaker
+    caption: 
+    min: 0
+    max: 15
+    value: 6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: numHarmonics
+    text: Harmonics
+    caption: 
+    min: 5
+    max: 15
+    value: 10
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: sweepRate
+    text: SweepRate
+    caption: 
+    min: 0.015
+    max: 0.75
+    value: 0.3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.15
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0.001
+    max: 9
+    value: 0.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _availableAudioChannels: []
+  _drawCsoundString: 0
+  _drawTestScore: 0
+  _drawSettings: 0
+  _drawChannels: 1
+  _drawAudioChannels: 0
+  _drawPresets: 1
+  _drawPresetsLoad: 1
+  _drawPresetsSave: 1
+  _showRuntimeEnvironmentPath: 0
+  _currentPreset: 
+  _currentPresetSaveFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped10/Presets
+  _currentPresetLoadFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped10/Presets
+--- !u!82 &909355916
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909355914}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &909355917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909355914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1072266543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1072266546}
+  - component: {fileID: 1072266545}
+  - component: {fileID: 1072266544}
+  m_Layer: 0
+  m_Name: Trapped08
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1072266544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072266543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logCsoundOutput: 0
+  mute: 0
+  processClipAudio: 0
+  loudVolumeWarning: 1
+  loudWarningThreshold: 10
+  csoundScore: 
+  environmentSettings: []
+  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
+    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
+    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
+    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
+    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
+    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
+    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
+    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
+    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
+    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
+    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
+    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
+    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
+    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
+    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
+    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
+    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
+    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
+    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
+    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
+    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
+    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
+    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
+    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
+    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
+    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
+    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
+    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
+    = chnget:i(\"sweepRate\")\r\n                                                                                      
+    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
+    25 = ARPEGGIO SPEED\r\n                                                          
+    \r\nk1             randi     1, 30                              \r\nk2            
+    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
+    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
+    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
+    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
+    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
+    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
+    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
+    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
+    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
+    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
+    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
+    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
+    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
+    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
+    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
+    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
+    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
+  _csoundFileName: CAB-Trapped02.csd
+  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+  _channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped02
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 2
+    max: 9
+    value: 3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Amp
+    caption: 
+    min: 0
+    max: 1
+    value: 0.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: note
+    text: Note
+    caption: 
+    min: 10
+    max: 100
+    value: 60
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndNote
+    text: RandNote
+    caption: 
+    min: -4
+    max: 4
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: shakeRate
+    text: Shaker
+    caption: 
+    min: 0
+    max: 15
+    value: 6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: numHarmonics
+    text: Harmonics
+    caption: 
+    min: 5
+    max: 15
+    value: 10
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: sweepRate
+    text: SweepRate
+    caption: 
+    min: 0.015
+    max: 0.75
+    value: 0.3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.15
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0.001
+    max: 9
+    value: 0.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _availableAudioChannels: []
+  _drawCsoundString: 0
+  _drawTestScore: 0
+  _drawSettings: 0
+  _drawChannels: 1
+  _drawAudioChannels: 0
+  _drawPresets: 1
+  _drawPresetsLoad: 1
+  _drawPresetsSave: 1
+  _showRuntimeEnvironmentPath: 0
+  _currentPreset: 
+  _currentPresetSaveFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped08/Presets
+  _currentPresetLoadFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped08/Presets
+--- !u!82 &1072266545
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072266543}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1072266546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072266543}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1198582206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1198582209}
+  - component: {fileID: 1198582208}
+  - component: {fileID: 1198582207}
+  m_Layer: 0
+  m_Name: Trapped04
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1198582207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198582206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logCsoundOutput: 0
+  mute: 0
+  processClipAudio: 0
+  loudVolumeWarning: 1
+  loudWarningThreshold: 10
+  csoundScore: 
+  environmentSettings: []
+  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
+    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
+    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
+    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
+    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
+    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
+    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
+    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
+    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
+    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
+    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
+    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
+    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
+    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
+    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
+    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
+    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
+    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
+    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
+    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
+    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
+    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
+    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
+    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
+    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
+    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
+    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
+    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
+    = chnget:i(\"sweepRate\")\r\n                                                                                      
+    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
+    25 = ARPEGGIO SPEED\r\n                                                          
+    \r\nk1             randi     1, 30                              \r\nk2            
+    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
+    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
+    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
+    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
+    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
+    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
+    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
+    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
+    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
+    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
+    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
+    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
+    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
+    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
+    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
+    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
+    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
+  _csoundFileName: CAB-Trapped02.csd
+  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+  _channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped02
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 2
+    max: 9
+    value: 3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Amp
+    caption: 
+    min: 0
+    max: 1
+    value: 0.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: note
+    text: Note
+    caption: 
+    min: 10
+    max: 100
+    value: 60
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndNote
+    text: RandNote
+    caption: 
+    min: -4
+    max: 4
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: shakeRate
+    text: Shaker
+    caption: 
+    min: 0
+    max: 15
+    value: 6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: numHarmonics
+    text: Harmonics
+    caption: 
+    min: 5
+    max: 15
+    value: 10
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: sweepRate
+    text: SweepRate
+    caption: 
+    min: 0.015
+    max: 0.75
+    value: 0.3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.15
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0.001
+    max: 9
+    value: 0.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _availableAudioChannels: []
+  _drawCsoundString: 0
+  _drawTestScore: 0
+  _drawSettings: 0
+  _drawChannels: 1
+  _drawAudioChannels: 0
+  _drawPresets: 1
+  _drawPresetsLoad: 1
+  _drawPresetsSave: 1
+  _showRuntimeEnvironmentPath: 0
+  _currentPreset: 
+  _currentPresetSaveFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped04/Presets
+  _currentPresetLoadFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped04/Presets
+--- !u!82 &1198582208
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198582206}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1198582209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198582206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1244980680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1244980683}
+  - component: {fileID: 1244980682}
+  - component: {fileID: 1244980681}
+  m_Layer: 0
+  m_Name: Trapped02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1244980681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244980680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logCsoundOutput: 0
+  mute: 0
+  processClipAudio: 0
+  loudVolumeWarning: 1
+  loudWarningThreshold: 10
+  csoundScore: 
+  environmentSettings: []
+  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
+    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
+    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
+    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
+    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
+    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
+    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
+    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
+    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
+    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
+    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
+    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
+    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
+    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
+    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
+    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
+    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
+    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
+    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
+    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
+    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
+    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
+    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
+    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
+    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
+    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
+    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
+    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
+    = chnget:i(\"sweepRate\")\r\n                                                                                      
+    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
+    25 = ARPEGGIO SPEED\r\n                                                          
+    \r\nk1             randi     1, 30                              \r\nk2            
+    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
+    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
+    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
+    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
+    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
+    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
+    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
+    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
+    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
+    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
+    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
+    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
+    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
+    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
+    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
+    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
+    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
+  _csoundFileName: CAB-Trapped02.csd
+  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+  _channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped02
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 2
+    max: 9
+    value: 3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Amp
+    caption: 
+    min: 0
+    max: 1
+    value: 0.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: note
+    text: Note
+    caption: 
+    min: 10
+    max: 100
+    value: 60
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndNote
+    text: RandNote
+    caption: 
+    min: -4
+    max: 4
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: shakeRate
+    text: Shaker
+    caption: 
+    min: 0
+    max: 15
+    value: 6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: numHarmonics
+    text: Harmonics
+    caption: 
+    min: 5
+    max: 15
+    value: 10
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: sweepRate
+    text: SweepRate
+    caption: 
+    min: 0.015
+    max: 0.75
+    value: 0.3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.15
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0.001
+    max: 9
+    value: 0.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _availableAudioChannels: []
+  _drawCsoundString: 0
+  _drawTestScore: 0
+  _drawSettings: 0
+  _drawChannels: 1
+  _drawAudioChannels: 0
+  _drawPresets: 1
+  _drawPresetsLoad: 1
+  _drawPresetsSave: 1
+  _showRuntimeEnvironmentPath: 0
+  _currentPreset: 
+  _currentPresetSaveFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped02/Presets
+  _currentPresetLoadFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped02/Presets
+--- !u!82 &1244980682
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244980680}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1244980683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244980680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1447959726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1447959729}
+  - component: {fileID: 1447959728}
+  - component: {fileID: 1447959727}
+  m_Layer: 0
+  m_Name: Trapped06
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1447959727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447959726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logCsoundOutput: 0
+  mute: 0
+  processClipAudio: 0
+  loudVolumeWarning: 1
+  loudWarningThreshold: 10
+  csoundScore: 
+  environmentSettings: []
+  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
+    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
+    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
+    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
+    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
+    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
+    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
+    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
+    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
+    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
+    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
+    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
+    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
+    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
+    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
+    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
+    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
+    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
+    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
+    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
+    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
+    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
+    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
+    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
+    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
+    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
+    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
+    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
+    = chnget:i(\"sweepRate\")\r\n                                                                                      
+    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
+    25 = ARPEGGIO SPEED\r\n                                                          
+    \r\nk1             randi     1, 30                              \r\nk2            
+    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
+    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
+    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
+    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
+    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
+    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
+    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
+    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
+    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
+    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
+    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
+    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
+    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
+    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
+    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
+    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
+    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
+  _csoundFileName: CAB-Trapped02.csd
+  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+  _channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped02
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 2
+    max: 9
+    value: 3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Amp
+    caption: 
+    min: 0
+    max: 1
+    value: 0.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: note
+    text: Note
+    caption: 
+    min: 10
+    max: 100
+    value: 60
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndNote
+    text: RandNote
+    caption: 
+    min: -4
+    max: 4
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: shakeRate
+    text: Shaker
+    caption: 
+    min: 0
+    max: 15
+    value: 6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: numHarmonics
+    text: Harmonics
+    caption: 
+    min: 5
+    max: 15
+    value: 10
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: sweepRate
+    text: SweepRate
+    caption: 
+    min: 0.015
+    max: 0.75
+    value: 0.3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.15
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0.001
+    max: 9
+    value: 0.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _availableAudioChannels: []
+  _drawCsoundString: 0
+  _drawTestScore: 0
+  _drawSettings: 0
+  _drawChannels: 1
+  _drawAudioChannels: 0
+  _drawPresets: 1
+  _drawPresetsLoad: 1
+  _drawPresetsSave: 1
+  _showRuntimeEnvironmentPath: 0
+  _currentPreset: 
+  _currentPresetSaveFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped06/Presets
+  _currentPresetLoadFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped06/Presets
+--- !u!82 &1447959728
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447959726}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1447959729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447959726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1559302054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1559302057}
+  - component: {fileID: 1559302056}
+  - component: {fileID: 1559302055}
+  m_Layer: 0
+  m_Name: Trapped12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1559302055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559302054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logCsoundOutput: 0
+  mute: 0
+  processClipAudio: 0
+  loudVolumeWarning: 1
+  loudWarningThreshold: 10
+  csoundScore: 
+  environmentSettings: []
+  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
+    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
+    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
+    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
+    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
+    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
+    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
+    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
+    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
+    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
+    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
+    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
+    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
+    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
+    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
+    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
+    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
+    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
+    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
+    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
+    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
+    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
+    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
+    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
+    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
+    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
+    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
+    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
+    = chnget:i(\"sweepRate\")\r\n                                                                                      
+    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
+    25 = ARPEGGIO SPEED\r\n                                                          
+    \r\nk1             randi     1, 30                              \r\nk2            
+    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
+    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
+    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
+    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
+    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
+    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
+    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
+    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
+    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
+    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
+    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
+    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
+    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
+    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
+    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
+    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
+    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
+  _csoundFileName: CAB-Trapped02.csd
+  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+  _channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped02
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 2
+    max: 9
+    value: 3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Amp
+    caption: 
+    min: 0
+    max: 1
+    value: 0.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: note
+    text: Note
+    caption: 
+    min: 10
+    max: 100
+    value: 60
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndNote
+    text: RandNote
+    caption: 
+    min: -4
+    max: 4
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: shakeRate
+    text: Shaker
+    caption: 
+    min: 0
+    max: 15
+    value: 6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: numHarmonics
+    text: Harmonics
+    caption: 
+    min: 5
+    max: 15
+    value: 10
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: sweepRate
+    text: SweepRate
+    caption: 
+    min: 0.015
+    max: 0.75
+    value: 0.3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.15
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0.001
+    max: 9
+    value: 0.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _availableAudioChannels: []
+  _drawCsoundString: 0
+  _drawTestScore: 0
+  _drawSettings: 0
+  _drawChannels: 1
+  _drawAudioChannels: 0
+  _drawPresets: 1
+  _drawPresetsLoad: 1
+  _drawPresetsSave: 1
+  _showRuntimeEnvironmentPath: 0
+  _currentPreset: 
+  _currentPresetSaveFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped12/Presets
+  _currentPresetLoadFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped12/Presets
+--- !u!82 &1559302056
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559302054}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1559302057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559302054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1798427600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1798427603}
+  - component: {fileID: 1798427602}
+  - component: {fileID: 1798427601}
+  m_Layer: 0
+  m_Name: Trapped09
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1798427601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798427600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logCsoundOutput: 0
+  mute: 0
+  processClipAudio: 0
+  loudVolumeWarning: 1
+  loudWarningThreshold: 10
+  csoundScore: 
+  environmentSettings: []
+  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
+    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
+    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
+    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
+    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
+    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
+    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
+    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
+    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
+    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
+    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
+    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
+    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
+    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
+    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
+    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
+    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
+    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
+    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
+    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
+    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
+    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
+    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
+    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
+    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
+    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
+    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
+    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
+    = chnget:i(\"sweepRate\")\r\n                                                                                      
+    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
+    25 = ARPEGGIO SPEED\r\n                                                          
+    \r\nk1             randi     1, 30                              \r\nk2            
+    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
+    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
+    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
+    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
+    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
+    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
+    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
+    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
+    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
+    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
+    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
+    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
+    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
+    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
+    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
+    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
+    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
+  _csoundFileName: CAB-Trapped02.csd
+  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+  _channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped02
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 2
+    max: 9
+    value: 3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Amp
+    caption: 
+    min: 0
+    max: 1
+    value: 0.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: note
+    text: Note
+    caption: 
+    min: 10
+    max: 100
+    value: 60
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndNote
+    text: RandNote
+    caption: 
+    min: -4
+    max: 4
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: shakeRate
+    text: Shaker
+    caption: 
+    min: 0
+    max: 15
+    value: 6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: numHarmonics
+    text: Harmonics
+    caption: 
+    min: 5
+    max: 15
+    value: 10
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: sweepRate
+    text: SweepRate
+    caption: 
+    min: 0.015
+    max: 0.75
+    value: 0.3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.15
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0.001
+    max: 9
+    value: 0.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _availableAudioChannels: []
+  _drawCsoundString: 0
+  _drawTestScore: 0
+  _drawSettings: 0
+  _drawChannels: 1
+  _drawAudioChannels: 0
+  _drawPresets: 1
+  _drawPresetsLoad: 1
+  _drawPresetsSave: 1
+  _showRuntimeEnvironmentPath: 0
+  _currentPreset: 
+  _currentPresetSaveFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped09/Presets
+  _currentPresetLoadFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped09/Presets
+--- !u!82 &1798427602
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798427600}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1798427603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798427600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1852323657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1852323660}
+  - component: {fileID: 1852323659}
+  - component: {fileID: 1852323658}
+  m_Layer: 0
+  m_Name: Trapped03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1852323658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852323657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logCsoundOutput: 0
+  mute: 0
+  processClipAudio: 0
+  loudVolumeWarning: 1
+  loudWarningThreshold: 10
+  csoundScore: 
+  environmentSettings: []
+  _csoundFileGUID: b823aa9948cb0434b9cb29477cc29ef9
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped03\") size(650,
+    400), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(212, 122, 86,
+    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\nhslider bounds(8,
+    122, 175, 50) channel(\"dur\") range(4, 12, 6, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\n\r\nhslider
+    bounds(178, 8, 158, 50) channel(\"masterLvl\") range(0, 1, 0.6, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\nhslider bounds(336, 8, 150, 50) channel(\"amp\")
+    range(0, 1, 0.6, 1, 0.001) text(\"Synth Lvl\") textColour(255, 255, 255, 255)\r\n\r\nhslider
+    bounds(90, 62, 160, 52) channel(\"frq\") range(30,1000, 800, 1, 0.001) text(\"Frq\")
+    textColour(\"white\")\r\nhslider bounds(262, 62, 160, 52) channel(\"rndFrq\")
+    range(2, 100, 100, 1, 0.001) text(\"RandFrq\") textColour(\"white\")\r\nhslider
+    bounds(432, 62, 160, 52) channel(\"gliss\") range(.25, 4, .9, 1, 0.001) text(\"FrqSweep\")
+    textColour(\"white\")\r\n\r\nhslider bounds(146, 194, 151, 48) channel(\"masterRate\")
+    range(.15, 8, 1, 1, 0.001) text(\"MasterRate\") textColour(\"white\")\r\nhslider
+    bounds(70, 250, 159, 50) channel(\"rndRate1\") range(10, 100, 20, 1, 0.001) text(\"RndRate1\")
+    textColour(\"white\")\r\nhslider bounds(244, 250, 150, 50) channel(\"rndRate2\")
+    range(10, 100, 30, 1, 0.001) text(\"RndRate2\") textColour(\"white\")\r\nhslider
+    bounds(408, 254, 150, 50) channel(\"rndRate3\") range(10, 100, 40, 1, 0.001)
+    text(\"RndRate3\") textColour(\"white\")\r\n\r\nhslider bounds(310, 194, 151,
+    48) channel(\"masterDepth\") range(.15, 8, 1, 1, 0.001) text(\"MasterDepth\")
+    textColour(\"white\")\r\nhslider bounds(70, 308, 159, 50) channel(\"rndDep1\")
+    range(1, 150, 123, 1, 0.001) text(\"RndDpth1\") textColour(\"white\")\r\nhslider
+    bounds(244, 308, 150, 50) channel(\"rndDep2\") range(5, 260, 234, 1, 0.001) text(\"RndDpth2\")
+    textColour(\"white\")\r\nhslider bounds(406, 308, 150, 50) channel(\"rndDep3\")
+    range(6, 390, 145, 1, 0.001) text(\"RndDpth3\") textColour(\"white\")\r\n\r\nhslider
+    bounds(316, 122, 161, 50) channel(\"rvbSend\") range(0, .7, .24, 1, 0.001) text(\"Rvb
+    Send\") textColour(\"white\")\r\nhslider bounds(486, 122, 150, 50) channel(\"rvbPan\")
+    range(.1, 24, 10, 1, 0.001) text(\"Rvb Pan\") textColour(\"white\")\r\n\r\ncombobox
+    bounds(76, 28, 100, 25), populate(\"*.snaps\"), channelType(\"string\") automatable(0)
+    channel(\"combo31\")  value(\"1\")\r\nfilebutton bounds(12, 28, 60, 25), text(\"Save\",
+    \"Save\"), populate(\"*.snaps\", \"test\"), mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton
+    bounds(12, 56, 60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"),
+    mode(\"remove preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\nksmps = 64\r\nnchnls = 2\r\n0dbfs
+    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiFn01 ftgen 1, 0, 8192, 10, 1\r\ngiFn16 ftgen
+    16, 0, 2048, 9, 1, 3, 0, 3, 1, 0, 6, 1, 0\r\n\r\n\r\ninstr 1\r\n    iDur = chnget:i(\"dur\")\r\n
+    \r\n    iFrq = chnget:i(\"frq\") + rnd(chnget:i(\"rndFrq\"))\r\n    iAmp = chnget:i(\"amp\")\r\n   
+    kTrig chnget \"trigger\"\r\n    if changed(kTrig) == 1 then\r\n        event
+    \"i\", \"Trapped03\", 0, iDur, iFrq, iAmp \r\n    endif\r\nendin\r\n\r\n\r\ninstr    
+    Trapped03\r\n\r\niDur       = chnget:i(\"dur\")\r\niAmp       = chnget:i(\"amp\")
+    \r\niAmp       = iAmp * .3            \r\nkFrq       = chnget:k(\"frq\") + rnd(chnget:i(\"rndFrq\"))\r\n\r\nkMstrRate 
+    = chnget:k(\"masterRate\")\r\niRndRate1  = chnget:i(\"rndRate1\")\r\niRndRate2 
+    = chnget:i(\"rndRate2\")\r\niRndRate3  = chnget:i(\"rndRate3\")\r\nkMstrDpth 
+    = chnget:k(\"masterDepth\")\r\niRndDep1   = chnget:i(\"rndDep1\")\r\niRndDep2  
+    = chnget:i(\"rndDep2\")\r\niRndDep3   = chnget:i(\"rndDep3\")\r\n\r\niGlis     
+    = chnget:i(\"gliss\")\r\n\r\nkRvbSnd    = chnget:k(\"rvbSend\")                                                                                                                                                                            
+    \r\n\r\nkRndDp1        transeg    10, iDur, iRndDep1, 1\r\nkRate1         transeg   
+    20, iDur, iRndRate1, 1\r\n\r\nkRndDp2        transeg    20, iDur, iRndDep2, 2
+    \r\nkRate2         transeg    80, iDur, iRndRate2, 2\r\n           \r\nkRndDp3       
+    transeg    40, iDur, iRndDep3, 3   \r\nkRate3         transeg    50, iDur, iRndRate3,
+    3\r\n\r\nkGlis          transeg    1, iDur, 0, iGlis\r\n\r\nkEnv1          transeg  
+    0, iDur * .2, 0, iAmp, iDur * .8, 0, 0\r\nkRndH1         randh     kRndDp1 *
+    kMstrDpth, kRate1 * kMstrRate, .5\r\naSig1          buzz      kEnv1, (kFrq +
+    kRndH1) * kGlis, kRndH1, 1\r\n\r\nkEnv2          transeg   0, iDur * .4, 0, iAmp,
+    iDur * .6, 0, 0\r\nkRndH2         randh     kRndDp2 * kMstrDpth, kRate2 * kMstrRate\r\naSig2         
+    buzz      kEnv2 , ((kFrq * 1.1) + kRndH2) * kGlis, kRndH2, 1\r\n\r\nkEnv3         
+    transeg   0, iDur * .6, 0, iAmp, iDur * .4, 0, 0\r\nkRndH3         randh    
+    kRndDp3 * kMstrDpth, kRate3 * kMstrRate, .2\r\naSig3          buzz      kEnv3,
+    ((kFrq * .99) + kRndH3) * kGlis, kRndH3, 1\r\n\r\nkgate    transeg  1, iDur,
+    0, 1\r\n\r\naL = (aSig2 + aSig3) * kgate\r\naR = (aSig1 + aSig2) * kgate\r\n\r\n\r\namix          
+    =        (aL + aR)\r\n\r\n             outs      aL * chnget:k(\"masterLvl\"),
+    aR * chnget:k(\"masterLvl\")\r\n             \r\ngarvb          =         garvb
+    + (amix * kRvbSnd) \r\n \r\n               endin\r\n\r\n               instr    
+    Reverb \r\n               denorm    garvb\r\niRvbTime       =         4 \r\nkgate         
+    transeg   1, chnget:i(\"iDur\") + iRvbTime, 0, 0\r\nkSpeed         transeg  
+    1, chnget:i(\"iDur\") * .6, 0, 1, chnget:i(\"iDur\") * .4, 0, 3                  
+    \r\nk1             oscil     .5, chnget:k(\"rvbPan\") * kSpeed, 1\r\nk2            
+    =         .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb   
+    garvb, iRvbTime\r\n               outs      .5 * (asig * k2) * chnget:k(\"masterLvl\"),
+    .5 * ((asig * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =        
+    0\r\n               endin\r\n\r\n</CsInstruments>\r\n\r\n<CsScore>\r\nf0 z\r\n\r\ni1
+    0 [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n\r\n</CsoundSynthesizer>"
+  _csoundFileName: CAB-Trapped03.csd
+  _csoundAsset: {fileID: 102900000, guid: b823aa9948cb0434b9cb29477cc29ef9, type: 3}
+  _channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped03
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 4
+    max: 12
+    value: 6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Synth Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: frq
+    text: Frq
+    caption: 
+    min: 30
+    max: 1000
+    value: 800
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndFrq
+    text: RandFrq
+    caption: 
+    min: 2
+    max: 100
+    value: 100
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: gliss
+    text: FrqSweep
+    caption: 
+    min: 0.25
+    max: 4
+    value: 0.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterRate
+    text: MasterRate
+    caption: 
+    min: 0.15
+    max: 8
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndRate1
+    text: RndRate1
+    caption: 
+    min: 10
+    max: 100
+    value: 20
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndRate2
+    text: RndRate2
+    caption: 
+    min: 10
+    max: 100
+    value: 30
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndRate3
+    text: RndRate3
+    caption: 
+    min: 10
+    max: 100
+    value: 40
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterDepth
+    text: MasterDepth
+    caption: 
+    min: 0.15
+    max: 8
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndDep1
+    text: RndDpth1
+    caption: 
+    min: 1
+    max: 150
+    value: 123
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndDep2
+    text: RndDpth2
+    caption: 
+    min: 5
+    max: 260
+    value: 234
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndDep3
+    text: RndDpth3
+    caption: 
+    min: 6
+    max: 390
+    value: 145
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 0.7
+    value: 0.24
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0.1
+    max: 24
+    value: 10
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _availableAudioChannels: []
+  _drawCsoundString: 0
+  _drawTestScore: 0
+  _drawSettings: 0
+  _drawChannels: 1
+  _drawAudioChannels: 0
+  _drawPresets: 1
+  _drawPresetsLoad: 1
+  _drawPresetsSave: 1
+  _showRuntimeEnvironmentPath: 0
+  _currentPreset: 
+  _currentPresetSaveFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped03/Presets
+  _currentPresetLoadFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped03/Presets
+--- !u!82 &1852323659
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852323657}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1852323660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852323657}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1950801136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1950801139}
+  - component: {fileID: 1950801138}
+  - component: {fileID: 1950801137}
+  m_Layer: 0
+  m_Name: Trapped11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1950801137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950801136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logCsoundOutput: 0
+  mute: 0
+  processClipAudio: 0
+  loudVolumeWarning: 1
+  loudWarningThreshold: 10
+  csoundScore: 
+  environmentSettings: []
+  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
+    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
+    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
+    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
+    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
+    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
+    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
+    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
+    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
+    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
+    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
+    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
+    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
+    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
+    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
+    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
+    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
+    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
+    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
+    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
+    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
+    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
+    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
+    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
+    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
+    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
+    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
+    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
+    = chnget:i(\"sweepRate\")\r\n                                                                                      
+    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
+    25 = ARPEGGIO SPEED\r\n                                                          
+    \r\nk1             randi     1, 30                              \r\nk2            
+    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
+    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
+    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
+    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
+    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
+    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
+    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
+    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
+    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
+    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
+    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
+    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
+    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
+    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
+    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
+    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
+    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
+  _csoundFileName: CAB-Trapped02.csd
+  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+  _channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped02
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 2
+    max: 9
+    value: 3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Amp
+    caption: 
+    min: 0
+    max: 1
+    value: 0.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: note
+    text: Note
+    caption: 
+    min: 10
+    max: 100
+    value: 60
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndNote
+    text: RandNote
+    caption: 
+    min: -4
+    max: 4
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: shakeRate
+    text: Shaker
+    caption: 
+    min: 0
+    max: 15
+    value: 6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: numHarmonics
+    text: Harmonics
+    caption: 
+    min: 5
+    max: 15
+    value: 10
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: sweepRate
+    text: SweepRate
+    caption: 
+    min: 0.015
+    max: 0.75
+    value: 0.3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.15
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0.001
+    max: 9
+    value: 0.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _availableAudioChannels: []
+  _drawCsoundString: 0
+  _drawTestScore: 0
+  _drawSettings: 0
+  _drawChannels: 1
+  _drawAudioChannels: 1
+  _drawPresets: 1
+  _drawPresetsLoad: 1
+  _drawPresetsSave: 1
+  _showRuntimeEnvironmentPath: 0
+  _currentPreset: 
+  _currentPresetSaveFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped11/Presets
+  _currentPresetLoadFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped11/Presets
+--- !u!82 &1950801138
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950801136}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1950801139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950801136}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2012839717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2012839720}
+  - component: {fileID: 2012839719}
+  - component: {fileID: 2012839718}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &2012839718
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012839717}
+  m_Enabled: 1
+--- !u!20 &2012839719
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012839717}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &2012839720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012839717}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2097846142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097846145}
+  - component: {fileID: 2097846144}
+  - component: {fileID: 2097846143}
+  m_Layer: 0
+  m_Name: Trapped07
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2097846143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097846142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logCsoundOutput: 0
+  mute: 0
+  processClipAudio: 0
+  loudVolumeWarning: 1
+  loudWarningThreshold: 10
+  csoundScore: 
+  environmentSettings: []
+  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
+    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
+    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
+    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
+    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
+    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
+    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
+    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
+    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
+    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
+    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
+    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
+    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
+    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
+    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
+    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
+    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
+    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
+    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
+    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
+    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
+    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
+    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
+    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
+    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
+    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
+    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
+    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
+    = chnget:i(\"sweepRate\")\r\n                                                                                      
+    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
+    25 = ARPEGGIO SPEED\r\n                                                          
+    \r\nk1             randi     1, 30                              \r\nk2            
+    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
+    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
+    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
+    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
+    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
+    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
+    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
+    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
+    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
+    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
+    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
+    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
+    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
+    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
+    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
+    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
+    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
+  _csoundFileName: CAB-Trapped02.csd
+  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+  _channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped02
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 2
+    max: 9
+    value: 3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Amp
+    caption: 
+    min: 0
+    max: 1
+    value: 0.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: note
+    text: Note
+    caption: 
+    min: 10
+    max: 100
+    value: 60
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndNote
+    text: RandNote
+    caption: 
+    min: -4
+    max: 4
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: shakeRate
+    text: Shaker
+    caption: 
+    min: 0
+    max: 15
+    value: 6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: numHarmonics
+    text: Harmonics
+    caption: 
+    min: 5
+    max: 15
+    value: 10
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: sweepRate
+    text: SweepRate
+    caption: 
+    min: 0.015
+    max: 0.75
+    value: 0.3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.15
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0.001
+    max: 9
+    value: 0.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _availableAudioChannels: []
+  _drawCsoundString: 0
+  _drawTestScore: 0
+  _drawSettings: 0
+  _drawChannels: 1
+  _drawAudioChannels: 0
+  _drawPresets: 1
+  _drawPresetsLoad: 1
+  _drawPresetsSave: 1
+  _showRuntimeEnvironmentPath: 0
+  _currentPreset: 
+  _currentPresetSaveFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped07/Presets
+  _currentPresetLoadFolder: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+    In The Garden/Assets/Cabbage/Trapped07/Presets
+--- !u!82 &2097846144
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097846142}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &2097846145
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097846142}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
