@@ -160,68 +160,74 @@ MonoBehaviour:
   loudWarningThreshold: 10
   csoundScore: 
   environmentSettings: []
-  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
-  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
-    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
-    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
-    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
-    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
-    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
-    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
-    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
-    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
-    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
-    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
-    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
-    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
-    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
-    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
-    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
-    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
-    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
-    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
+  _csoundFileGUID: 0dfebcf77c35b40d2b7971e39fcedc7e
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped05\") size(680,
+    360), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(202, 64, 86,
+    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\nhslider bounds(18,
+    118, 175, 50) channel(\"dur\") range(2, 10, 5, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\n\r\nhslider
+    bounds(20, 4, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\nhslider bounds(382, 60, 150, 50) channel(\"amp\")
+    range(0, 1, 0.7, 1, 0.001) text(\"Synth Lvl\") textColour(255, 255, 255, 255)\r\n\r\nhslider
+    bounds(298, 112, 160, 52) channel(\"frq\") range(20, 500, 150, 1, 0.001) text(\"Freq\")
+    textColour(\"white\")\r\nhslider bounds(478, 110, 150, 50) channel(\"rndFrq\")
+    range(1, 5, 2, 1, 0.001) text(\"RandFreq\") textColour(\"white\")\r\n\r\nhslider
+    bounds(24, 170, 160, 52) channel(\"pan\") range(.1, 1, 1, 1, 0.001) text(\"Synth
+    Pan\") textColour(\"white\")\r\n\r\nhslider bounds(302, 216, 159, 50) channel(\"modFrq\")
+    range(10, 100, 10, 1, 0.001) text(\"Mod Frq\") textColour(\"white\")\r\nhslider
+    bounds(480, 218, 150, 50) channel(\"modAmp\") range(100, 1000, 500, 1, 0.001)
+    text(\"Mod Amp\") textColour(\"white\")\r\nhslider bounds(42, 280, 150, 50) channel(\"modNdx\")
+    range(1, 20, 12, 1, 0.001) text(\"Mod Indx\") textColour(\"white\")\r\n\r\nhslider
+    bounds(246, 280, 150, 50) channel(\"mstrModRat\") range(1, 20, 12, 1, 0.001)
+    text(\"MastrModRate\") textColour(\"white\")\r\nhslider bounds(452, 280, 150,
+    50) channel(\"mstrModDpth\") range(1, 20, 1, 1, 0.001) text(\"MastrModDpth\")
+    textColour(\"white\")\r\n\r\nhslider bounds(300, 164, 159, 50) channel(\"carRat\")
+    range(1, 10, 1, 1, 0.001) text(\"Car Ratio\") textColour(\"white\")\r\nhslider
+    bounds(478, 160, 150, 55) channel(\"modRat\") range(1, 10, 1, 1, 0.001) text(\"Mod
+    Ratio\") textColour(\"white\")\r\n\r\nhslider bounds(300, 8, 161, 49) channel(\"rvbSend\")
+    range(0, 1, .5, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
+    bounds(464, 8, 150, 50) channel(\"rvbPan\") range(.01, 34, 25, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(84, 58, 100, 25), populate(\"*.snaps\"),
     channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
-    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
-    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
+    bounds(20, 58, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(20, 86,
     60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
     preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
     -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
-    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
-    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
-    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiFn1 ftgen 1, 0, 8192, 10, 1\r\n\r\ninstr 1\r\n   
+    iDur = chnget:i(\"dur\")\r\n \r\n    iFrq = chnget:i(\"frq\")*rnd(chnget:i(\"rndFrq\"))\r\n   
     iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
-    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
-    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
-    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
-    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
-    = chnget:i(\"sweepRate\")\r\n                                                                                      
-    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
-    25 = ARPEGGIO SPEED\r\n                                                          
-    \r\nk1             randi     1, 30                              \r\nk2            
-    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
-    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
-    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
-    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
-    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
-    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
-    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
-    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
-    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
+    == 1 then\r\n        event \"i\", \"Trapped05\", 0, iDur, iFrq, iAmp \r\n   
+    endif\r\nendin\r\n\r\ninstr Trapped05\r\n\r\niDur        = chnget:i(\"dur\")\r\niAmp       
+    = chnget:i(\"amp\")             \r\niFrq        = chnget:i(\"frq\")*rnd(chnget:i(\"rndFrq\"))\r\niPan       
+    = chnget:i(\"pan\")\r\niModFrq     = chnget:i(\"modFrq\")\r\niModAmp     = chnget:i(\"modAmp\")\r\niCarRat    
+    = chnget:i(\"carRat\")\r\niModRat     = chnget:i(\"modRat\")\r\nkModNdx     =
+    chnget:k(\"modNdx\")\r\nkMstrRndDp  = chnget:k(\"mstrModDpth\")\r\nkMastRndRt 
+    = chnget:k(\"mstrModRat\")\r\n                                                                                   
+    \r\nkCarRat        line      iCarRat, iDur, 1                     \r\nkModRat       
+    line      1, iDur, iModRat                      \r\nkModAmp        expon    
+    2, iDur, iModAmp                   \r\nkModFrq        linseg    0, iDur * .8,
+    8, iDur * .2, 8     \r\nkIndx          randh     kModAmp * kMstrRndDp, kModFrq
+    * kMastRndRt                                        \r\nkMod           oscil    
+    kModAmp, kModFrq, 1, .3    \r\n\r\nkEnv           linen     iAmp, .03, iDur,
+    .2     \r\naSig             foscil    kEnv, iFrq + kMod, kCarRat, kModRat, kIndx,
+    1\r\n\r\nkpan           linseg    int(iPan), iDur * .7, frac(iPan), iDur * .3,
+    int(iPan)\r\n\r\n               outs      aSig * kpan * chnget:k(\"masterLvl\"),
+    aSig *  (1 - kpan) * chnget:k(\"masterLvl\")\r\n                                    
+    \r\ngarvb          =         garvb + (aSig * chnget:k(\"rvbSend\"))  \r\n              
     endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
     \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
     .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
     3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
     * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
-    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
-    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
-    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
-  _csoundFileName: CAB-Trapped02.csd
-  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\nf0 z\r\ni1 0 [60*60*24*7] \r\ni
+    \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>"
+  _csoundFileName: CAB-Trapped05.csd
+  _csoundAsset: {fileID: 102900000, guid: 0dfebcf77c35b40d2b7971e39fcedc7e, type: 3}
   _channels:
   - type: form
     channel: 
     text: 
-    caption: Trapped02
+    caption: Trapped05
     min: 0
     max: 0
     value: 0
@@ -239,6 +245,16 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 2
+    max: 10
+    value: 5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
     channel: masterLvl
     text: Master Lvl
     caption: 
@@ -249,72 +265,112 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: dur
-    text: Dur
-    caption: 
-    min: 2
-    max: 9
-    value: 3
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
     channel: amp
-    text: Amp
+    text: Synth Lvl
     caption: 
     min: 0
     max: 1
-    value: 0.5
+    value: 0.7
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: note
-    text: Note
+    channel: frq
+    text: Freq
+    caption: 
+    min: 20
+    max: 500
+    value: 150
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndFrq
+    text: RandFreq
+    caption: 
+    min: 1
+    max: 5
+    value: 2
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: pan
+    text: Synth Pan
+    caption: 
+    min: 0.1
+    max: 1
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: modFrq
+    text: Mod Frq
     caption: 
     min: 10
     max: 100
-    value: 60
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: rndNote
-    text: RandNote
-    caption: 
-    min: -4
-    max: 4
-    value: 0
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: shakeRate
-    text: Shaker
-    caption: 
-    min: 0
-    max: 15
-    value: 6
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: numHarmonics
-    text: Harmonics
-    caption: 
-    min: 5
-    max: 15
     value: 10
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: sweepRate
-    text: SweepRate
+    channel: modAmp
+    text: Mod Amp
     caption: 
-    min: 0.015
-    max: 0.75
-    value: 0.3
+    min: 100
+    max: 1000
+    value: 500
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: modNdx
+    text: Mod Indx
+    caption: 
+    min: 1
+    max: 20
+    value: 12
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: mstrModRat
+    text: MastrModRate
+    caption: 
+    min: 1
+    max: 20
+    value: 12
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: mstrModDpth
+    text: MastrModDpth
+    caption: 
+    min: 1
+    max: 20
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: carRat
+    text: Car Ratio
+    caption: 
+    min: 1
+    max: 10
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: modRat
+    text: Mod Ratio
+    caption: 
+    min: 1
+    max: 10
+    value: 1
     skew: 0
     increment: 0
     options: []
@@ -324,7 +380,7 @@ MonoBehaviour:
     caption: 
     min: 0
     max: 1
-    value: 0.15
+    value: 0.5
     skew: 0
     increment: 0
     options: []
@@ -332,9 +388,9 @@ MonoBehaviour:
     channel: rvbPan
     text: Rvb Pan
     caption: 
-    min: 0.001
-    max: 9
-    value: 0.9
+    min: 0.01
+    max: 34
+    value: 25
     skew: 0
     increment: 0
     options: []
@@ -646,68 +702,83 @@ MonoBehaviour:
   loudWarningThreshold: 10
   csoundScore: 
   environmentSettings: []
-  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
-  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
-    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
-    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
-    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
-    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
-    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
-    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
-    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
-    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
-    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
-    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
-    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
-    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
-    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
-    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
-    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
-    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
-    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
-    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
-    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
-    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
-    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
+  _csoundFileGUID: 725c31d60805649ea82333a824f04090
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\nform caption(\"Trapped10\") size(650,
+    600), guiMode(\"queue\") pluginId(\"def1\")\n\nbutton  bounds(46, 74, 86, 55)
+    channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\nhslider bounds(258,
+    186, 175, 50) channel(\"dur\") range(1, 10, 4, 1, 0.001) text(\"Dur\") textColour(\"white\")\n\nhslider
+    bounds(258, 6, 158, 50) channel(\"masterLvl\") range(0, 1, 0.5, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\nhslider bounds(346, 64, 150, 50) channel(\"verbLvl\")
+    range(0, 1, 0.6, 1, 0.001) text(\"Verb Lvl\") textColour(\"white\")\nhslider
+    bounds(184, 62, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Synth
+    Lvl\") textColour(255, 255, 255, 255)\n\nhslider bounds(180, 242, 160, 52) channel(\"frq\")
+    range(20, 1000, 396, 1, 0.001) text(\"Freq\") textColour(\"white\")\nhslider
+    bounds(352, 242, 150, 50) channel(\"rndFrq\") range(0, 400, 130, 1, 0.001) text(\"RandFreq\")
+    textColour(\"white\")\n\nhslider bounds(258, 306, 151, 57) channel(\"masterRate\")
+    range(.5, 2, 1, 1, 0.001) text(\"MasterRate\") textColour(\"white\")\nhslider
+    bounds(10, 374, 159, 50) channel(\"rndRate1\") range(0, 200, 200, 1, 0.001) text(\"RndRate1\")
+    textColour(\"white\")\nhslider bounds(170, 376, 150, 50) channel(\"rndRate2\")
+    range(0, 200, 180, 1, 0.001) text(\"RndRate2\") textColour(\"white\")\nhslider
+    bounds(320, 374, 159, 50) channel(\"rndRate3\") range(0, 200, 120, 1, 0.001)
+    text(\"RndRate3\") textColour(\"white\")\nhslider bounds(482, 374, 150, 50) channel(\"rndRate4\")
+    range(0, 200, 160, 1, 0.001) text(\"RndRate4\") textColour(\"white\")\n\nhslider
+    bounds(270, 434, 151, 48) channel(\"masterDepth\") range(.5, 2, 1, 1, 0.001)
+    text(\"MasterDepth\") textColour(\"white\")\nhslider bounds(14, 492, 159, 50)
+    channel(\"rndDepth1\") range(0, 100, 50, 1, 0.001) text(\"RndDpth1\") textColour(\"white\")\nhslider
+    bounds(180, 490, 150, 50) channel(\"rndDepth2\") range(0, 100, 45, 1, 0.001)
+    text(\"RndDpth2\") textColour(\"white\")\nhslider bounds(332, 490, 159, 50) channel(\"rndDepth3\")
+    range(0, 100, 40, 1, 0.001) text(\"RndDpth3\") textColour(\"white\")\nhslider
+    bounds(496, 490, 150, 50) channel(\"rndDepth4\") range(0, 100, 60, 1, 0.001)
+    text(\"RndDpth4\") textColour(\"white\")\n\nhslider bounds(190, 128, 161, 50)
+    channel(\"rvbSend\") range(0, 1, .45, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\nhslider
+    bounds(360, 128, 150, 50) channel(\"rvbPan\") range(.001, 3, .5, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\n\ncombobox bounds(78, 138, 100, 25), populate(\"*.snaps\"),
+    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\nfilebutton
+    bounds(14, 138, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+    mode(\"named preset\") channel(\"filebutton32\")\nfilebutton bounds(14, 166,
     60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
-    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
-    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
-    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
-    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
-    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
-    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
-    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
-    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
-    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
-    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
-    = chnget:i(\"sweepRate\")\r\n                                                                                      
-    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
-    25 = ARPEGGIO SPEED\r\n                                                          
-    \r\nk1             randi     1, 30                              \r\nk2            
-    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
-    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
-    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
-    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
-    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
-    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
-    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
-    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
-    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
-    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
-    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
-    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
-    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
-    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
-    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
-    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
-    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
-  _csoundFileName: CAB-Trapped02.csd
-  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+    preset\") channel(\"filebutton33\")\n</Cabbage>\n\n<CsoundSynthesizer>\n\n<CsOptions>\n-n
+    -dm0\n</CsOptions>\n\n<CsInstruments>\n\nksmps = 32\nnchnls = 2\n0dbfs = 1\n\ngarvb 
+    init  0\n\ngiFun1 ftgen 1, 0, 8192, 10, 1\ngiFun2 ftgen 2, 0, 8192, 10, 1, .8,
+    0, .6, 0, .4, 0, .01\ngiFun3 ftgen 3, 0, 8192, 10, 1,  0, .5, .2, 0, .4, .3,
+    0, .01\ngiFun4 ftgen 4, 0, 8192, 10, 1,  0, .9, 0, 0, .8, 0, .7, 0, .4, 0, .2,
+    0, .01\n\ninstr 1\n    iDur = chnget:i(\"dur\") \n    iFrq = chnget:i(\"frq\")
+    + rnd(chnget:i(\"rndFrq\"))\n    iAmp = chnget:i(\"amp\")\n    kTrig chnget \"trigger\"\n   
+    if changed(kTrig) == 1 then\n        event \"i\", \"Trapped10\", 0, iDur, iFrq,
+    iAmp \n    endif\nendin\n\ninstr  Trapped10\n\niDur        = chnget:i(\"dur\")\niAmp       
+    = chnget:i(\"amp\")              \niFrq        = chnget:i(\"frq\") + rnd(chnget:i(\"rndFrq\"))\n\nkMstrRate  
+    = chnget:k(\"masterRate\")\nkRndRate1   = chnget:k(\"rndRate1\")\nkRndRate2  
+    = chnget:k(\"rndRate2\")\nkRndRate3   = chnget:k(\"rndRate3\")\nkRndRate4   =
+    chnget:k(\"rndRate4\")\n\nkMstrDpth   = chnget:k(\"masterDepth\")\nkRndDpth1  
+    = chnget:k(\"rndDepth1\")\nkRndDpth2   = chnget:k(\"rndDepth2\")\nkRndDpth3  
+    = chnget:k(\"rndDepth3\")\nkRndDpth4   = chnget:k(\"rndDepth4\")\n                                                                                                                                            
+    \nkRnd1          randh     kMstrDpth * kRndDpth1, kMstrRate * kRndRate1, .1                    
+    \nkRnd2          randh     kMstrDpth * kRndDpth2, kMstrRate * kRndRate2, .2            
+    \nkRnd3          randh     kMstrDpth * kRndDpth3, kMstrRate * kRndRate3, .3           
+    \nkRnd4          randh     kMstrDpth * kRndDpth4, kMstrRate * kRndRate4, .4    
+    \n\nkEnv           linen     iAmp, iDur * .1, iDur, iDur * .8                       
+    \n\na1             oscil     kEnv, iFrq + kRnd1, 1, .2             \na2            
+    oscil     kEnv * .91, (iFrq + .04) + kRnd2, 2, .3\na3             oscil     kEnv
+    * .85, (iFrq + .06) + kRnd3, 3, .5\na4             oscil     kEnv * .95, (iFrq
+    + .09) + kRnd4, 4, .8\n\n;kgate         transeg   1, iDur, 0, 0 \n\naL             
+    =  a1 + a3\naR              =  a2 + a4\namix            =  aL + aR\n\n              
+    outs      aL * chnget:k(\"masterLvl\"), aR * chnget:k(\"masterLvl\")            
+    \ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \n              
+    endin\n   \n               instr     Reverb \n               denorm    garvb                  
+    \nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\nk2             =        
+    .5 + k1\nk3             =         1 - k2\nasig           reverb2   garvb, 4.1,
+    .7\n               outs      (asig * k2) * chnget:k(\"verbLvl\") * chnget:k(\"masterLvl\"),
+    ((asig * k3) * (-1)) * chnget:k(\"verbLvl\") * chnget:k(\"masterLvl\")\ngarvb         
+    =         0\n               endin\n\n</CsInstruments>\n<CsScore>\n;causes Csound
+    to run for about 7000 years...\nf0 z\n;starts instrument 1 and runs it for a
+    week\ni1 0 [60*60*24*7] \ni \"Reverb\" 0 [60*60*24*7]  \n</CsScore>\n</CsoundSynthesizer>"
+  _csoundFileName: CAB-Trapped10.csd
+  _csoundAsset: {fileID: 102900000, guid: 725c31d60805649ea82333a824f04090, type: 3}
   _channels:
   - type: form
     channel: 
     text: 
-    caption: Trapped02
+    caption: Trapped10
     min: 0
     max: 0
     value: 0
@@ -725,28 +796,18 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: masterLvl
-    text: Master Lvl
-    caption: 
-    min: 0
-    max: 1
-    value: 0.7
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
     channel: dur
     text: Dur
     caption: 
-    min: 2
-    max: 9
-    value: 3
+    min: 1
+    max: 10
+    value: 4
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: amp
-    text: Amp
+    channel: masterLvl
+    text: Master Lvl
     caption: 
     min: 0
     max: 1
@@ -755,52 +816,142 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: note
-    text: Note
-    caption: 
-    min: 10
-    max: 100
-    value: 60
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: rndNote
-    text: RandNote
-    caption: 
-    min: -4
-    max: 4
-    value: 0
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: shakeRate
-    text: Shaker
+    channel: verbLvl
+    text: Verb Lvl
     caption: 
     min: 0
-    max: 15
-    value: 6
+    max: 1
+    value: 0.6
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: numHarmonics
-    text: Harmonics
+    channel: amp
+    text: Synth Lvl
     caption: 
-    min: 5
-    max: 15
-    value: 10
+    min: 0
+    max: 1
+    value: 0.5
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: sweepRate
-    text: SweepRate
+    channel: frq
+    text: Freq
     caption: 
-    min: 0.015
-    max: 0.75
-    value: 0.3
+    min: 20
+    max: 1000
+    value: 396
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndFrq
+    text: RandFreq
+    caption: 
+    min: 0
+    max: 400
+    value: 130
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterRate
+    text: MasterRate
+    caption: 
+    min: 0.5
+    max: 2
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndRate1
+    text: RndRate1
+    caption: 
+    min: 0
+    max: 200
+    value: 200
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndRate2
+    text: RndRate2
+    caption: 
+    min: 0
+    max: 200
+    value: 180
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndRate3
+    text: RndRate3
+    caption: 
+    min: 0
+    max: 200
+    value: 120
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndRate4
+    text: RndRate4
+    caption: 
+    min: 0
+    max: 200
+    value: 160
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterDepth
+    text: MasterDepth
+    caption: 
+    min: 0.5
+    max: 2
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndDepth1
+    text: RndDpth1
+    caption: 
+    min: 0
+    max: 100
+    value: 50
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndDepth2
+    text: RndDpth2
+    caption: 
+    min: 0
+    max: 100
+    value: 45
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndDepth3
+    text: RndDpth3
+    caption: 
+    min: 0
+    max: 100
+    value: 40
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndDepth4
+    text: RndDpth4
+    caption: 
+    min: 0
+    max: 100
+    value: 60
     skew: 0
     increment: 0
     options: []
@@ -810,7 +961,7 @@ MonoBehaviour:
     caption: 
     min: 0
     max: 1
-    value: 0.15
+    value: 0.45
     skew: 0
     increment: 0
     options: []
@@ -819,8 +970,8 @@ MonoBehaviour:
     text: Rvb Pan
     caption: 
     min: 0.001
-    max: 9
-    value: 0.9
+    max: 3
+    value: 0.5
     skew: 0
     increment: 0
     options: []
@@ -1017,68 +1168,83 @@ MonoBehaviour:
   loudWarningThreshold: 10
   csoundScore: 
   environmentSettings: []
-  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
-  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
-    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
-    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
-    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
-    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
-    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
-    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
-    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
-    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
-    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
-    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
-    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
-    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
-    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
-    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
-    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
+  _csoundFileGUID: df649fc9e2891454080f963114a96cee
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped08\") size(650,
+    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(212, 122, 86,
+    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\nhslider bounds(8,
+    122, 175, 50) channel(\"dur\") range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\n\r\nhslider
+    bounds(178, 8, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\nhslider bounds(486, 8, 150, 50) channel(\"verbLvl\")
+    range(0, 1, 0.5, 1, 0.001) text(\"Verb Lvl\") textColour(\"white\")\r\nhslider
+    bounds(336, 8, 150, 50) channel(\"amp\") range(0, 1, 0.7, 1, 0.001) text(\"Synth
+    Lvl\") textColour(255, 255, 255, 255)\r\n\r\nhslider bounds(206, 62, 160, 52)
+    channel(\"frq\") range(20, 3000, 1100, 1, 0.001) text(\"Freq\") textColour(\"white\")\r\nhslider
+    bounds(378, 62, 150, 50) channel(\"rndFrq\") range(1, 4, 2, 1, 0.001) text(\"RandFreq\")
+    textColour(\"white\")\r\n\r\nhslider bounds(16, 184, 161, 51) channel(\"fltRange\")
+    range(.5, 2, 1, 1, 0.001) text(\"FilterPeak\") textColour(\"white\")\r\nhslider
+    bounds(182, 184, 161, 51) channel(\"fltCF\") range(10, 5000, 1800, 1, 0.001)
+    text(\"FilterCF\") textColour(\"white\")\r\nhslider bounds(354, 186, 151, 50)
+    channel(\"fltBW\") range(.04, .1, .05, 1, 0.001) text(\"FilterBW\") textColour(\"white\")\r\n\r\nhslider
+    bounds(96, 240, 151, 48) channel(\"masterRate\") range(.5, 2, 1, 1, 0.001) text(\"MasterRate\")
+    textColour(\"white\")\r\nhslider bounds(256, 240, 159, 50) channel(\"rndRate1\")
+    range(.1, 32, 13, 1, 0.001) text(\"RndRate1\") textColour(\"white\")\r\nhslider
+    bounds(428, 242, 150, 50) channel(\"rndRate2\") range(.1, 32, 10, 1, 0.001) text(\"RndRate2\")
+    textColour(\"white\")\r\n\r\nhslider bounds(316, 122, 161, 50) channel(\"rvbSend\")
     range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
-    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
-    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
+    bounds(486, 122, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(76, 28, 100, 25), populate(\"*.snaps\"),
     channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
-    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
-    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
+    bounds(12, 28, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(12, 56,
     60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
     preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
-    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
-    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
-    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
-    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n; Initialize the global variables.
+    \r\nksmps = 32\r\nnchnls = 2\r\n0dbfs = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine
+    ftgen 1, 0, 8192, 10, 1\r\ngiFun20 ftgen 20, 0, 16, -2, 0, 30, 40, 45, 50, 40,
+    30, 20, 10, 5, 4, 3, 2, 1, 0, 0, 0\r\ngiFun21 ftgen 21, 0, 16, -2, 0, 20, 15,
+    10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 0\r\n\r\ngkRevPan init 6\r\n\r\ninstr 1\r\n   
+    iDur = chnget:i(\"dur\")\r\n \r\n    iFrq = chnget:i(\"frq\")*rnd(chnget:i(\"rndFrq\"))\r\n   
     iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
-    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
-    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
-    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
-    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
-    = chnget:i(\"sweepRate\")\r\n                                                                                      
-    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
-    25 = ARPEGGIO SPEED\r\n                                                          
-    \r\nk1             randi     1, 30                              \r\nk2            
-    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
-    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
-    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
-    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
-    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
-    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
-    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
-    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
-    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
+    == 1 then\r\n        event \"i\", \"Trapped08\", 0, iDur, iFrq, iAmp \r\n   
+    endif\r\nendin\r\n\r\n\r\n            instr     Trapped08\r\n\r\niFunLen    
+    = 16\r\n\r\niDur        = chnget:i(\"dur\")\r\n\r\niAmp        = chnget:i(\"amp\")\r\n             
+    \r\niFrq        = chnget:i(\"frq\")*rnd(chnget:i(\"rndFrq\"))\r\n\r\nkMastrRat  
+    = chnget:k(\"masterRate\")\r\niRndRate1   = chnget:i(\"rndRate1\")\r\niRndRate2  
+    = chnget:i(\"rndRate2\")\r\n\r\nkFltRange = chnget:k(\"fltRange\")\r\niFltCF   
+    = chnget:i(\"fltCF\")\r\nkFltBW    = chnget:k(\"fltBW\")                                                                                       
+    \r\n\r\nanoise         rand      .4                                                                                                   
+    \r\n\r\nk1             transeg   iFrq, iDur, 0, iFltCF                     \r\nk2            
+    transeg   iRndRate1, iDur, 0, iRndRate1 * .93              \r\nk3            
+    phasor    k2 * kMastrRat                           \r\nk4             table    
+    k3 * iFunLen, giFun20                                             \r\naflt1         
+    butterbp  anoise, k1 * kFltRange, 20 + (k4 * k1 * kFltBW), 1         \r\n\r\nk5            
+    linsegr   iFltCF * .9, iDur * .8, iFrq * 1.4, iDur * .2, iFrq * 1.4\r\nk6            
+    transeg   iRndRate2 * .97, iDur, 0, iRndRate2\r\nk7             phasor    k6
+    * kMastrRat\r\nk8             tablei    k7 * iFunLen, giFun21\r\naflt2         
+    butterbp  anoise, k5 * kFltRange, 30 + (k8 * k5 * (kFltBW * .9)), 1\r\n\r\nk11           
+    linenr    iAmp, .015, iDur, .85\r\na3             =         aflt1 * k11\r\na5            
+    =         aflt2 * k11\r\n\r\nk9             randh     1, k2\r\naL          =        
+    ((a3 * k9) * .7) + ((a5 * k9) * .3)     \r\nk10            randh     1, k6\r\naR        
+    =         ((a3 * k10) * .3) + ((a5 * k10) * .7)\r\n\r\nkgate         transeg  
+    1, iDur, 0, 0 \r\namix           =        (aL + aR) * kgate\r\n\r\n            
+    outs      aL * chnget:k(\"masterLvl\"), aR * chnget:k(\"masterLvl\")\r\n            
+    \r\n;garvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\ngarvb         
+    =         garvb + (a3 * chnget:k(\"rvbSend\")) ; (optional)\r\n \r\n              
     endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
     \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
     .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
-    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
-    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
-    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
-    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
-    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
-  _csoundFileName: CAB-Trapped02.csd
-  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+    3.1\r\n               outs      (asig * k2) * chnget:k(\"verbLvl\") * chnget:k(\"masterLvl\"),
+    ((asig * k3) * (-1)) * chnget:k(\"verbLvl\") * chnget:k(\"masterLvl\")\r\ngarvb         
+    =         0\r\n               endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes
+    Csound to run for about 7000 years...\r\nf0 z\r\n;starts instrument 1 and runs
+    it for a week\r\ni1 0 [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n\r\n\r\n"
+  _csoundFileName: CAB-Trapped08.csd
+  _csoundAsset: {fileID: 102900000, guid: df649fc9e2891454080f963114a96cee, type: 3}
   _channels:
   - type: form
     channel: 
     text: 
-    caption: Trapped02
+    caption: Trapped08
     min: 0
     max: 0
     value: 0
@@ -1096,16 +1262,6 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: masterLvl
-    text: Master Lvl
-    caption: 
-    min: 0
-    max: 1
-    value: 0.7
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
     channel: dur
     text: Dur
     caption: 
@@ -1116,8 +1272,18 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: amp
-    text: Amp
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: verbLvl
+    text: Verb Lvl
     caption: 
     min: 0
     max: 1
@@ -1126,52 +1292,92 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: note
-    text: Note
-    caption: 
-    min: 10
-    max: 100
-    value: 60
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: rndNote
-    text: RandNote
-    caption: 
-    min: -4
-    max: 4
-    value: 0
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: shakeRate
-    text: Shaker
+    channel: amp
+    text: Synth Lvl
     caption: 
     min: 0
-    max: 15
-    value: 6
+    max: 1
+    value: 0.7
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: numHarmonics
-    text: Harmonics
+    channel: frq
+    text: Freq
     caption: 
-    min: 5
-    max: 15
+    min: 20
+    max: 3000
+    value: 1100
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndFrq
+    text: RandFreq
+    caption: 
+    min: 1
+    max: 4
+    value: 2
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: fltRange
+    text: FilterPeak
+    caption: 
+    min: 0.5
+    max: 2
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: fltCF
+    text: FilterCF
+    caption: 
+    min: 10
+    max: 5000
+    value: 1800
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: fltBW
+    text: FilterBW
+    caption: 
+    min: 0.04
+    max: 0.1
+    value: 0.05
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterRate
+    text: MasterRate
+    caption: 
+    min: 0.5
+    max: 2
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndRate1
+    text: RndRate1
+    caption: 
+    min: 0.1
+    max: 32
+    value: 13
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndRate2
+    text: RndRate2
+    caption: 
+    min: 0.1
+    max: 32
     value: 10
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: sweepRate
-    text: SweepRate
-    caption: 
-    min: 0.015
-    max: 0.75
-    value: 0.3
     skew: 0
     increment: 0
     options: []
@@ -1388,68 +1594,77 @@ MonoBehaviour:
   loudWarningThreshold: 10
   csoundScore: 
   environmentSettings: []
-  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
-  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
-    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
-    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
-    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
-    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
-    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
-    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
-    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
-    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
-    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
-    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
-    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
-    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
-    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
-    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
-    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
-    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
-    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
-    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
+  _csoundFileGUID: a3e3a90d6fed842778161a2b6c88f59d
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped04\") size(650,
+    440), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(218, 102, 86,
+    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\nhslider bounds(318,
+    102, 175, 50) channel(\"dur\") range(.5, 4, 1, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\n\r\nhslider
+    bounds(254, 2, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\nhslider bounds(96, 52, 158, 50) channel(\"synthNoiseMix\")
+    range(0, 1, 0.8, 1, 0.001) text(\"Syn/Nse Mix\") textColour(\"white\")\r\nhslider
+    bounds(254, 52, 160, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Synth
+    Lvl\") textColour(255, 255, 255, 255)\r\n\r\nhslider bounds(412, 52, 150, 50)
+    channel(\"rvbLvl\") range(0, 1, 0.5, 1, 0.001) text(\"Verb Lvl\") textColour(\"white\")\r\nhslider
+    bounds(98, 376, 161, 50) channel(\"rvbSend\") range(0, 1, .15, 1, 0.001) text(\"Rvb
+    Send\") textColour(\"white\")\r\nhslider bounds(264, 376, 150, 50) channel(\"rvbPanRate\")
+    range(.001, 9, .9, 1, 0.001) text(\"RvbPanRate\") textColour(\"white\")\r\nhslider
+    bounds(420, 376, 150, 50) channel(\"rvbRndRate\") range(1, 3, 1, 1, 0.001) text(\"RvbRndRate\")
+    textColour(\"white\")\r\n\r\nhslider bounds(174, 156, 160, 52) channel(\"carFrq\")
+    range(20, 3000, 1100, 1, 0.001) text(\"CarFrq\") textColour(\"white\")\r\nhslider
+    bounds(334, 156, 159, 52) channel(\"carRndFrq\") range(1, 4, 1, 1, 0.001) text(\"CarRndFrq\")
+    textColour(\"white\")\r\n\r\nhslider bounds(96, 214, 160, 52) channel(\"modFrq\")
+    range(1, 3000, 13, 1, 0.001) text(\"ModFrq\") textColour(\"white\")\r\nhslider
+    bounds(258, 214, 150, 50) channel(\"modRndFrq\") range(1, 4, 1, 1, 0.001) text(\"ModRndFrq\")
+    textColour(\"white\")\r\nhslider bounds(434, 212, 150, 50) channel(\"modAmp\")
+    range(.2, 500, .6, 1, 0.001) text(\"ModAmp\") textColour(\"white\")\r\n\r\nhslider
+    bounds(112, 270, 161, 51) channel(\"fltSweepStart\") range(40, 7000, 3000, 1,
+    0.001) text(\"FltSwpSt\") textColour(\"white\")\r\nhslider bounds(276, 270, 161,
+    51) channel(\"fltRndStart\") range(1, 2, 1, 1, 0.001) text(\"FltRndSt\") textColour(\"white\")\r\nhslider
+    bounds(112, 320, 161, 51) channel(\"fltSweepEnd\") range(40, 7000, 1000, 1, 0.001)
+    text(\"FltSwpNd\") textColour(\"white\")\r\nhslider bounds(276, 320, 161, 51)
+    channel(\"fltRndEnd\") range(1, 2, 1, 1, 0.001) text(\"FltRndNd\") textColour(\"white\")\r\nhslider
+    bounds(446, 296, 151, 50) channel(\"fltBW\") range(20, 40, 35, 1, 0.001) text(\"FltBW\")
+    textColour(\"white\")\r\n\r\ncombobox bounds(114, 118, 100, 25), populate(\"*.snaps\"),
     channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
-    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
-    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
+    bounds(50, 118, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(50, 146,
     60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
     preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
-    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
-    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
-    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
-    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
-    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
-    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
-    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
-    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
-    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
-    = chnget:i(\"sweepRate\")\r\n                                                                                      
-    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
-    25 = ARPEGGIO SPEED\r\n                                                          
-    \r\nk1             randi     1, 30                              \r\nk2            
-    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
-    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
-    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
-    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
-    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
-    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
-    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
-    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
-    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
-    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
-    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
-    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
-    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
-    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
-    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
-    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
-    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
-  _csoundFileName: CAB-Trapped02.csd
-  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
+    = 1\r\n\r\ngaRvb  init  0\r\n\r\ngiFn01 ftgen  1, 0, 8192, 10, 1\r\ngiFn15 ftgen
+    15, 0, 8192,  9, 1, 1, 90\r\n\r\n\r\ninstr 1   \r\n    kTrig chnget \"trigger\"\r\n       
+    if changed(kTrig) == 1 then\r\n            event \"i\", \"Trapped04\", 0, chnget:i(\"dur\")\r\n       
+    endif\r\nendin\r\n\r\n\r\n            instr     Trapped04\r\n\r\niDur       
+    = chnget:i(\"dur\")\r\niAmp        = chnget:i(\"amp\")            \r\nkCarFrq    
+    = chnget:k(\"carFrq\")*rnd(chnget:i(\"carRndFrq\"))\r\nkModFrq     = chnget:k(\"modFrq\")*rnd(chnget:i(\"modRndFrq\"))\r\nkModAmp    
+    = chnget:k(\"modAmp\")*rnd(10)\r\n\r\niFltSwpStrt   = chnget:i(\"fltSweepStart\")*rnd(chnget:i(\"fltRndStart\"))\r\niFltSwpEnd   
+    = chnget:i(\"fltSweepEnd\")*rnd(chnget:i(\"fltRndEnd\")) \r\nkFltBW        =
+    chnget:k(\"fltBW\")\r\n\r\nkSweep         expon     iFltSwpStrt, iDur, iFltSwpEnd                   
+    \r\naNoise         rand      .4                         \r\naFltNoise      reson    
+    aNoise, kSweep, kSweep / kFltBW, 1  \r\n          \r\naMod           oscil    
+    kModAmp, kModFrq, 1, .1               \r\nkEnv           expon     iAmp, iDur,
+    .001 \r\naCar           oscil     kEnv, kCarFrq + aMod, 15\r\n\r\n\r\n;              
+    outs      (aFltNoise * .8) + aCar, (aFltNoise * .6) + (aCar * .7)\r\n\r\n                                                                                     
+    \r\n;kgate         transeg   1, iDur, 0, 0 \r\n;amix           =        (aL +
+    aR) * kgate\r\n\r\naMix         ntrpol   aCar, aFltNoise, chnget:k(\"synthNoiseMix\") 
+    ; synth-noise mix   \r\n\r\n             outs      aMix * chnget:k(\"masterLvl\"),
+    aMix * chnget:k(\"masterLvl\")\r\n                                              
+    \r\ngaRvb          =         gaRvb + (aMix * chnget:k(\"rvbSend\")) \r\n\r\n              
+    endin\r\n\r\n               instr     Reverb \r\n               denorm    gaRvb                  
+    \r\nk1             oscil     .5, chnget:k(\"rvbPanRate\")*rnd(chnget:k(\"rvbRndRate\")),
+    1\r\nk2             =         .5 + k1\r\nk3             =         1 - k2\r\naSig          
+    reverb    gaRvb, 2.5\r\n               outs      (aSig * k2) * chnget:k(\"rvbLvl\")
+    * chnget:k(\"masterLvl\"), ((aSig * k3) * (-1)) * chnget:k(\"rvbLvl\") * chnget:k(\"masterLvl\")\r\ngaRvb         
+    =         0\r\n               endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes
+    Csound to run for about 7000 years...\r\nf0 z\r\n;starts instrument 1 and runs
+    it for a week\r\ni1 0 [60*60*24*7]  \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n\r\n"
+  _csoundFileName: CAB-Trapped04.csd
+  _csoundAsset: {fileID: 102900000, guid: a3e3a90d6fed842778161a2b6c88f59d, type: 3}
   _channels:
   - type: form
     channel: 
     text: 
-    caption: Trapped02
+    caption: Trapped04
     min: 0
     max: 0
     value: 0
@@ -1467,6 +1682,16 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 0.5
+    max: 4
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
     channel: masterLvl
     text: Master Lvl
     caption: 
@@ -1477,18 +1702,18 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: dur
-    text: Dur
+    channel: synthNoiseMix
+    text: Syn/Nse Mix
     caption: 
-    min: 2
-    max: 9
-    value: 3
+    min: 0
+    max: 1
+    value: 0.8
     skew: 0
     increment: 0
     options: []
   - type: hslider
     channel: amp
-    text: Amp
+    text: Synth Lvl
     caption: 
     min: 0
     max: 1
@@ -1497,52 +1722,12 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: note
-    text: Note
-    caption: 
-    min: 10
-    max: 100
-    value: 60
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: rndNote
-    text: RandNote
-    caption: 
-    min: -4
-    max: 4
-    value: 0
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: shakeRate
-    text: Shaker
+    channel: rvbLvl
+    text: Verb Lvl
     caption: 
     min: 0
-    max: 15
-    value: 6
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: numHarmonics
-    text: Harmonics
-    caption: 
-    min: 5
-    max: 15
-    value: 10
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: sweepRate
-    text: SweepRate
-    caption: 
-    min: 0.015
-    max: 0.75
-    value: 0.3
+    max: 1
+    value: 0.5
     skew: 0
     increment: 0
     options: []
@@ -1557,12 +1742,122 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: rvbPan
-    text: Rvb Pan
+    channel: rvbPanRate
+    text: RvbPanRate
     caption: 
     min: 0.001
     max: 9
     value: 0.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbRndRate
+    text: RvbRndRate
+    caption: 
+    min: 1
+    max: 3
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: carFrq
+    text: CarFrq
+    caption: 
+    min: 20
+    max: 3000
+    value: 1100
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: carRndFrq
+    text: CarRndFrq
+    caption: 
+    min: 1
+    max: 4
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: modFrq
+    text: ModFrq
+    caption: 
+    min: 1
+    max: 3000
+    value: 13
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: modRndFrq
+    text: ModRndFrq
+    caption: 
+    min: 1
+    max: 4
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: modAmp
+    text: ModAmp
+    caption: 
+    min: 0.2
+    max: 500
+    value: 0.6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: fltSweepStart
+    text: FltSwpSt
+    caption: 
+    min: 40
+    max: 7000
+    value: 3000
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: fltRndStart
+    text: FltRndSt
+    caption: 
+    min: 1
+    max: 2
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: fltSweepEnd
+    text: FltSwpNd
+    caption: 
+    min: 40
+    max: 7000
+    value: 1000
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: fltRndEnd
+    text: FltRndNd
+    caption: 
+    min: 1
+    max: 2
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: fltBW
+    text: FltBW
+    caption: 
+    min: 20
+    max: 40
+    value: 35
     skew: 0
     increment: 0
     options: []
@@ -2130,68 +2425,61 @@ MonoBehaviour:
   loudWarningThreshold: 10
   csoundScore: 
   environmentSettings: []
-  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
-  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
-    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
-    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
-    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
-    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
-    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
-    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
-    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
-    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
-    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
-    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
-    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
-    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
-    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
-    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
-    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
-    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
-    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
-    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
-    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
-    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
-    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
-    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
-    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
-    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
-    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
-    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
-    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
-    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
-    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
-    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
-    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
-    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
-    = chnget:i(\"sweepRate\")\r\n                                                                                      
-    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
-    25 = ARPEGGIO SPEED\r\n                                                          
-    \r\nk1             randi     1, 30                              \r\nk2            
-    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
-    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
-    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
-    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
-    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
-    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
-    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
-    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
-    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
-    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
-    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
-    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
-    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
-    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
-    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
-    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
-    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
-  _csoundFileName: CAB-Trapped02.csd
-  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+  _csoundFileGUID: 7d8fca7d58c0c4c63928fceed48df7fc
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped06\") size(600,
+    400), guiMode(\"queue\") pluginId(\"def1\")\r\nbutton  bounds(62, 22, 86, 55)
+    channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\nhslider bounds(202,
+    26, 175, 50) channel(\"dur\") range(1, 9, 4, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider
+    bounds(34, 86, 158, 50) channel(\"masterLvl\") range(0, 1, 0.8, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\nhslider bounds(390, 88, 162, 50) channel(\"verbLvl\")
+    range(0, 1, 0.4, 1, 0.001) text(\"Verb Lvl\") textColour(\"white\")\r\nhslider
+    bounds(210, 88, 175, 50) channel(\"amp\") range(0, 1, 0.7, 1, 0.001) text(\"Synth
+    Lvl\") textColour(255, 255, 255, 255)\r\nhslider bounds(138, 254, 160, 52) channel(\"strtFrq\")
+    range(20, 3000, 400, 1, 0.001) text(\"FltSweepSt\") textColour(\"white\")\r\nhslider
+    bounds(300, 254, 150, 50) channel(\"endFrq\") range(22, 4000, 1200, 1, 0.001)
+    text(\"FltSweepNd\") textColour(\"white\")\r\nhslider bounds(200, 198, 150, 50)
+    channel(\"rndFrq\") range(0, 1000, 300, 1, 0.001) text(\"FltRndStNd\") textColour(\"white\")\r\nhslider
+    bounds(358, 196, 151, 50) channel(\"bw\") range(.001, .1, .03, 1, 0.001) text(\"FltBW\")
+    textColour(\"white\")\r\nhslider bounds(216, 310, 151, 48) channel(\"rate\")
+    range(.6, 17, 10, 1, 0.001) text(\"Rate\") textColour(\"white\")\r\nhslider bounds(110,
+    144, 177, 50) channel(\"rvbSend\") range(0, 1, .8, 1, 0.001) text(\"Rvb Send\")
+    textColour(\"white\")\r\nhslider bounds(294, 142, 160, 50) channel(\"rvbPan\")
+    range(.01, 9, 4, 1, 0.001) text(\"Rvb Pan\") textColour(\"white\")\r\ncombobox
+    bounds(454, 26, 100, 25), populate(\"*.snaps\"), channelType(\"string\") automatable(0)
+    channel(\"combo31\")  value(\"1\")\r\nfilebutton bounds(390, 26, 60, 25), text(\"Save\",
+    \"Save\"), populate(\"*.snaps\", \"test\"), mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton
+    bounds(390, 54, 60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\",
+    \"test\"), mode(\"remove preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
+    = 1\r\n\r\ngaRvb  init  0\r\n\r\ngiFn01 ftgen  1, 0, 8192, 10, 1\r\ngiFn19 ftgen
+    19, 0,   8,  2, 1, 7, 10, 7, 6, 5, 4, 2\r\n\r\ninstr 1\r\n    iDur = chnget:i(\"dur\")\r\n   
+    kTrig chnget \"trigger\"\r\n    if changed(kTrig) == 1 then\r\n        event
+    \"i\", \"Trapped06\", 0, iDur\r\n    endif\r\nendin\r\n\r\n            instr    
+    Trapped06\r\n\r\niFnLen      = 8  \r\n\r\niDur        = chnget:i(\"dur\")\r\n\r\niAmp       
+    = chnget:i(\"amp\")\r\n              \r\niStFltFrq   = chnget:i(\"strtFrq\")+rnd(chnget:i(\"rndFrq\"))\r\niEndFltFrq 
+    = chnget:i(\"endFrq\")+rnd(chnget:i(\"rndFrq\"))\r\n\r\nkRate       = chnget:k(\"rate\") 
+    \r\n\r\nkBW         = chnget:k(\"bw\")\r\n                                                                                                                                                      
+    \r\nkPhase     phasor    kRate                          \r\nk2         table    
+    kPhase * iFnLen, 19                      \r\naNoise     rand      .4                       
+    \r\nk3         expon     iStFltFrq, iDur, iEndFltFrq                       \r\naSig      
+    butterbp  aNoise, k3 * k2, k3 * kBW, 1\r\n\r\n               outs      aSig *
+    chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")            \r\ngaRvb         
+    =         gaRvb + (aSig * chnget:k(\"rvbSend\")) \r\n               endin\r\n\r\n\r\n              
+    instr     Reverb \r\n               denorm    gaRvb                   \r\nk1            
+    oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =         .5 + k1\r\nk3            
+    =         1 - k2\r\naSig           reverb    gaRvb, 2.1\r\n               outs     
+    (aSig * k2) * chnget:k(\"verbLvl\") * chnget:k(\"masterLvl\"), ((aSig * k3) *
+    (-1)) * chnget:k(\"verbLvl\") * chnget:k(\"masterLvl\")\r\ngaRvb          =        
+    0\r\n               endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound
+    to run for about 7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for
+    a week\r\ni1 0 [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>"
+  _csoundFileName: CAB-Trapped06.csd
+  _csoundAsset: {fileID: 102900000, guid: 7d8fca7d58c0c4c63928fceed48df7fc, type: 3}
   _channels:
   - type: form
     channel: 
     text: 
-    caption: Trapped02
+    caption: Trapped06
     min: 0
     max: 0
     value: 0
@@ -2209,8 +2497,38 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 1
+    max: 9
+    value: 4
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
     channel: masterLvl
     text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.8
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: verbLvl
+    text: Verb Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.4
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Synth Lvl
     caption: 
     min: 0
     max: 1
@@ -2219,72 +2537,52 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: dur
-    text: Dur
+    channel: strtFrq
+    text: FltSweepSt
     caption: 
-    min: 2
-    max: 9
-    value: 3
+    min: 20
+    max: 3000
+    value: 400
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: amp
-    text: Amp
+    channel: endFrq
+    text: FltSweepNd
+    caption: 
+    min: 22
+    max: 4000
+    value: 1200
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndFrq
+    text: FltRndStNd
     caption: 
     min: 0
-    max: 1
-    value: 0.5
+    max: 1000
+    value: 300
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: note
-    text: Note
+    channel: bw
+    text: FltBW
     caption: 
-    min: 10
-    max: 100
-    value: 60
+    min: 0.001
+    max: 0.1
+    value: 0.03
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: rndNote
-    text: RandNote
+    channel: rate
+    text: Rate
     caption: 
-    min: -4
-    max: 4
-    value: 0
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: shakeRate
-    text: Shaker
-    caption: 
-    min: 0
-    max: 15
-    value: 6
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: numHarmonics
-    text: Harmonics
-    caption: 
-    min: 5
-    max: 15
+    min: 0.6
+    max: 17
     value: 10
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: sweepRate
-    text: SweepRate
-    caption: 
-    min: 0.015
-    max: 0.75
-    value: 0.3
     skew: 0
     increment: 0
     options: []
@@ -2294,7 +2592,7 @@ MonoBehaviour:
     caption: 
     min: 0
     max: 1
-    value: 0.15
+    value: 0.8
     skew: 0
     increment: 0
     options: []
@@ -2302,9 +2600,9 @@ MonoBehaviour:
     channel: rvbPan
     text: Rvb Pan
     caption: 
-    min: 0.001
+    min: 0.01
     max: 9
-    value: 0.9
+    value: 4
     skew: 0
     increment: 0
     options: []
@@ -2501,68 +2799,76 @@ MonoBehaviour:
   loudWarningThreshold: 10
   csoundScore: 
   environmentSettings: []
-  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
-  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
-    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
-    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
-    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
-    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
-    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
-    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
-    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
-    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
-    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
-    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
-    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
-    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
-    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
-    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
-    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
-    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
-    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
-    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
-    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
-    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
-    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
-    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
-    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
-    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
-    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
-    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
-    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
-    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
-    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
-    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
-    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
-    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
-    = chnget:i(\"sweepRate\")\r\n                                                                                      
-    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
-    25 = ARPEGGIO SPEED\r\n                                                          
-    \r\nk1             randi     1, 30                              \r\nk2            
-    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
-    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
-    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
-    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
-    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
-    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
-    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
-    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
-    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
-    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
-    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
-    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
-    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
-    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
-    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
-    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
-    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
-  _csoundFileName: CAB-Trapped02.csd
-  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+  _csoundFileGUID: 72422632fac1d4370a9be09db88e5eb5
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped12\") size(700,
+    330), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(56, 132, 80,
+    42) channel(\"trigger1\") text(\"Trigger1\") textColour(\"white\")\r\n\r\ncheckbox
+    bounds(138, 182, 27, 25), channel(\"reTrigger\"), fontColour(\"white\"),  value(0)\r\nlabel   
+    bounds(6, 182, 114, 22), text(\"ReTrigger\"), fontColour(255, 255, 255, 255)
+    channel(\"label9\")\r\n\r\nhslider bounds(16, 72, 175, 50) channel(\"dur\") range(.01,
+    6, 2.4, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\n\r\nhslider bounds(4,
+    228, 175, 50) channel(\"rate\") range(.02, 20, 8, 1, 0.001) text(\"ReTrig Rate\")
+    textColour(\"white\")\r\n\r\nhslider bounds(20, 10, 158, 50) channel(\"masterLvl\")
+    range(0, 1, 0.7, 1, 0.001) text(\"Master Lvl\") textColour(\"white\")\r\n\r\nhslider
+    bounds(206, 8, 150, 50) channel(\"synthLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Synth
+    Lvl\") textColour(255, 255, 255, 255)\r\nhslider bounds(362, 10, 150, 50) channel(\"noiseLvl\")
+    range(0, 1, 0.2, 1, 0.001) text(\"Noise Lvl\") textColour(255, 255, 255, 255)\r\nhslider
+    bounds(520, 8, 150, 50) channel(\"verbLvl\") range(0, 1, 0.5, 1, 0.001) text(\"Verb
+    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(252, 68, 160, 52) channel(\"frq\")
+    range(200, 4000, 1300, 1, 0.001) text(\"Freq\") textColour(\"white\")\r\nhslider
+    bounds(428, 68, 150, 50) channel(\"rndFrq\") range(1, 4, 2, 1, 0.001) text(\"RandFreq\")
+    textColour(\"white\")\r\n\r\nhslider bounds(200, 130, 161, 51) channel(\"fltStrt\")
+    range(80, 8000, 1200, 1, 0.001) text(\"FilterStart\") textColour(\"white\")\r\nhslider
+    bounds(360, 128, 161, 51) channel(\"fltPeak\") range(80, 8000, 2200, 1, 0.001)
+    text(\"FilterPeak\") textColour(\"white\")\r\nhslider bounds(520, 130, 151, 50)
+    channel(\"fltBW\") range(.01, .5, .07, 1, 0.001) text(\"FilterBW\") textColour(\"white\")\r\n\r\nhslider
+    bounds(252, 186, 161, 52) channel(\"rvbSend\") range(0, 1, .15, 1, 0.001) text(\"Rvb
+    Send\") textColour(\"white\")\r\nhslider bounds(426, 188, 150, 50) channel(\"rvbPan\")
+    range(.001, 16, 11, 1, 0.001) text(\"Rvb Pan\") textColour(\"white\")\r\n\r\ncombobox
+    bounds(382, 254, 100, 25), populate(\"*.snaps\"), channelType(\"string\") automatable(0)
+    channel(\"combo31\")  value(\"1\")\r\nfilebutton bounds(316, 254, 60, 25), text(\"Save\",
+    \"Save\"), populate(\"*.snaps\", \"test\"), mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton
+    bounds(316, 282, 60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\",
+    \"test\"), mode(\"remove preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\nksmps  = 32\r\nnchnls = 2\r\n0dbfs 
+    = 1\r\n \r\ngarvb  init  0\r\n\r\ngiFun01 ftgen 01, 0, 8192, 10, 1\r\ngiFun22
+    ftgen 22, 0,    8, -2, .001, .004, .007, .003, .002, .005, .009, .006\r\n\r\ninstr
+    1\r\n\r\n    kTrig   chnget \"trigger1\"\r\n    kReTrig chnget \"reTrigger\"\r\n      
+    \r\n    iDur = chnget:i(\"dur\")\r\n    iAmp = chnget:i(\"synthLvl\")\r\n   
+    iFrq = chnget:i(\"frq\")*rnd(chnget:i(\"rndFrq\"))\r\n        \r\n    if kReTrig
+    == 1 then\r\n        kTrig metro chnget:k(\"rate\")\r\n    endif\r\n\r\n    if
+    changed(kTrig) == 1 then\r\n        event \"i\", \"Trapped12\", 0, iDur, iFrq,
+    iAmp \r\n    endif\r\n   \r\nendin\r\n\r\n               instr     Trapped12\r\n                     
+    \r\niDur           =         chnget:i(\"dur\")\r\niAmp           =         chnget:i(\"synthLvl\")            
+    \r\niFrq           =         chnget:i(\"frq\")*rnd(chnget:i(\"rndFrq\"))\r\n\r\niFltStrt      
+    =         chnget:i(\"fltStrt\")+rnd(30)\r\niFltPeak       =         chnget:i(\"fltPeak\")+rnd(100)\r\niFltBW        
+    =         chnget:i(\"fltBW\")+rnd(.1)                                                                                       
+    \r\n                    \r\nifuncl         =         8                            
+    \r\n                                             \r\nk1             linseg   
+    0, iDur * .8, 8, iDur * .2, 0     \r\nk2             phasor    k1                        
+    \r\nk3             table     k2 * ifuncl, 22                    \r\n\r\nkGate         
+    transeg   1, iDur, 0, 0\r\nkCut           transeg   iFltStrt, iDur * .7, 1, iFltPeak,
+    iDur * .3, iFltStrt * .9, 6\r\n;kCut           expseg    iFltStrt, iDur * .7,
+    iFltPeak, iDur * .3, iFltStrt * .9    \r\n\r\nanoise         rand      10                    
+    \r\naFlt           reson     anoise * chnget:k(\"noiseLvl\"), kCut + iFrq, kCut
+    * iFltBW, 1\r\naSig           oscil     kGate * iAmp, iFrq + k3, 1\r\naMix          
+    =         kGate * (aSig + aFlt)\r\n               outs      aMix * chnget:k(\"masterLvl\"),
+    aMix * chnget:k(\"masterLvl\")            \r\ngarvb          =         garvb
+    + (aMix * chnget:k(\"rvbSend\")) \r\n               endin\r\n\r\n              
+    instr     Reverb \r\n               denorm    garvb                   \r\nk1            
+    oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =         .5 + k1\r\nk3            
+    =         1 - k2\r\naSig           reverb    garvb, 3.1\r\n               outs     
+    (aSig * k2) * chnget:k(\"verbLvl\") * chnget:k(\"masterLvl\"), ((aSig * k3) *
+    (-1)) * chnget:k(\"verbLvl\") * chnget:k(\"masterLvl\")\r\ngarvb          =        
+    0\r\n               endin\r\n\r\n</CsInstruments>\r\n\r\n<CsScore>\r\nf0 z\r\ni1
+    0 [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n\r\n</CsoundSynthesizer>"
+  _csoundFileName: CAB-Trapped12.csd
+  _csoundAsset: {fileID: 102900000, guid: 72422632fac1d4370a9be09db88e5eb5, type: 3}
   _channels:
   - type: form
     channel: 
     text: 
-    caption: Trapped02
+    caption: Trapped12
     min: 0
     max: 0
     value: 0
@@ -2570,12 +2876,42 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: button
-    channel: trigger
-    text: Trigger
+    channel: trigger1
+    text: Trigger1
     caption: 
     min: 0
     max: 0
     value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: checkbox
+    channel: reTrigger
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 0.01
+    max: 6
+    value: 2.4
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rate
+    text: ReTrig Rate
+    caption: 
+    min: 0.02
+    max: 20
+    value: 8
     skew: 0
     increment: 0
     options: []
@@ -2590,18 +2926,28 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: dur
-    text: Dur
+    channel: synthLvl
+    text: Synth Lvl
     caption: 
-    min: 2
-    max: 9
-    value: 3
+    min: 0
+    max: 1
+    value: 0.7
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: amp
-    text: Amp
+    channel: noiseLvl
+    text: Noise Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.2
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: verbLvl
+    text: Verb Lvl
     caption: 
     min: 0
     max: 1
@@ -2610,52 +2956,52 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: note
-    text: Note
+    channel: frq
+    text: Freq
     caption: 
-    min: 10
-    max: 100
-    value: 60
+    min: 200
+    max: 4000
+    value: 1300
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: rndNote
-    text: RandNote
+    channel: rndFrq
+    text: RandFreq
     caption: 
-    min: -4
+    min: 1
     max: 4
-    value: 0
+    value: 2
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: shakeRate
-    text: Shaker
+    channel: fltStrt
+    text: FilterStart
     caption: 
-    min: 0
-    max: 15
-    value: 6
+    min: 80
+    max: 8000
+    value: 1200
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: numHarmonics
-    text: Harmonics
+    channel: fltPeak
+    text: FilterPeak
     caption: 
-    min: 5
-    max: 15
-    value: 10
+    min: 80
+    max: 8000
+    value: 2200
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: sweepRate
-    text: SweepRate
+    channel: fltBW
+    text: FilterBW
     caption: 
-    min: 0.015
-    max: 0.75
-    value: 0.3
+    min: 0.01
+    max: 0.5
+    value: 0.07
     skew: 0
     increment: 0
     options: []
@@ -2674,8 +3020,8 @@ MonoBehaviour:
     text: Rvb Pan
     caption: 
     min: 0.001
-    max: 9
-    value: 0.9
+    max: 16
+    value: 11
     skew: 0
     increment: 0
     options: []
@@ -2872,68 +3218,79 @@ MonoBehaviour:
   loudWarningThreshold: 10
   csoundScore: 
   environmentSettings: []
-  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
-  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
-    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
-    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
-    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
-    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
-    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
-    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
-    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
-    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
-    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
-    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
-    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
-    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
-    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
-    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
-    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
-    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
-    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
-    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
-    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
-    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
-    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
-    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
-    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
-    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
-    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
-    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
-    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+  _csoundFileGUID: 740a5927887d04345a1dab14a0c92627
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped09\") size(650,
+    250), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(34, 34, 101,
+    44) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
+    bounds(322, 10, 150, 50) channel(\"dur\") range(2, 9, 4, 1, 0.001) text(\"Dur\")
+    textColour(\"white\")\r\nhslider bounds(250, 68, 150, 50) channel(\"note\") range(20,
+    80, 50, 1, 0.001) text(\"MIDI NN\") textColour(\"white\")\r\nhslider bounds(408,
+    68, 150, 50) channel(\"rndNote\") range(0, 8, 3, 1, 0.001) text(\"Rnd NN\") textColour(\"white\")\r\n\r\nhslider
+    bounds(484, 10, 150, 50) channel(\"amp\") range(0, 1, .6, 1, 0.001) text(\"Synth
+    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(286, 122, 162, 50) channel(\"rndRate\")
+    range(100, 400, 185, 1, 0.001) text(\"RndRate\") textColour(\"white\")\r\nhslider
+    bounds(452, 122, 150, 50) channel(\"rndAmp\") range(0, 10, 3.3, 1, 0.001) text(\"RndAmp\")
+    textColour(\"white\")\r\n\r\nhslider bounds(338, 182, 150, 50) channel(\"delaySend\")
+    range(0, 1, .76, 1, 0.001) text(\"Delay Send\") textColour(\"white\")\r\nhslider
+    bounds(490, 182, 150, 50) channel(\"delayTime\") range(.001, 5, .08, 1, 0.001)
+    text(\"Delay Time\") textColour(\"white\")\r\n\r\nhslider bounds(22, 184, 150,
+    50) channel(\"rvbSend\") range(0, 1, .45, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
+    bounds(176, 184, 150, 50) channel(\"rvbPan\") range(0, 6, 4, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\r\n\r\nhslider bounds(160, 10, 150, 50) channel(\"masterLvl\")
+    range(0, 1, 0.9, 1, 0.001) text(\"Master Lvl\") textColour(\"white\")\r\n\r\ncombobox
+    bounds(120, 104, 100, 25), populate(\"*.snaps\"), channelType(\"string\") automatable(0)
+    channel(\"combo31\") text(\"Starting-4note\", \"More Notes Less Vcomb\", \"More
+    noise & open filter -pan LFO faster\", \"faster, less notes, more delay\", \"Slower,
+    More resonance, and RingMod\", \"Complex PolyRhythms\", \"Alll Notes, Spinning,
+    No Delay, All FreeVerb\") value(\"1\")\r\nfilebutton bounds(58, 104, 60, 25),
+    text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"), mode(\"named preset\")
+    channel(\"filebutton32\")\r\nfilebutton bounds(58, 134, 60, 25), text(\"Remove\",
+    \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n<CsoundSynthesizer>\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n<CsInstruments>\r\n; Initialize the global variables.
+    \r\nksmps = 32\r\nnchnls = 2\r\n0dbfs = 1\r\n\r\ngarvb          init      0\r\ngadel         
+    init      0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiWav2 ftgen 2, 0, 8192,
+    10, 10, 8, 0, 6, 0, 4, 0, 1\r\ngiWav3 ftgen 3, 0, 8192, 10, 10, 0, 5, 5, 0, 4,
+    3, 0, 1\r\ngiWav4 ftgen 4, 0, 8192, 10, 10, 0, 9, 0, 0, 8, 0, 7, 0, 4, 0, 2,
+    0, 1\r\n\r\ngkRevPan init 4\r\n\r\ninstr 1\r\n    iDur = chnget:i(\"dur\")\r\n
+    \r\n    iNote = chnget:i(\"frq\")+rnd(chnget:i(\"rndNote\"))\r\n    iFrq = cpsmidinn(iNote)\r\n   
     iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
-    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
-    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
-    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
-    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
-    = chnget:i(\"sweepRate\")\r\n                                                                                      
-    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
-    25 = ARPEGGIO SPEED\r\n                                                          
-    \r\nk1             randi     1, 30                              \r\nk2            
-    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
-    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
-    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
-    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
-    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
-    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
-    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
-    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
-    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
-    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
-    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
-    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
-    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
-    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
-    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
-    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
-    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
-  _csoundFileName: CAB-Trapped02.csd
-  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+    == 1 then\r\n        event \"i\", \"Trapped09\", 0, iDur, iFrq, iAmp\r\n    endif\r\nendin\r\n\r\n\r\ninstr    
+    Trapped09\r\n\r\nip3    = chnget:i(\"dur\")\r\n\r\niamp   = chnget:i(\"amp\")*.2\r\n             
+    \r\nkNote  = chnget:k(\"note\")+rnd(chnget:i(\"rndNote\"))\r\nkFrq   = cpsmidinn(kNote)*.25\r\n\r\nkRndAmp 
+    = chnget:k(\"rndAmp\")\r\nkRndFrq  = chnget:k(\"rndRate\")\r\n                                                                                       
+    \r\nk2             randh     kRndAmp, kRndFrq, .1                     \r\nk3            
+    randh     kRndAmp * .98, kRndFrq * .91, .2             \r\nk4             randh    
+    kRndAmp * 1.2, kRndFrq * .96, .3            \r\nk5             randh     kRndAmp
+    * .9, kRndFrq * 1.3     \r\n                       \r\nkenv           linen   
+    iamp, ip3 *.2, ip3, ip3 * .8  \r\n\r\na1             oscil     kenv, kFrq + k2,
+    giSine, .2             \r\na2             oscil     kenv * .91, (kFrq + .004)
+    + k3, giWav2, .3\r\na3             oscil     kenv * .85, (kFrq + .006) + k4,
+    giWav3, .5\r\na4             oscil     kenv * .95, (kFrq + .009) + k5, giWav4,
+    .8\r\n\r\nkgate         transeg   1, ip3, 0, 0 \r\namix           =        (a1
+    + a2 + a3 + a4) * kgate\r\naL             =        a1 + a3\r\naR            
+    =        a2 + a4\r\n\r\n              outs      aL * chnget:k(\"masterLvl\"),
+    aR * chnget:k(\"masterLvl\")\r\n                \r\ngarvb          =        
+    garvb + (amix * chnget:k(\"rvbSend\")) \r\ngadel          =         gadel + (amix
+    * chnget:k(\"delaySend\")) \r\n               \r\nendin\r\n\r\n              
+    instr     Delay\r\n               denorm    gadel\r\nip3    = chnget:i(\"dur\")\r\nkgate         
+    expseg    1, ip3*.7, 1, ip3*.3, .0001\r\nasig           delay     gadel, chnget:i(\"delayTime\")\r\nasig
+    = asig*kgate\r\n               outs      asig*chnget:k(\"masterLvl\"), asig*chnget:k(\"masterLvl\")\r\ngadel         
+    =         0\r\n               endin\r\n\r\n\r\n               instr     Reverb
+    \r\n               denorm    garvb                   \r\nk1             oscil    
+    .5, chnget:k(\"rvbPan\"), 1\r\nk2             =         .5 + k1\r\nk3            
+    =         1 - k2\r\nasig           reverb    garvb, 3.1\r\n               outs     
+    (asig * k2) * chnget:k(\"masterLvl\"), ((asig * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb         
+    =         0\r\n               endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes
+    Csound to run for about 7000 years...\r\nf0 z\r\n;starts instrument 1 and runs
+    it for a week\r\ni1 0 [60*60*24*7] \r\ni \"Delay\" 0 [60*60*24*7]\r\ni \"Reverb\"
+    0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>"
+  _csoundFileName: CAB-Trapped09.csd
+  _csoundAsset: {fileID: 102900000, guid: 740a5927887d04345a1dab14a0c92627, type: 3}
   _channels:
   - type: form
     channel: 
     text: 
-    caption: Trapped02
+    caption: Trapped09
     min: 0
     max: 0
     value: 0
@@ -2951,82 +3308,82 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: masterLvl
-    text: Master Lvl
-    caption: 
-    min: 0
-    max: 1
-    value: 0.7
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
     channel: dur
     text: Dur
     caption: 
     min: 2
     max: 9
+    value: 4
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: note
+    text: MIDI NN
+    caption: 
+    min: 20
+    max: 80
+    value: 50
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndNote
+    text: Rnd NN
+    caption: 
+    min: 0
+    max: 8
     value: 3
     skew: 0
     increment: 0
     options: []
   - type: hslider
     channel: amp
-    text: Amp
+    text: Synth Lvl
     caption: 
     min: 0
     max: 1
-    value: 0.5
+    value: 0.6
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: note
-    text: Note
+    channel: rndRate
+    text: RndRate
     caption: 
-    min: 10
-    max: 100
-    value: 60
+    min: 100
+    max: 400
+    value: 185
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: rndNote
-    text: RandNote
-    caption: 
-    min: -4
-    max: 4
-    value: 0
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: shakeRate
-    text: Shaker
+    channel: rndAmp
+    text: RndAmp
     caption: 
     min: 0
-    max: 15
-    value: 6
+    max: 10
+    value: 3.3
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: numHarmonics
-    text: Harmonics
+    channel: delaySend
+    text: Delay Send
     caption: 
-    min: 5
-    max: 15
-    value: 10
+    min: 0
+    max: 1
+    value: 0.76
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: sweepRate
-    text: SweepRate
+    channel: delayTime
+    text: Delay Time
     caption: 
-    min: 0.015
-    max: 0.75
-    value: 0.3
+    min: 0.001
+    max: 5
+    value: 0.08
     skew: 0
     increment: 0
     options: []
@@ -3036,7 +3393,7 @@ MonoBehaviour:
     caption: 
     min: 0
     max: 1
-    value: 0.15
+    value: 0.45
     skew: 0
     increment: 0
     options: []
@@ -3044,22 +3401,48 @@ MonoBehaviour:
     channel: rvbPan
     text: Rvb Pan
     caption: 
-    min: 0.001
-    max: 9
+    min: 0
+    max: 6
+    value: 4
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
     value: 0.9
     skew: 0
     increment: 0
     options: []
   - type: combobox
     channel: combo31
-    text: 
+    text: Starting-4note, More Notes Less Vcomb, More noise & open filter -pan LFO
+      faster, faster, less notes, more delay, Slower, More resonance, and RingMod,
+      Complex PolyRhythms, Alll Notes, Spinning, No Delay, All FreeVerb
     caption: 
-    min: 0
-    max: 0
+    min: 1
+    max: 14
     value: 0
     skew: 0
     increment: 0
-    options: []
+    options:
+    - Starting-4note
+    - MoreNotesLessVcomb
+    - Morenoise&openfilter-panLFOfaster
+    - faster
+    - lessnotes
+    - moredelay
+    - Slower
+    - Moreresonance
+    - andRingMod
+    - ComplexPolyRhythms
+    - AlllNotes
+    - Spinning
+    - NoDelay
+    - AllFreeVerb
   - type: filebutton
     channel: filebutton32
     text: Save, Save
@@ -3691,68 +4074,79 @@ MonoBehaviour:
   loudWarningThreshold: 10
   csoundScore: 
   environmentSettings: []
-  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
-  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
-    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
-    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
-    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
-    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
-    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
-    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
-    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
-    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
-    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
-    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
-    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
-    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
-    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
-    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
-    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
-    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
-    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
-    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
-    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
-    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
-    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
-    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
-    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
-    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
-    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
-    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
-    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
-    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
-    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
-    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
-    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
-    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
-    = chnget:i(\"sweepRate\")\r\n                                                                                      
-    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
-    25 = ARPEGGIO SPEED\r\n                                                          
-    \r\nk1             randi     1, 30                              \r\nk2            
-    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
-    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
-    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
-    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
-    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
-    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
-    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
-    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
-    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
-    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
-    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
-    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
-    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
-    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
-    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
-    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
-    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
-  _csoundFileName: CAB-Trapped02.csd
-  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+  _csoundFileGUID: dd708f23bf5f0486cbfc3be2676074bc
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\nform caption(\"Trapped11\") size(650,
+    300), guiMode(\"queue\") pluginId(\"def1\")\n\nbutton  bounds(16, 60, 101, 44)
+    channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\n\nhslider bounds(122,
+    56, 150, 50) channel(\"dur\") range(3, 8, 5, 1, 0.001) text(\"Dur\") textColour(\"white\")\nhslider
+    bounds(328, 66, 150, 50) channel(\"note\") range(23, 98, 60, 1, 0.001) text(\"MIDI
+    NN\") textColour(\"white\")\nhslider bounds(486, 66, 150, 50) channel(\"rndNote\")
+    range(0, 8, 3, 1, 0.001) text(\"Rnd NN\") textColour(\"white\")\n\nhslider bounds(454,
+    8, 150, 50) channel(\"amp\") range(0, 1, .6, 1, 0.001) text(\"Synth Lvl\") textColour(\"white\")\n\nhslider
+    bounds(214, 120, 162, 50) channel(\"mstrRate\") range(10, 4000, 185, 1, 0.001)
+    text(\"MasterRate\") textColour(\"white\")\nhslider bounds(384, 120, 150, 50)
+    channel(\"mstrDpth\") range(0, 40, 3, 1, 0.001) text(\"MasterDepth\") textColour(\"white\")\n\nhslider
+    bounds(134, 176, 150, 50) channel(\"delaySend\") range(0, 1, .76, 1, 0.001) text(\"Delay
+    Send\") textColour(\"white\")\nhslider bounds(300, 178, 150, 50) channel(\"loopTime\")
+    range(.0005, 3.65, .78, 1, 0.001) text(\"Delay Time\") textColour(\"white\")\nhslider
+    bounds(466, 178, 150, 50) channel(\"feedbasck\") range(.5, 5.65, 3, 1, 0.001)
+    text(\"Delay FeedB\") textColour(\"white\")\n\nhslider bounds(208, 238, 150,
+    50) channel(\"rvbSend\") range(0, 1, .35, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\nhslider
+    bounds(374, 236, 150, 50) channel(\"rvbPan\") range(0, 11, .2, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\n\nhslider bounds(294, 8, 150, 50) channel(\"masterLvl\")
+    range(0, 1, 0.7, 1, 0.001) text(\"Master Lvl\") textColour(\"white\")\n\ncombobox
+    bounds(90, 126, 100, 25), populate(\"*.snaps\"), channelType(\"string\") automatable(0)
+    channel(\"combo31\") text(\"sizzle\", \"burble\") value(\"1\")\nfilebutton bounds(28,
+    126, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"), mode(\"named
+    preset\") channel(\"filebutton32\")\nfilebutton bounds(28, 156, 60, 25), text(\"Remove\",
+    \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove preset\") channel(\"filebutton33\")\n</Cabbage>\n<CsoundSynthesizer>\n<CsOptions>\n-n
+    -dm0\n</CsOptions>\n<CsInstruments>\nksmps = 64\nnchnls = 2\n0dbfs = 1\n\ngarvb         
+    init      0\ngadel          init      0\n\ngiFn01 ftgen 1, 0, 8192, 10, 1\ngiFn14
+    ftgen 14, 0, 512, 9, 1, 3, 0, 3, 1, 0, 9, .333, 180\n\ninstr 1\n    iDur = chnget:i(\"dur\")\n
+    \n    iNote = chnget:i(\"frq\")+rnd(chnget:i(\"rndNote\"))\n    iFrq = cpsmidinn(iNote)\n   
+    iAmp = chnget:i(\"amp\")\n    kTrig chnget \"trigger\"\n    if changed(kTrig)
+    == 1 then\n        event \"i\", \"Trapped11\", 0, iDur, iFrq, iAmp\n    endif\nendin\n\n\ninstr 
+    Trapped11\n\nip3    = chnget:i(\"dur\")\nip6    = chnget:i(\"amp\")*.2\n             
+    \nkNote  = chnget:k(\"note\")+rnd(chnget:i(\"rndNote\"))\nkFrq   = cpsmidinn(kNote)\n\nkDepth
+    = chnget:k(\"mstrDpth\")\nkRate = chnget:k(\"mstrRate\")\n                                           
+    \nk1             expseg    1, ip3 * .5, 40, ip3 * .5, 2    \nk2             expseg   
+    10, ip3 * .72, 35, ip3 * .28, 6\nk3             linen     ip6, ip3 * .333, ip3,
+    ip3 * .333\nk4             randh     k1*kDepth, (k2*kRate)+rnd(12), .5\na4            
+    oscil     k3, kFrq + (kFrq * .05) + k4, 1, .1\n     \nk5             linseg   
+    .4, ip3 * .9, 26, ip3 * .1, 0\nk6             linseg    8, ip3 * .24, 20, ip3
+    * .76, 2\nk7             linen     ip6, ip3 * .5, ip3, ip3 * .46\nk8            
+    randh     k5*kDepth, (k6*kRate)+rnd(10), .4\na3             oscil     k7, kFrq
+    + (kFrq * .03) + k8, 14, .3\n\nk9             expseg    1, ip3 * .7, 50, ip3
+    * .3, 2\nk10            expseg    10, ip3 * .3, 45, ip3 * .7, 6\nk11           
+    linen     ip6, ip3 * .25, ip3, ip3 * .25\nk12            randh     k9*kDepth,
+    (k10*kRate)+rnd(3), .5\na2             oscil     k11, kFrq + (kFrq * .02) + k12,
+    1, .1\n\nk13            linseg    .4, ip3 * .6, 46, ip3 * .4, 0\nk14           
+    linseg    18, ip3 * .1, 50, ip3 * .9, 2\nk15            linen     ip6, ip3 *
+    .2, ip3, ip3 * .3\nk16            randh     k13*kDepth, (k14*kRate)+rnd(4), .8\na1            
+    oscil     k15, kFrq + (kFrq * .01) + k16, 14, .3\n\nkgate         transeg   1,ip3,0,0\namix          
+    =        (a1 + a2 + a3 + a4) * kgate\naL             =        a1 + a3\naR            
+    =        a2 + a4\n\n              outs      aL * chnget:k(\"masterLvl\"), aR
+    * chnget:k(\"masterLvl\")\n                \ngarvb          =         garvb +
+    (amix * chnget:k(\"rvbSend\")) \ngadel          =         gadel + (amix * chnget:k(\"delaySend\"))
+    \n               \nendin\n\n               instr     Delay\n               denorm   
+    gadel\nkFeedback      =         chnget:k(\"feedback\")\niLoopTime      =        
+    chnget:i(\"loopTime\")\naL             comb      gadel, kFeedback*rnd(1), iLoopTime+rnd(.8)\naR            
+    comb      gadel, kFeedback*rnd(1), iLoopTime+rnd(.5)\n               outs     
+    aL*chnget:k(\"masterLvl\"), aR*chnget:k(\"masterLvl\")\ngadel          =        
+    0\n               endin\n\n               instr     Reverb \n               denorm   
+    garvb                   \nk1             oscil     .5, chnget:k(\"rvbPan\"),
+    1\nk2             =         .5 + k1\nk3             =         1 - k2\nasig          
+    reverb    garvb, 3.1\n               outs      (asig * k2) * chnget:k(\"masterLvl\"),
+    ((asig * k3) * (-1)) * chnget:k(\"masterLvl\")\ngarvb          =         0\n              
+    endin\n\n</CsInstruments>\n<CsScore>\nf0 z\ni1 0 [60*60*24*7] \ni \"Delay\" 0
+    [60*60*24*7]\ni \"Reverb\" 0 [60*60*24*7]  \n</CsScore>\n</CsoundSynthesizer>\n"
+  _csoundFileName: CAB-Trapped11.csd
+  _csoundAsset: {fileID: 102900000, guid: dd708f23bf5f0486cbfc3be2676074bc, type: 3}
   _channels:
   - type: form
     channel: 
     text: 
-    caption: Trapped02
+    caption: Trapped11
     min: 0
     max: 0
     value: 0
@@ -3770,82 +4164,92 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: masterLvl
-    text: Master Lvl
-    caption: 
-    min: 0
-    max: 1
-    value: 0.7
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
     channel: dur
     text: Dur
     caption: 
-    min: 2
-    max: 9
-    value: 3
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: amp
-    text: Amp
-    caption: 
-    min: 0
-    max: 1
-    value: 0.5
+    min: 3
+    max: 8
+    value: 5
     skew: 0
     increment: 0
     options: []
   - type: hslider
     channel: note
-    text: Note
+    text: MIDI NN
     caption: 
-    min: 10
-    max: 100
+    min: 23
+    max: 98
     value: 60
     skew: 0
     increment: 0
     options: []
   - type: hslider
     channel: rndNote
-    text: RandNote
-    caption: 
-    min: -4
-    max: 4
-    value: 0
-    skew: 0
-    increment: 0
-    options: []
-  - type: hslider
-    channel: shakeRate
-    text: Shaker
+    text: Rnd NN
     caption: 
     min: 0
-    max: 15
-    value: 6
+    max: 8
+    value: 3
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: numHarmonics
-    text: Harmonics
+    channel: amp
+    text: Synth Lvl
     caption: 
-    min: 5
-    max: 15
-    value: 10
+    min: 0
+    max: 1
+    value: 0.6
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: sweepRate
-    text: SweepRate
+    channel: mstrRate
+    text: MasterRate
     caption: 
-    min: 0.015
-    max: 0.75
-    value: 0.3
+    min: 10
+    max: 4000
+    value: 185
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: mstrDpth
+    text: MasterDepth
+    caption: 
+    min: 0
+    max: 40
+    value: 3
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: delaySend
+    text: Delay Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.76
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: loopTime
+    text: Delay Time
+    caption: 
+    min: 0.0005
+    max: 3.65
+    value: 0.78
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: feedbasck
+    text: Delay FeedB
+    caption: 
+    min: 0.5
+    max: 5.65
+    value: 3
     skew: 0
     increment: 0
     options: []
@@ -3855,7 +4259,7 @@ MonoBehaviour:
     caption: 
     min: 0
     max: 1
-    value: 0.15
+    value: 0.35
     skew: 0
     increment: 0
     options: []
@@ -3863,22 +4267,34 @@ MonoBehaviour:
     channel: rvbPan
     text: Rvb Pan
     caption: 
-    min: 0.001
-    max: 9
-    value: 0.9
+    min: 0
+    max: 11
+    value: 0.2
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.7
     skew: 0
     increment: 0
     options: []
   - type: combobox
     channel: combo31
-    text: 
+    text: sizzle, burble
     caption: 
-    min: 0
-    max: 0
+    min: 1
+    max: 2
     value: 0
     skew: 0
     increment: 0
-    options: []
+    options:
+    - sizzle
+    - burble
   - type: filebutton
     channel: filebutton32
     text: Save, Save
@@ -4146,68 +4562,80 @@ MonoBehaviour:
   loudWarningThreshold: 10
   csoundScore: 
   environmentSettings: []
-  _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
-  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
-    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
-    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
-    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
-    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
-    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
-    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
-    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
-    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
-    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
-    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
-    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
-    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
-    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
-    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
-    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
-    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
-    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
-    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
-    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
-    bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
-    mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
-    60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
-    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
-    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
-    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
-    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
-    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
-    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
-    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
-    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
-    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
-    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
-    = chnget:i(\"sweepRate\")\r\n                                                                                      
-    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
-    25 = ARPEGGIO SPEED\r\n                                                          
-    \r\nk1             randi     1, 30                              \r\nk2            
-    linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
-    iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
-    1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
-    linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
-    1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
-    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
-    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
-    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
-    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
-    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
-    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
-    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
-    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
-    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
-    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
-    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
-    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
-  _csoundFileName: CAB-Trapped02.csd
-  _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
+  _csoundFileGUID: dd1faa315e0e2426db7d0be6888f818d
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\nform caption(\"Trapped07\") size(700,
+    330), guiMode(\"queue\") pluginId(\"def1\")\n\nbutton  bounds(56, 132, 80, 42)
+    channel(\"trigger1\") text(\"Trigger1\") textColour(\"white\")\n\ncheckbox bounds(138,
+    182, 27, 25), channel(\"reTrigger\"), fontColour(\"white\"),  value(0)\nlabel   
+    bounds(6, 182, 114, 22), text(\"ReTrigger\"), fontColour(255, 255, 255, 255)
+    channel(\"label9\")\n\nhslider bounds(16, 72, 175, 50) channel(\"dur\") range(.1,
+    5, 2.4, 1, 0.001) text(\"Dur\") textColour(\"white\")\n\nhslider bounds(4, 228,
+    175, 50) channel(\"rate\") range(.02, 20, 8, 1, 0.001) text(\"ReTrig Rate\")
+    textColour(\"white\")\n\nhslider bounds(20, 10, 158, 50) channel(\"masterLvl\")
+    range(0, 1, 0.7, 1, 0.001) text(\"Master Lvl\") textColour(\"white\")\n\nhslider
+    bounds(206, 8, 150, 50) channel(\"synthLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Synth
+    Lvl\") textColour(255, 255, 255, 255)\nhslider bounds(362, 10, 150, 50) channel(\"noiseLvl\")
+    range(0, 1, 0.2, 1, 0.001) text(\"Noise Lvl\") textColour(255, 255, 255, 255)\nhslider
+    bounds(520, 8, 150, 50) channel(\"verbLvl\") range(0, 1, 0.5, 1, 0.001) text(\"Verb
+    Lvl\") textColour(\"white\")\n\nhslider bounds(252, 68, 160, 52) channel(\"frq\")
+    range(200, 4000, 1300, 1, 0.001) text(\"Freq\") textColour(\"white\")\nhslider
+    bounds(428, 68, 150, 50) channel(\"rndFrq\") range(1, 4, 2, 1, 0.001) text(\"RandFreq\")
+    textColour(\"white\")\n\nhslider bounds(200, 130, 161, 51) channel(\"modFrqStrt\")
+    range(.01, .99, .2, 1, 0.001) text(\"ModFrqStart\") textColour(\"white\")\nhslider
+    bounds(360, 128, 161, 51) channel(\"modFrqPeak\") range(.1, .99, .4, 1, 0.001)
+    text(\"ModFrqPeak\") textColour(\"white\")\n\nhslider bounds(520, 130, 151, 50)
+    channel(\"ctrlFunc\") range(2, 4, 2, 1, 0.001) text(\"CtrlFunc\") textColour(\"white\")\nhslider
+    bounds(520, 130, 151, 50) channel(\"ctrlAmp\") range(.3, 1, .6, 1, 0.001) text(\"CtrlAmp\")
+    textColour(\"white\")\n\nhslider bounds(520, 130, 151, 50) channel(\"oscFunc\")
+    range(2, 4, 3, 1, 0.001) text(\"OscFunc\") textColour(\"white\")\n\nhslider bounds(252,
+    186, 161, 52) channel(\"rvbSend\") range(0, 1, .25, 1, 0.001) text(\"Rvb Send\")
+    textColour(\"white\")\nhslider bounds(426, 188, 150, 50) channel(\"rvbPan\")
+    range(.001, 4, 2, 1, 0.001) text(\"Rvb Pan\") textColour(\"white\")\n\ncombobox
+    bounds(382, 254, 100, 25), populate(\"*.snaps\"), channelType(\"string\") automatable(0)
+    channel(\"combo31\")  value(\"1\")\nfilebutton bounds(316, 254, 60, 25), text(\"Save\",
+    \"Save\"), populate(\"*.snaps\", \"test\"), mode(\"named preset\") channel(\"filebutton32\")\nfilebutton
+    bounds(316, 282, 60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\",
+    \"test\"), mode(\"remove preset\") channel(\"filebutton33\")\n</Cabbage>\n\n<CsoundSynthesizer>\n\n<CsOptions>\n-n
+    -dm0\n</CsOptions>\n\n<CsInstruments>\nksmps  = 32\nnchnls = 2\n0dbfs  = 1\n
+    \ngarvb  init  0\n\ngiFun01 ftgen 01, 0, 8192, 10, 1\ngiFun02 ftgen 02, 0,  512,
+    10, 10,  8,   0,   6,   0,   4,   0,   1\ngiFun03 ftgen 03, 0,  512, 10, 10, 
+    0,   5,   5,   0,   4,   3,   0,   1\ngiFun04 ftgen 04, 0,  512, 09, 1,   3,  
+    0,   3,   1,   0,   9,  .333,  180\n\ninstr 1\n\n    kTrig   chnget \"trigger1\"\n   
+    kReTrig chnget \"reTrigger\"\n       \n    iDur = chnget:i(\"dur\")\n    iAmp
+    = chnget:i(\"synthLvl\")\n    iFrq = chnget:i(\"frq\")*rnd(chnget:i(\"rndFrq\"))\n       
+    \n    if kReTrig == 1 then\n        kTrig metro chnget:k(\"rate\")\n    endif\n\n   
+    if changed(kTrig) == 1 then\n        event \"i\", \"Trapped07\", 0, iDur, iFrq,
+    iAmp \n    endif\n   \nendin\n\n               instr     Trapped07\n                     
+    \nip3             =         chnget:i(\"dur\")\nip4             =         chnget:i(\"synthLvl\")            
+    \nifreq           =         chnget:i(\"frq\")*rnd(chnget:i(\"rndFrq\"))\n\nip6            
+    =         chnget:i(\"modFrqStrt\")*rnd(.4)\nip7             =         chnget:i(\"modFrqPeak\")*rnd(.6)\n\nkp8           
+    =         chnget:k(\"ctrlAmp\")\nip9            =         int(chnget:i(\"ctrlFunc\"))\n\nip10          
+    =         int(chnget:i(\"oscFunc\"))\n                                                                                                                                                                           
+    \nifuncl         =         512                                                                                                  
+    \n\nkenv           linen     ip4, ip3 * .3, ip3, ip3 * .4   \n\nk1            
+    linseg    ip6, ip3 * .5, ip7, ip3 * .5, ip6       \na3             oscili   
+    kp8, ifreq + k1, ip9            \na4             phasor    ifreq                        
+    \na5             table     (a4 + a3) * ifuncl, ip10 \na5             =        
+    kenv * a5                \na1             oscil     kenv, ifreq + .9, ip10  \n                
+    \nkGate         linsegr    0, ip3 * .1, 1, ip3 * .7, 1, ip3*.2, 0 \n             
+    \naMix           =         (a1 + a5) * kGate \n\n               outs      aMix
+    * chnget:k(\"synthLvl\") * chnget:k(\"masterLvl\"), aMix * chnget:k(\"synthLvl\")
+    * chnget:k(\"masterLvl\") \n                          \ngarvb          =        
+    garvb + (aMix * chnget:k(\"rvbSend\")) \n               endin\n\n              
+    instr     Reverb \n               denorm    garvb                   \nk1            
+    oscil     .5, chnget:k(\"rvbPan\"), 1\nk2             =         .5 + k1\nk3            
+    =         1 - k2\naSig           reverb    garvb, 2.3\n               outs     
+    (aSig * k2) * chnget:k(\"verbLvl\") * chnget:k(\"masterLvl\"), ((aSig * k3) *
+    (-1)) * chnget:k(\"verbLvl\") * chnget:k(\"masterLvl\")\ngarvb          =        
+    0\n               endin\n\n</CsInstruments>\n\n<CsScore>\nf0 z\ni1 0 [60*60*24*7]
+    \ni \"Reverb\" 0 [60*60*24*7]  \n</CsScore>\n\n</CsoundSynthesizer>"
+  _csoundFileName: CAB-Trapped07.csd
+  _csoundAsset: {fileID: 102900000, guid: dd1faa315e0e2426db7d0be6888f818d, type: 3}
   _channels:
   - type: form
     channel: 
     text: 
-    caption: Trapped02
+    caption: Trapped07
     min: 0
     max: 0
     value: 0
@@ -4215,12 +4643,42 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: button
-    channel: trigger
-    text: Trigger
+    channel: trigger1
+    text: Trigger1
     caption: 
     min: 0
     max: 0
     value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: checkbox
+    channel: reTrigger
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 0.1
+    max: 5
+    value: 2.4
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rate
+    text: ReTrig Rate
+    caption: 
+    min: 0.02
+    max: 20
+    value: 8
     skew: 0
     increment: 0
     options: []
@@ -4235,18 +4693,28 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: dur
-    text: Dur
+    channel: synthLvl
+    text: Synth Lvl
     caption: 
-    min: 2
-    max: 9
-    value: 3
+    min: 0
+    max: 1
+    value: 0.7
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: amp
-    text: Amp
+    channel: noiseLvl
+    text: Noise Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.2
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: verbLvl
+    text: Verb Lvl
     caption: 
     min: 0
     max: 1
@@ -4255,52 +4723,72 @@ MonoBehaviour:
     increment: 0
     options: []
   - type: hslider
-    channel: note
-    text: Note
+    channel: frq
+    text: Freq
     caption: 
-    min: 10
-    max: 100
-    value: 60
+    min: 200
+    max: 4000
+    value: 1300
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: rndNote
-    text: RandNote
+    channel: rndFrq
+    text: RandFreq
     caption: 
-    min: -4
+    min: 1
     max: 4
-    value: 0
+    value: 2
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: shakeRate
-    text: Shaker
+    channel: modFrqStrt
+    text: ModFrqStart
     caption: 
-    min: 0
-    max: 15
-    value: 6
+    min: 0.01
+    max: 0.99
+    value: 0.2
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: numHarmonics
-    text: Harmonics
+    channel: modFrqPeak
+    text: ModFrqPeak
     caption: 
-    min: 5
-    max: 15
-    value: 10
+    min: 0.1
+    max: 0.99
+    value: 0.4
     skew: 0
     increment: 0
     options: []
   - type: hslider
-    channel: sweepRate
-    text: SweepRate
+    channel: ctrlFunc
+    text: CtrlFunc
     caption: 
-    min: 0.015
-    max: 0.75
-    value: 0.3
+    min: 2
+    max: 4
+    value: 2
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: ctrlAmp
+    text: CtrlAmp
+    caption: 
+    min: 0.3
+    max: 1
+    value: 0.6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: oscFunc
+    text: OscFunc
+    caption: 
+    min: 2
+    max: 4
+    value: 3
     skew: 0
     increment: 0
     options: []
@@ -4310,7 +4798,7 @@ MonoBehaviour:
     caption: 
     min: 0
     max: 1
-    value: 0.15
+    value: 0.25
     skew: 0
     increment: 0
     options: []
@@ -4319,8 +4807,8 @@ MonoBehaviour:
     text: Rvb Pan
     caption: 
     min: 0.001
-    max: 9
-    value: 0.9
+    max: 4
+    value: 2
     skew: 0
     increment: 0
     options: []
