@@ -5,6 +5,7 @@ using System.Collections.Generic;
 /// <summary>
 /// Provides methods to send data in the CsoundUnityPreset and CsoundScoreEventSO assets through a CsoundUnity component.
 /// </summary>
+[AddComponentMenu("Csound/Csound Sender")]
 public class CsoundSender : MonoBehaviour
 {
     [Tooltip("Reference to the CsoundUnity component to send values to. Will automatically get the component attached to the same object if left empty.")]
