@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.csound.csoundunity": {
-      "version": "file:/Users/mlf/Desktop/CsoundUnity",
+      "version": "file:/Users/rboulanger/Documents/GitHub/CsoundUnity",
       "depth": 0,
       "source": "local",
       "dependencies": {}
