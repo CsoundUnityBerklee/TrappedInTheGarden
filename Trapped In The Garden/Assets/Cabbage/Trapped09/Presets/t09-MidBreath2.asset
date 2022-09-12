@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc83b726b41f0c4ba68dac38255a4dd, type: 3}
+  m_Name: t09-MidBreath2
+  m_EditorClassIdentifier: 
+  presetName: t09-MidBreath2
+  csoundFileName: CAB-Trapped09.csd
+  channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped09
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 2
+    max: 9
+    value: 6.46
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: note
+    text: MIDI NN
+    caption: 
+    min: 20
+    max: 80
+    value: 44.2
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndNote
+    text: Rnd NN
+    caption: 
+    min: 0
+    max: 8
+    value: 1.41
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Synth Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.462
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndRate
+    text: RndRate
+    caption: 
+    min: 100
+    max: 400
+    value: 195
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndAmp
+    text: RndAmp
+    caption: 
+    min: 0
+    max: 10
+    value: 8.95
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: delaySend
+    text: Delay Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.4
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: delayTime
+    text: Delay Time
+    caption: 
+    min: 0.001
+    max: 5
+    value: 1.06
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0
+    max: 6
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.67
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: Starting-4note, More Notes Less Vcomb, More noise & open filter -pan LFO
+      faster, faster, less notes, more delay, Slower, More resonance, and RingMod,
+      Complex PolyRhythms, Alll Notes, Spinning, No Delay, All FreeVerb
+    caption: 
+    min: 1
+    max: 14
+    value: 7
+    skew: 0
+    increment: 0
+    options:
+    - Starting-4note
+    - MoreNotesLessVcomb
+    - Morenoise&openfilter-panLFOfaster
+    - faster
+    - lessnotes
+    - moredelay
+    - Slower
+    - Moreresonance
+    - andRingMod
+    - ComplexPolyRhythms
+    - AlllNotes
+    - Spinning
+    - NoDelay
+    - AllFreeVerb
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _drawChannels: 0
