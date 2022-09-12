@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc83b726b41f0c4ba68dac38255a4dd, type: 3}
+  m_Name: t11-HighTone+Noise2
+  m_EditorClassIdentifier: 
+  presetName: t11-HighTone+Noise2
+  csoundFileName: CAB-Trapped11.csd
+  channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped11
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 3
+    max: 8
+    value: 5.8
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: note
+    text: MIDI NN
+    caption: 
+    min: 23
+    max: 98
+    value: 98
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndNote
+    text: Rnd NN
+    caption: 
+    min: 0
+    max: 8
+    value: 1.12
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Synth Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.565
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: mstrRate
+    text: MasterRate
+    caption: 
+    min: 10
+    max: 4000
+    value: 3386
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: mstrDpth
+    text: MasterDepth
+    caption: 
+    min: 0
+    max: 40
+    value: 12.1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: delaySend
+    text: Delay Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.218
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: loopTime
+    text: Delay Time
+    caption: 
+    min: 0.0005
+    max: 3.65
+    value: 1.89
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: feedbasck
+    text: Delay FeedB
+    caption: 
+    min: 0.5
+    max: 5.65
+    value: 5.65
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.274
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0
+    max: 11
+    value: 9.78
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.532
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: sizzle, burble
+    caption: 
+    min: 1
+    max: 2
+    value: 0
+    skew: 0
+    increment: 0
+    options:
+    - sizzle
+    - burble
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _drawChannels: 0
