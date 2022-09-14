@@ -10,14 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6517f40f6fb54a959f819328eed0dc6, type: 3}
-  m_Name: FruitTest_Y
+  m_Name: Trapped02_PosY
   m_EditorClassIdentifier: 
   channelData:
-  - name: frq
-    minValue: 200
-    maxValue: 1000
-    returnAbsoluteValue: 0
-  - name: rvbSend
-    minValue: 0.15
-    maxValue: 0.7
+  - name: Note
+    minValue: 20
+    maxValue: 80
     returnAbsoluteValue: 0
