@@ -15,7 +15,6 @@ using UnityEngine;
 /// Provides general methods to pass transform and rigidbody behavior data from Unity to Csound
 /// </summary>
 [AddComponentMenu("Csound/Csound Transform And Physics Sender")]
-
 public class CsoundTransformAndPhysicsSender : MonoBehaviour
 {
     [Header("REFERENCES")]

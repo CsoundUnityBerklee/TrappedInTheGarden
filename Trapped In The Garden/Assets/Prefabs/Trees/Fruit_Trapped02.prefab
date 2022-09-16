@@ -441,14 +441,14 @@ MonoBehaviour:
   csoundUnity: {fileID: 0}
   referenceObject: {fileID: 0}
   PositionSender:
-    setXPositionTo: 3
-    setYPositionTo: 3
+    setXPositionTo: 1
+    setYPositionTo: 0
     setZPositionTo: 3
-    posVectorRangesMax: {x: 0.8, y: 3, z: 0}
-    posVectorRangesMin: {x: -0.8, y: 0, z: 0}
-    csoundChannelsPosX: {fileID: 11400000, guid: 220ea29a205724c6e8c55b935b65aa63,
+    posVectorRangesMax: {x: 0.3, y: 3, z: 0}
+    posVectorRangesMin: {x: -0.3, y: 1, z: 0}
+    csoundChannelsPosX: {fileID: 11400000, guid: a60b8be558e5c4b14b0c626a352fb48c,
       type: 2}
-    csoundChannelsPosY: {fileID: 11400000, guid: 1d37cb630ff954bf68d9c9f8d29a67e2,
+    csoundChannelsPosY: {fileID: 11400000, guid: 983d2370dcada451ea3c63cf6da877a6,
       type: 2}
     csoundChannelsPosZ: {fileID: 0}
     updatePositionOnStart: 0
@@ -534,6 +534,7 @@ GameObject:
   - component: {fileID: 6163393411755354942}
   - component: {fileID: 6163393411755354941}
   - component: {fileID: 6163393411755354943}
+  - component: {fileID: 3265039935852553705}
   m_Layer: 0
   m_Name: Fruit_Trapped02
   m_TagString: Untagged
@@ -703,6 +704,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 3265039935852553705}
+        m_TargetAssemblyTypeName: ResetStartingPosition, Assembly-CSharp
+        m_MethodName: ResetPositionTimer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -792,3 +805,15 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 1
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &3265039935852553705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6163393411755322778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c25f0cc6bd4ef4bca895c1c342ab5b07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
