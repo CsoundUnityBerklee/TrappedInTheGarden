@@ -5,7 +5,7 @@ button  bounds(192, 8, 86, 55) channel("trigger") text("Trigger") textColour("wh
 
 hslider bounds(296, 10, 158, 50) channel("masterLvl") range(0, 1, 0.7, 1, 0.001) text("Master Lvl") textColour("white")
 
-hslider bounds(462, 10, 175, 50) channel("dur") range(2, 9, 3, 1, 0.001) text("Dur") textColour("white")
+hslider bounds(462, 8, 175, 50) channel("dur") range(2, 9, 3, 1, 0.001) text("Dur") textColour("white")
 hslider bounds(62, 70, 150, 50) channel("amp") range(0, 1, 0.5, 1, 0.001) text("Amp") textColour(255, 255, 255, 255)
 
 hslider bounds(226, 70, 159, 52) channel("note") range(10, 100, 60, 1, 0.001) text("Note") textColour("white")
@@ -20,9 +20,13 @@ hslider bounds(438, 130, 150, 50) channel("sweepRate") range(.015, .75, .3, 1, 0
 hslider bounds(104, 196, 161, 50) channel("rvbSend") range(0, 1, .15, 1, 0.001) text("Rvb Send") textColour("white")
 hslider bounds(332, 200, 150, 50) channel("rvbPan") range(.001, 9, .9, 1, 0.001) text("Rvb Pan") textColour("white")
 
+hslider bounds(202, 288, 272, 50) channel("macro1") range(.5, 2, .2, 2, 0.001) text("Macro1") textColour(255, 255, 255, 255)
+; hslider bounds(202, 346, 272, 50) channel("macro2") range(.1, 10, .1, 10, 0.001) text("Macro2") textColour(255, 255, 255, 255)
+
 combobox bounds(82, 8, 100, 25), populate("*.snaps"), channelType("string") automatable(0) channel("combo31")  value("1")
 filebutton bounds(18, 8, 60, 25), text("Save", "Save"), populate("*.snaps", "test"), mode("named preset") channel("filebutton32")
 filebutton bounds(18, 36, 60, 25), text("Remove", "Remove"), populate("*.snaps", "test"), mode("remove preset") channel("filebutton33")
+
 </Cabbage>
 
 <CsoundSynthesizer>
@@ -77,12 +81,11 @@ k2             linseg    0, iDur * .5, 1, iDur * .5, 0
 k3             linseg    .005, iDur * .71, .015, iDur * .29, .01
 k4             oscil     k2, kShakeRate, 1, .2               
 k5             =         k4 + 2
-
+icut init 5000
 ksweep         linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)), 1
 
 kenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001
-aSig           gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15
-
+aSig           gbuzz     kenv, (cpsmidinn(iNote) * chnget:k("macro1")) + k3, k5, ksweep, k1, 15
 kgate         transeg   1, iDur, 0, 0 
 amix           =        aSig * kgate
 
