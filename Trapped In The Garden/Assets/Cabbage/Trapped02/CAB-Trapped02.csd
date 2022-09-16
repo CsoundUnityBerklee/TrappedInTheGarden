@@ -1,5 +1,5 @@
 <Cabbage> bounds(0, 0, 0, 0)
-form caption("Trapped02") size(650, 300), guiMode("queue") pluginId("def1")
+form caption("Trapped02") size(650, 600), guiMode("queue") pluginId("def1")
 
 button  bounds(192, 8, 86, 55) channel("trigger") text("Trigger") textColour("white")
 
