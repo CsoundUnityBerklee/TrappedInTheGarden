@@ -1,0 +1,228 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc83b726b41f0c4ba68dac38255a4dd, type: 3}
+  m_Name: t03=downGlis
+  m_EditorClassIdentifier: 
+  presetName: t03=downGlis
+  csoundFileName: CAB-Trapped03.csd
+  channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped03
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 4
+    max: 12
+    value: 6.02
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Synth Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: frq
+    text: Frq
+    caption: 
+    min: 30
+    max: 1000
+    value: 800
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndFrq
+    text: RandFrq
+    caption: 
+    min: 2
+    max: 100
+    value: 69.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: gliss
+    text: FrqSweep
+    caption: 
+    min: 0.25
+    max: 4
+    value: 0.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterRate
+    text: MasterRate
+    caption: 
+    min: 0.15
+    max: 8
+    value: 0.84
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndRate1
+    text: RndRate1
+    caption: 
+    min: 10
+    max: 100
+    value: 20
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndRate2
+    text: RndRate2
+    caption: 
+    min: 10
+    max: 100
+    value: 61.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndRate3
+    text: RndRate3
+    caption: 
+    min: 10
+    max: 100
+    value: 32.1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterDepth
+    text: MasterDepth
+    caption: 
+    min: 0.15
+    max: 8
+    value: 5.75
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndDep1
+    text: RndDpth1
+    caption: 
+    min: 1
+    max: 150
+    value: 30
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndDep2
+    text: RndDpth2
+    caption: 
+    min: 5
+    max: 260
+    value: 234
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndDep3
+    text: RndDpth3
+    caption: 
+    min: 6
+    max: 390
+    value: 280
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 0.7
+    value: 0.417
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0.1
+    max: 24
+    value: 10
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _drawChannels: 0

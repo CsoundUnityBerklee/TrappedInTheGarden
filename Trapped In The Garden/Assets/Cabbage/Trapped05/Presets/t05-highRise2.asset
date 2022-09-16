@@ -1,0 +1,218 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc83b726b41f0c4ba68dac38255a4dd, type: 3}
+  m_Name: t05-highRise2
+  m_EditorClassIdentifier: 
+  presetName: t05-highRise2
+  csoundFileName: CAB-Trapped05.csd
+  channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped05
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 2
+    max: 10
+    value: 8.88
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.302
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Synth Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.574
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: frq
+    text: Freq
+    caption: 
+    min: 20
+    max: 500
+    value: 500
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rndFrq
+    text: RandFreq
+    caption: 
+    min: 1
+    max: 5
+    value: 1.62
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: pan
+    text: Synth Pan
+    caption: 
+    min: 0.1
+    max: 1
+    value: 0.296
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: modFrq
+    text: Mod Frq
+    caption: 
+    min: 10
+    max: 100
+    value: 21.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: modAmp
+    text: Mod Amp
+    caption: 
+    min: 100
+    max: 1000
+    value: 246
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: modNdx
+    text: Mod Indx
+    caption: 
+    min: 1
+    max: 20
+    value: 4.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: mstrModRat
+    text: MastrModRate
+    caption: 
+    min: 1
+    max: 20
+    value: 6.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: mstrModDpth
+    text: MastrModDpth
+    caption: 
+    min: 1
+    max: 20
+    value: 8.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: carRat
+    text: Car Ratio
+    caption: 
+    min: 1
+    max: 10
+    value: 6.48
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: modRat
+    text: Mod Ratio
+    caption: 
+    min: 1
+    max: 10
+    value: 4.03
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.588
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPan
+    text: Rvb Pan
+    caption: 
+    min: 0.01
+    max: 34
+    value: 6.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _drawChannels: 0
