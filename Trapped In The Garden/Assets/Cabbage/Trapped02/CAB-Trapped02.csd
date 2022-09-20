@@ -1,5 +1,5 @@
 <Cabbage> bounds(0, 0, 0, 0)
-form caption("Trapped02") size(650, 600), guiMode("queue") pluginId("def1")
+form caption("Trapped02") size(650, 400), guiMode("queue") pluginId("def1")
 
 button  bounds(192, 8, 86, 55) channel("trigger") text("Trigger") textColour("white")
 
@@ -17,11 +17,13 @@ hslider bounds(270, 130, 159, 50) channel("numHarmonics") range(5, 15, 10, 1, 0.
 
 hslider bounds(438, 130, 150, 50) channel("sweepRate") range(.015, .75, .3, 1, 0.001) text("SweepRate") textColour("white")
 
-hslider bounds(104, 196, 161, 50) channel("rvbSend") range(0, 1, .15, 1, 0.001) text("Rvb Send") textColour("white")
-hslider bounds(332, 200, 150, 50) channel("rvbPan") range(.001, 9, .9, 1, 0.001) text("Rvb Pan") textColour("white")
+hslider bounds(102, 188, 161, 50) channel("rvbSend") range(0, 1, .15, 1, 0.001) text("Rvb Send") textColour("white")
+hslider bounds(360, 184, 150, 50) channel("rvbPan") range(.001, 9, .9, 1, 0.001) text("Rvb Pan") textColour("white")
 
-hslider bounds(202, 288, 272, 50) channel("macro1") range(.5, 2, .2, 2, 0.001) text("Macro1") textColour(255, 255, 255, 255)
-; hslider bounds(202, 346, 272, 50) channel("macro2") range(.1, 10, .1, 10, 0.001) text("Macro2") textColour(255, 255, 255, 255)
+hslider bounds(22, 244, 272, 50) channel("macro1") range(.1, 3, .2, .5, 0.001) text("M1-Ypitch") textColour(255, 255, 255, 255)
+hslider bounds(20, 300, 272, 50) channel("macro2") range(.1, 10, .1, 10, 0.001) text("M2-Xfilt") textColour(255, 255, 255, 255)
+hslider bounds(320, 242, 272, 50) channel("macro3") range(.1, 10, .1, 10, 0.001) text("M3-ZvolVrb") textColour(255, 255, 255, 255)
+hslider bounds(316, 296, 272, 50) channel("macro4") range(.1, 10, .1, 10, 0.001) text("M4-RotRat") textColour(255, 255, 255, 255)
 
 combobox bounds(82, 8, 100, 25), populate("*.snaps"), channelType("string") automatable(0) channel("combo31")  value("1")
 filebutton bounds(18, 8, 60, 25), text("Save", "Save"), populate("*.snaps", "test"), mode("named preset") channel("filebutton32")
@@ -35,6 +37,11 @@ filebutton bounds(18, 36, 60, 25), text("Remove", "Remove"), populate("*.snaps",
 -n -dm0
 </CsOptions>
 
+; macro1 = Pitch (on Y axis)
+; macro2 = Filter (on X asis)
+; macro3 = Volume and Verb (on Z axis)
+; macro4 = Rate (on Rotation)
+
 <CsInstruments>
 
 ksmps = 32
@@ -43,8 +50,8 @@ nchnls = 2
 
 garvb  init  0
 
-giSine ftgen 1, 0, 8192, 10, 1
-giFun15 ftgen 15, 0, 8192, 9, 1, 1, 90
+giSine  ftgen  1, 0, 8192, 10, 1
+giFun15 ftgen 15, 0, 8192,  9, 1, 1, 90
 
 ;gkRevPan init 4
 
@@ -63,25 +70,20 @@ endin
 instr Trapped02
 
 iDur  = chnget:i("dur")
-iAmp  = chnget:i("amp") 
-            
+iAmp  = chnget:i("amp")             
 iNote = chnget:i("note")+rnd(chnget:i("rndNote"))
+iNumHarmonics = chnget:i("numHarmonics")
+iSweepRate    = chnget:i("sweepRate")
+ip10            midic7    25, .75, .15        ; CONTROLLER 25 = ARPEGGIO SPEED
 
 kShakeRate = chnget:k("shakeRate")
-
-iNumHarmonics = chnget:i("numHarmonics")
-
-iSweepRate  = chnget:i("sweepRate")
-                                                                                       
-               
-ip10           midic7    25, .75, .15        ; CONTROLLER 25 = ARPEGGIO SPEED
                                                            
 k1             randi     1, 30                              
 k2             linseg    0, iDur * .5, 1, iDur * .5, 0     
 k3             linseg    .005, iDur * .71, .015, iDur * .29, .01
 k4             oscil     k2, kShakeRate, 1, .2               
 k5             =         k4 + 2
-icut init 5000
+; icut init 5000
 ksweep         linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)), 1
 
 kenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001
