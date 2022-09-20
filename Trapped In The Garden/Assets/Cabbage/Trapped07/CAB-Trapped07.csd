@@ -1,38 +1,34 @@
 <Cabbage> bounds(0, 0, 0, 0)
 form caption("Trapped07") size(700, 330), guiMode("queue") pluginId("def1")
 
-button  bounds(56, 132, 80, 42) channel("trigger1") text("Trigger1") textColour("white")
+hslider bounds(208, 42, 158, 50) channel("masterLvl") range(0, 1, 0.7, 1, 0.001) text("Master Lvl") textColour("white")
+hslider bounds(368, 42, 150, 50) channel("synthLvl") range(0, 1, 0.7, 1, 0.001) text("Synth Lvl") textColour(255, 255, 255, 255)
+hslider bounds(514, 42, 150, 50) channel("verbLvl") range(0, 1, 0.5, 1, 0.001) text("Verb Lvl") textColour("white")
 
-checkbox bounds(138, 182, 27, 25), channel("reTrigger"), fontColour("white"),  value(0)
-label    bounds(6, 182, 114, 22), text("ReTrigger"), fontColour(255, 255, 255, 255) channel("label9")
+hslider bounds(0, 102, 175, 50) channel("dur") range(.001, 23, 14, 1, 0.001) text("Dur") textColour("white")
+hslider bounds(176, 102, 175, 50) channel("rndDur") range(.01, 0.3, .3, 1, 0.001) text("RandDur") textColour("white")
 
-hslider bounds(16, 72, 175, 50) channel("dur") range(.1, 5, 2.4, 1, 0.001) text("Dur") textColour("white")
+hslider bounds(356, 102, 160, 52) channel("frq") range(23, 93, 45, 1, 0.001) text("Freq") textColour("white")
+hslider bounds(514, 102, 150, 50) channel("rndFrq") range(1, 101, 32, 1, 0.001) text("RandFreq") textColour("white")
 
-hslider bounds(4, 228, 175, 50) channel("rate") range(.02, 20, 8, 1, 0.001) text("ReTrig Rate") textColour("white")
+button  bounds(58, 180, 80, 42) channel("trigger1") text("Trigger1") textColour("white")
+checkbox bounds(150, 232, 27, 25), channel("reTrigger"), fontColour("white"),  value(0)
+label    bounds(18, 232, 114, 22), text("ReTrigger"), fontColour(255, 255, 255, 255) channel("label9")
+hslider bounds(18, 264, 175, 50) channel("reTrigRate") range(.02, 20, 8, 1, 0.001) text("ReTrig Rate") textColour("white")
 
-hslider bounds(20, 10, 158, 50) channel("masterLvl") range(0, 1, 0.7, 1, 0.001) text("Master Lvl") textColour("white")
+hslider bounds(284, 166, 161, 51) channel("modFrqStrt") range(.01, .99, .12, 1, 0.001) text("ModFrqStart") textColour("white")
+hslider bounds(458, 164, 161, 51) channel("modFrqPeak") range(.1, .99, .94, 1, 0.001) text("ModFrqPeak") textColour("white")
 
-hslider bounds(206, 8, 150, 50) channel("synthLvl") range(0, 1, 0.7, 1, 0.001) text("Synth Lvl") textColour(255, 255, 255, 255)
-hslider bounds(362, 10, 150, 50) channel("noiseLvl") range(0, 1, 0.2, 1, 0.001) text("Noise Lvl") textColour(255, 255, 255, 255)
-hslider bounds(520, 8, 150, 50) channel("verbLvl") range(0, 1, 0.5, 1, 0.001) text("Verb Lvl") textColour("white")
+hslider bounds(200, 218, 151, 50) channel("ctrlAmp") range(.3, 1, .86, 1, 0.001) text("CtrlAmp") textColour("white")
+hslider bounds(350, 218, 151, 50) channel("ctrlFunc") range(2, 4, 2, 1, 1) text("CtrlFunc") textColour("white")
+hslider bounds(502, 218, 151, 50) channel("oscFunc") range(2, 4, 3, 1, 1) text("OscFunc") textColour("white")
 
-hslider bounds(252, 68, 160, 52) channel("frq") range(200, 4000, 1300, 1, 0.001) text("Freq") textColour("white")
-hslider bounds(428, 68, 150, 50) channel("rndFrq") range(1, 4, 2, 1, 0.001) text("RandFreq") textColour("white")
+hslider bounds(284, 270, 161, 52) channel("rvbSend") range(0, 1, .5, 1, 0.001) text("Rvb Send") textColour("white")
+hslider bounds(446, 270, 150, 50) channel("rvbPan") range(.001, 1, .01, 1, 0.001) text("Rvb Pan") textColour("white")
 
-hslider bounds(200, 130, 161, 51) channel("modFrqStrt") range(.01, .99, .2, 1, 0.001) text("ModFrqStart") textColour("white")
-hslider bounds(360, 128, 161, 51) channel("modFrqPeak") range(.1, .99, .4, 1, 0.001) text("ModFrqPeak") textColour("white")
-
-hslider bounds(520, 130, 151, 50) channel("ctrlFunc") range(2, 4, 2, 1, 0.001) text("CtrlFunc") textColour("white")
-hslider bounds(520, 130, 151, 50) channel("ctrlAmp") range(.3, 1, .6, 1, 0.001) text("CtrlAmp") textColour("white")
-
-hslider bounds(520, 130, 151, 50) channel("oscFunc") range(2, 4, 3, 1, 0.001) text("OscFunc") textColour("white")
-
-hslider bounds(252, 186, 161, 52) channel("rvbSend") range(0, 1, .25, 1, 0.001) text("Rvb Send") textColour("white")
-hslider bounds(426, 188, 150, 50) channel("rvbPan") range(.001, 4, 2, 1, 0.001) text("Rvb Pan") textColour("white")
-
-combobox bounds(382, 254, 100, 25), populate("*.snaps"), channelType("string") automatable(0) channel("combo31")  value("1")
-filebutton bounds(316, 254, 60, 25), text("Save", "Save"), populate("*.snaps", "test"), mode("named preset") channel("filebutton32")
-filebutton bounds(316, 282, 60, 25), text("Remove", "Remove"), populate("*.snaps", "test"), mode("remove preset") channel("filebutton33")
+combobox bounds(92, 28, 100, 25), populate("*.snaps"), channelType("string") automatable(0) channel("combo31")  value("1")
+filebutton bounds(26, 28, 60, 25), text("Save", "Save"), populate("*.snaps", "test"), mode("named preset") channel("filebutton32")
+filebutton bounds(26, 56, 60, 25), text("Remove", "Remove"), populate("*.snaps", "test"), mode("remove preset") channel("filebutton33")
 </Cabbage>
 
 <CsoundSynthesizer>
@@ -63,7 +59,8 @@ instr 1
     iFrq = chnget:i("frq")*rnd(chnget:i("rndFrq"))
         
     if kReTrig == 1 then
-        kTrig metro chnget:k("rate")
+        kRndH randh chnget:k("reTrigRate")*.4, 4
+        kTrig metro chnget:k("reTrigRate")+kRndH
     endif
 
     if changed(kTrig) == 1 then
@@ -73,35 +70,40 @@ instr 1
 endin
 
                instr     Trapped07
-                      
-ip3             =         chnget:i("dur")
+
+
+                         
+ip3             =         chnget:i("dur")+rnd(chnget:i("rndDur"))
 ip4             =         chnget:i("synthLvl")             
-ifreq           =         chnget:i("frq")*rnd(chnget:i("rndFrq"))
+ifreq           =         cpsmidinn(chnget:i("frq"))+cpsmidinn(rnd(chnget:i("rndFrq")))
 
-ip6             =         chnget:i("modFrqStrt")*rnd(.4)
-ip7             =         chnget:i("modFrqPeak")*rnd(.6)
+ip6             =         chnget:i("modFrqStrt")*rnd(.19)
+ip7             =         chnget:i("modFrqPeak")*rnd(.99)
 
-kp8            =         chnget:k("ctrlAmp")
-ip9            =         int(chnget:i("ctrlFunc"))
+kp8            =          chnget:k("ctrlAmp")*rnd(.6)
+ip9            =          int(chnget:i("ctrlFunc"))
 
-ip10           =         int(chnget:i("oscFunc"))
+ip10           =          int(chnget:i("oscFunc"))
                                                                                                                                                                             
 ifuncl         =         512                                                                                                   
 
-kenv           linen     ip4, ip3 * .3, ip3, ip3 * .4   
+    kReTrig chnget "reTrigger"
+    if kReTrig == 1 then
+        ip3 = ip3 *.2
+        ip4 = ip4 *.12
+    endif
+kenv           transeg   0, ip3 * .2, 0, ip4, ip3 * .4, 0, ip4, ip3 * .4, 0, 0   
 
 k1             linseg    ip6, ip3 * .5, ip7, ip3 * .5, ip6       
 a3             oscili    kp8, ifreq + k1, ip9            
 a4             phasor    ifreq                         
 a5             table     (a4 + a3) * ifuncl, ip10 
-a5             =         kenv * a5                
-a1             oscil     kenv, ifreq + .9, ip10  
-                 
-kGate         linsegr    0, ip3 * .1, 1, ip3 * .7, 1, ip3*.2, 0 
-              
-aMix           =         (a1 + a5) * kGate 
+aL             =         kenv * a5                
+aR             oscil     kenv, ifreq + .9, ip10  
+                              
+aMix           =         aL + aR
 
-               outs      aMix * chnget:k("synthLvl") * chnget:k("masterLvl"), aMix * chnget:k("synthLvl") * chnget:k("masterLvl") 
+               outs      aL * chnget:k("synthLvl") * chnget:k("masterLvl"), aR * chnget:k("synthLvl") * chnget:k("masterLvl") 
                           
 garvb          =         garvb + (aMix * chnget:k("rvbSend")) 
                endin
