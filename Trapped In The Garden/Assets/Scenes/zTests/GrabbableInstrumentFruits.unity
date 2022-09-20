@@ -511,11 +511,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6163393411262137346, guid: 50ce2f0db7ae040ad881e8494fab7876,
+        type: 3}
+      propertyPath: _channels.Array.data[12].value
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6163393411262137347, guid: 50ce2f0db7ae040ad881e8494fab7876,
         type: 3}
       propertyPath: ChannelTrigger.triggerOnStart
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6163393411262137347, guid: 50ce2f0db7ae040ad881e8494fab7876,
+        type: 3}
+      propertyPath: InstrumentPresets.presetList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 39764bbc541324842a51f27e76012539,
+        type: 2}
     - target: {fileID: 6163393411262137404, guid: 50ce2f0db7ae040ad881e8494fab7876,
         type: 3}
       propertyPath: PositionSender.updatePositionOnStart
@@ -2594,12 +2605,17 @@ PrefabInstance:
     - target: {fileID: 6163393411262137346, guid: 50ce2f0db7ae040ad881e8494fab7876,
         type: 3}
       propertyPath: _channels.Array.data[5].value
-      value: 30.9
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 6163393411262137346, guid: 50ce2f0db7ae040ad881e8494fab7876,
         type: 3}
       propertyPath: _channels.Array.data[8].value
-      value: 8.69
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163393411262137346, guid: 50ce2f0db7ae040ad881e8494fab7876,
+        type: 3}
+      propertyPath: _channels.Array.data[12].value
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6163393411262137347, guid: 50ce2f0db7ae040ad881e8494fab7876,
         type: 3}
