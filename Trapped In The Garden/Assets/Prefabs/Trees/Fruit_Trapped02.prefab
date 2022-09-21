@@ -161,67 +161,84 @@ MonoBehaviour:
   csoundScore: 
   environmentSettings: []
   _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
-  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02\") size(650,
-    300), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(192, 8, 86,
-    55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\n\r\nhslider
-    bounds(296, 10, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
-    Lvl\") textColour(\"white\")\r\n\r\nhslider bounds(462, 10, 175, 50) channel(\"dur\")
-    range(2, 9, 3, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\nhslider bounds(62,
-    70, 150, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Amp\") textColour(255,
-    255, 255, 255)\r\n\r\nhslider bounds(226, 70, 159, 52) channel(\"note\") range(10,
-    100, 60, 1, 0.001) text(\"Note\") textColour(\"white\")\r\nhslider bounds(404,
-    70, 150, 50) channel(\"rndNote\") range(-4, 4, 0, 1, 0.001) text(\"RandNote\")
-    textColour(\"white\")\r\n\r\nhslider bounds(28, 134, 151, 48) channel(\"shakeRate\")
-    range(0, 15, 6, 1, 0.001) text(\"Shaker\") textColour(\"white\")\r\n\r\nhslider
-    bounds(270, 130, 159, 50) channel(\"numHarmonics\") range(5, 15, 10, 1, 0.001)
-    text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider bounds(438, 130, 150,
-    50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001) text(\"SweepRate\")
-    textColour(\"white\")\r\n\r\nhslider bounds(104, 196, 161, 50) channel(\"rvbSend\")
-    range(0, 1, .15, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
-    bounds(332, 200, 150, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
-    Pan\") textColour(\"white\")\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02rev\")
+    size(650, 400), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(20,
+    122, 86, 55) channel(\"trigger\") text(\"Trigger\", \"Trigger\") \r\ncheckbox
+    bounds(50, 182, 27, 25), channel(\"reTrigger\"), , fontColour:0(255, 255, 255,
+    255)\r\nlabel    bounds(22, 210, 80, 18), text(\"ReTrigger\"), fontColour(255,
+    255, 255, 255) channel(\"label9\") alpha(0.99)\r\nhslider bounds(12, 234, 175,
+    50) channel(\"reTrigRate\") range(.1, 6, 1, .5, 0.001) text(\"ReTrig Rate\")
+    textColour(\"white\")\r\n\r\nhslider bounds(190, 8, 158, 50) channel(\"masterLvl\")
+    range(0, 1, 0.7, 1, 0.001) text(\"Master Lvl\") textColour(\"white\")\r\n\r\nhslider
+    bounds(408, 8, 175, 50) channel(\"dur\") range(2, 9, 3, 1, 0.001) text(\"Dur\")
+    textColour(\"white\")\r\nhslider bounds(118, 68, 150, 50) channel(\"amp\") range(0,
+    1, 0.5, 1, 0.001) text(\"Amp\") textColour(255, 255, 255, 255)\r\n\r\nhslider
+    bounds(272, 66, 159, 52) channel(\"note\") range(10, 100, 60, 1, 0.001) text(\"Note\")
+    textColour(\"white\")\r\nhslider bounds(436, 66, 150, 50) channel(\"rndNote\")
+    range(-4, 4, 0, 1, 0.001) text(\"RandNote\") textColour(\"white\")\r\n\r\nhslider
+    bounds(120, 124, 151, 48) channel(\"shakeRate\") range(0, 15, 6, 1, 0.001) text(\"Shaker\")
+    textColour(\"white\")\r\n\r\nhslider bounds(276, 124, 159, 50) channel(\"numHarmonics\")
+    range(5, 15, 10, 1, 0.001) text(\"Harmonics\") textColour(\"white\")\r\n\r\nhslider
+    bounds(438, 124, 150, 50) channel(\"sweepRate\") range(.015, .75, .3, 1, 0.001)
+    text(\"SweepRate\") textColour(\"white\")\r\n\r\nhslider bounds(428, 188, 161,
+    50) channel(\"rvbSend\") range(.2, 1, .23, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
+    bounds(428, 240, 160, 50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb
+    Pan\") textColour(\"white\")\r\n\r\nhslider bounds(18, 294, 272, 50) channel(\"macro1\")
+    range(.1, 3, .2, .5, 0.001) text(\"M1y-pitch\") textColour(255, 255, 255, 255)\r\nhslider
+    bounds(18, 346, 272, 50) channel(\"macro2\") range(1, 20, 5, .5, 0.001) text(\"M2x-filt\")
+    textColour(255, 255, 255, 255)\r\nhslider bounds(314, 292, 272, 50) channel(\"macro3\")
+    range(0, 1, .8, .5, 0.001) text(\"M3z-volVrb\") textColour(255, 255, 255, 255)\r\nhslider
+    bounds(314, 344, 272, 50) channel(\"macro4\") range(.4, 10, 2, .4, 0.001) text(\"M4rot-Rate\")
+    textColour(255, 255, 255, 255)\r\n\r\ncombobox bounds(82, 8, 100, 25), populate(\"*.snaps\"),
     channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")\r\nfilebutton
     bounds(18, 8, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
     mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(18, 36,
     60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"), mode(\"remove
-    preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
-    -dm0\r\n</CsOptions>\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls = 2\r\n0dbfs
-    = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10, 1\r\ngiFun15 ftgen
-    15, 0, 8192, 9, 1, 1, 90\r\n\r\n;gkRevPan init 4\r\n\r\ninstr 1\r\n    iDur =
-    chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
-    iAmp = chnget:i(\"amp\")\r\n    kTrig chnget \"trigger\"\r\n    if changed(kTrig)
-    == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp
-    \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
-    = chnget:i(\"amp\") \r\n            \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\n\r\nkShakeRate
-    = chnget:k(\"shakeRate\")\r\n\r\niNumHarmonics = chnget:i(\"numHarmonics\")\r\n\r\niSweepRate 
-    = chnget:i(\"sweepRate\")\r\n                                                                                      
-    \r\n               \r\nip10           midic7    25, .75, .15        ; CONTROLLER
-    25 = ARPEGGIO SPEED\r\n                                                          
+    preset\") channel(\"filebutton33\")\r\n\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n; macro1 = Pitch (on Y axis)\r\n; macro2 = Filter
+    or Spectral Content (on X asis)\r\n; macro3 = Volume and Verb (on Z axis)\r\n;
+    macro4 = Rate (on Rotation)\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls
+    = 2\r\n0dbfs = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine  ftgen  1, 0, 8192, 10,
+    1\r\ngiFun15 ftgen 15, 0, 8192,  9, 1, 1, 90\r\n\r\n\r\ninstr 1\r\n\r\n    \r\n   
+    iDur = chnget:i(\"dur\")\r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+    iAmp = chnget:i(\"amp\")\r\n\r\n    kTrig   chnget \"trigger\"\r\n    kReTrig
+    chnget \"reTrigger\"\r\n\r\n    \r\n    if kReTrig == 1 then\r\n        kRndH
+    randh chnget:k(\"reTrigRate\")*chnget:k(\"macro4\") * .4, 4\r\n        kTrig
+    metro chnget:k(\"reTrigRate\")*chnget:k(\"macro4\") + kRndH\r\n    endif\r\n\r\n\r\n   
+    if changed(kTrig) == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote),
+    iAmp \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
+    = chnget:i(\"amp\")             \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\niNumHarmonics
+    = chnget:i(\"numHarmonics\")\r\niSweepRate    = chnget:i(\"sweepRate\")\r\nip10           
+    midic7    25, .75, .15        ; CONTROLLER 25 = ARPEGGIO SPEED\r\n\r\nkShakeRate
+    = chnget:k(\"shakeRate\")\r\n                                                         
     \r\nk1             randi     1, 30                              \r\nk2            
     linseg    0, iDur * .5, 1, iDur * .5, 0     \r\nk3             linseg    .005,
     iDur * .71, .015, iDur * .29, .01\r\nk4             oscil     k2, kShakeRate,
     1, .2               \r\nk5             =         k4 + 2\r\n\r\nksweep        
     linseg    iNumHarmonics, iDur * iSweepRate, 1, iDur * (iDur - (iDur * iSweepRate)),
     1\r\n\r\nkenv           expseg    .001, iDur * .01, iAmp, iDur * .99, .001\r\naSig          
-    gbuzz     kenv, cpsmidinn(iNote) + k3, k5, ksweep, k1, 15\r\n\r\nkgate        
-    transeg   1, iDur, 0, 0 \r\namix           =        aSig * kgate\r\n\r\n            
-    outs      aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
-    \r\ngarvb          =         garvb + (amix * chnget:k(\"rvbSend\")) \r\n \r\n              
-    endin\r\n\r\n               instr     Reverb \r\n               denorm    garvb                  
-    \r\nk1             oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =        
-    .5 + k1\r\nk3             =         1 - k2\r\nasig           reverb    garvb,
-    3.1\r\n               outs      (asig * k2) * chnget:k(\"masterLvl\"), ((asig
-    * k3) * (-1)) * chnget:k(\"masterLvl\")\r\ngarvb          =         0\r\n              
-    endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound to run for about
-    7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for a week\r\ni1 0
-    [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
+    gbuzz     kenv, (cpsmidinn(iNote) * chnget:k(\"macro1\")) + k3, k5 * chnget:k(\"macro2\")
+    , ksweep, k1, 15\r\n\r\nkgate         transeg   1, iDur, 0, 0 \r\n\r\naFlt        
+    moogladder2  aSig, 200 * chnget:k(\"macro2\"), .8\r\n\r\naMix           =       
+    aFlt * kgate\r\n\r\n             outs      aMix * (chnget:k(\"masterLvl\")*chnget:k(\"macro3\")),
+    aMix * (chnget:k(\"masterLvl\")*chnget:k(\"macro3\"))\r\n;             outs     
+    aSig * chnget:k(\"masterLvl\"), aSig * chnget:k(\"masterLvl\")\r\n            
+    \r\ngarvb          =         garvb + aMix * (chnget:k(\"rvbSend\"))*(1-chnget:k(\"macro3\"))
+    \r\n \r\n \r\n               endin\r\n\r\n               instr     Reverb \r\n              
+    denorm    garvb                   \r\nk1             oscil     .5, chnget:k(\"rvbPan\"),
+    1\r\nk2             =         .5 + k1\r\nk3             =         1 - k2\r\nasig          
+    reverb    garvb, 3.1\r\n               outs      (asig * k2) * (chnget:k(\"masterLvl\")*chnget:k(\"macro3\")),
+    ((asig * k3) * (-1)) * (chnget:k(\"masterLvl\")*chnget:k(\"macro3\"))\r\ngarvb         
+    =         0\r\n               endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes
+    Csound to run for about 7000 years...\r\nf0 z\r\n;starts instrument 1 and runs
+    it for a week\r\ni1 0 [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n"
   _csoundFileName: CAB-Trapped02.csd
   _csoundAsset: {fileID: 102900000, guid: 5cb846f25e3774862978d2643fc45d95, type: 3}
   _channels:
   - type: form
     channel: 
     text: 
-    caption: Trapped02
+    caption: Trapped02rev
     min: 0
     max: 0
     value: 0
@@ -230,11 +247,31 @@ MonoBehaviour:
     options: []
   - type: button
     channel: trigger
-    text: Trigger
+    text: Trigger, Trigger
     caption: 
     min: 0
     max: 0
     value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: checkbox
+    channel: reTrigger
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: reTrigRate
+    text: ReTrig Rate
+    caption: 
+    min: 0.1
+    max: 6
+    value: 1
     skew: 0
     increment: 0
     options: []
@@ -254,7 +291,7 @@ MonoBehaviour:
     caption: 
     min: 2
     max: 9
-    value: 2.51
+    value: 3
     skew: 0
     increment: 0
     options: []
@@ -264,7 +301,7 @@ MonoBehaviour:
     caption: 
     min: 0
     max: 1
-    value: 0.242
+    value: 0.5
     skew: 0
     increment: 0
     options: []
@@ -274,7 +311,7 @@ MonoBehaviour:
     caption: 
     min: 10
     max: 100
-    value: 34
+    value: 60
     skew: 0
     increment: 0
     options: []
@@ -284,7 +321,7 @@ MonoBehaviour:
     caption: 
     min: -4
     max: 4
-    value: 2.51
+    value: 0
     skew: 0
     increment: 0
     options: []
@@ -294,7 +331,7 @@ MonoBehaviour:
     caption: 
     min: 0
     max: 15
-    value: 4.9
+    value: 6
     skew: 0
     increment: 0
     options: []
@@ -322,9 +359,9 @@ MonoBehaviour:
     channel: rvbSend
     text: Rvb Send
     caption: 
-    min: 0
+    min: 0.2
     max: 1
-    value: 0.897
+    value: 0.23
     skew: 0
     increment: 0
     options: []
@@ -334,7 +371,47 @@ MonoBehaviour:
     caption: 
     min: 0.001
     max: 9
-    value: 7.24
+    value: 0.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: macro1
+    text: M1y-pitch
+    caption: 
+    min: 0.1
+    max: 3
+    value: 0.2
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: macro2
+    text: M2x-filt
+    caption: 
+    min: 1
+    max: 20
+    value: 5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: macro3
+    text: M3z-volVrb
+    caption: 
+    min: 0
+    max: 1
+    value: 0.8
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: macro4
+    text: M4rot-Rate
+    caption: 
+    min: 0.4
+    max: 10
+    value: 2
     skew: 0
     increment: 0
     options: []
@@ -398,7 +475,7 @@ MonoBehaviour:
   csoundUnity: {fileID: 0}
   InstrumentPresets:
     presetList:
-    - {fileID: 11400000, guid: c76a1ed56c985437f8187319f7847f98, type: 2}
+    - {fileID: 11400000, guid: 39764bbc541324842a51f27e76012539, type: 2}
     presetIndexOnStart: 0
     setPresetOnStart: 1
     debugPresets: 0
@@ -441,16 +518,17 @@ MonoBehaviour:
   csoundUnity: {fileID: 0}
   referenceObject: {fileID: 0}
   PositionSender:
-    setXPositionTo: 1
+    setXPositionTo: 2
     setYPositionTo: 0
-    setZPositionTo: 3
-    posVectorRangesMax: {x: 0.3, y: 3, z: 0}
-    posVectorRangesMin: {x: -0.3, y: 1, z: 0}
-    csoundChannelsPosX: {fileID: 11400000, guid: a60b8be558e5c4b14b0c626a352fb48c,
+    setZPositionTo: 2
+    posVectorRangesMax: {x: 0.5, y: 3.5, z: 0.08}
+    posVectorRangesMin: {x: -0.3, y: 0, z: -0.5}
+    csoundChannelsPosX: {fileID: 11400000, guid: 84c411543dd644a9da83a98784411607,
       type: 2}
-    csoundChannelsPosY: {fileID: 11400000, guid: 983d2370dcada451ea3c63cf6da877a6,
+    csoundChannelsPosY: {fileID: 11400000, guid: a60b8be558e5c4b14b0c626a352fb48c,
       type: 2}
-    csoundChannelsPosZ: {fileID: 0}
+    csoundChannelsPosZ: {fileID: 11400000, guid: fc78906657d1e4b75be6203c9a51aaf6,
+      type: 2}
     updatePositionOnStart: 0
     debugPosition: 0
     camera: {fileID: 0}
@@ -465,10 +543,11 @@ MonoBehaviour:
     rotationMode: 0
     setXRotationTo: 2
     setYRotationTo: 2
-    setZRotationTo: 2
+    setZRotationTo: 0
     csoundChannelsRotationX: {fileID: 0}
     csoundChannelsRotationY: {fileID: 0}
-    csoundChannelsRotationZ: {fileID: 0}
+    csoundChannelsRotationZ: {fileID: 11400000, guid: 983d2370dcada451ea3c63cf6da877a6,
+      type: 2}
     useLocalEulerAngles: 0
     updateRotationOnStart: 0
     debugRotation: 0
@@ -476,6 +555,7 @@ MonoBehaviour:
     rotationStart: {x: 0, y: 0, z: 0}
     rotationRelative: {x: 0, y: 0, z: 0}
     localRotation: {x: 0, y: 0, z: 0}
+    zAxisValue: 0
   ScaleAxisSender:
     setXScaleTo: 2
     setYScaleTo: 2
@@ -549,7 +629,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6163393411755322778}
-  m_LocalRotation: {x: -0.679773, y: -0, z: -0, w: 0.73342264}
+  m_LocalRotation: {x: -0.6797741, y: 0, z: 0, w: 0.7334215}
   m_LocalPosition: {x: -0.43433332, y: -0.0662961, z: -0.2407155}
   m_LocalScale: {x: 0.007045713, y: 0.007045713, z: 0.007045713}
   m_ConstrainProportionsScale: 0
@@ -692,18 +772,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6163393411262137404}
-        m_TargetAssemblyTypeName: CsoundTransformAndPhysicsSender, Assembly-CSharp
-        m_MethodName: UpdatePosition
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 3265039935852553705}
         m_TargetAssemblyTypeName: ResetStartingPosition, Assembly-CSharp
         m_MethodName: ResetPositionTimer
@@ -714,15 +785,12 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6163393411262137404}
-        m_TargetAssemblyTypeName: CsoundTransformAndPhysicsSender, Assembly-CSharp
-        m_MethodName: UpdatePosition
-        m_Mode: 6
+      - m_Target: {fileID: 6163393411262137347}
+        m_TargetAssemblyTypeName: CsoundSender, Assembly-CSharp
+        m_MethodName: ToggleTrigger
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

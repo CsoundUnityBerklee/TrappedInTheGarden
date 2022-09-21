@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: reTriggerOff
   m_EditorClassIdentifier: 
   channelData:
-  - name: ReTrigger
+  - name: reTrigger
     value: 0

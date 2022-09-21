@@ -471,6 +471,7 @@ public class CsoundTransformAndPhysicsSender : MonoBehaviour
             else if (RotationSender.setZRotationTo == CsoundRotation.RotationVectorReference.Relative)
                 CsoundMap.MapValueToChannelRange(RotationSender.csoundChannelsRotationZ, 0, 360, CircularAxisValue(RotationSender.rotationRelative.z), csoundUnity);
         }
+        RotationSender.zAxisValue = CircularAxisValue(RotationSender.localRotation.z);
     }
     #endregion
 
@@ -717,6 +718,9 @@ public class CsoundRotation
 
     [HideInInspector] public bool updateRotation;
     [HideInInspector] public Vector3 rotationStart, rotationRelative, localRotation;
+
+    //DEBUG
+    [HideInInspector] public float zAxisValue;
 }
 
 [System.Serializable]
