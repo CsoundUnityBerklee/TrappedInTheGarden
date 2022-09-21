@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6517f40f6fb54a959f819328eed0dc6, type: 3}
-  m_Name: Trapped02_PosY
+  m_Name: T02_Macro2
   m_EditorClassIdentifier: 
   channelData:
-  - name: Note
-    minValue: 20
-    maxValue: 80
+  - name: macro2
+    minValue: 1
+    maxValue: 20
     returnAbsoluteValue: 0
