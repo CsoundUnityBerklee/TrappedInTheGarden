@@ -10,6 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6517f40f6fb54a959f819328eed0dc6, type: 3}
-  m_Name: Fruit_PosY
+  m_Name: T02_Macro4
   m_EditorClassIdentifier: 
-  channelData: []
+  channelData:
+  - name: macro2
+    minValue: 0.4
+    maxValue: 10
+    returnAbsoluteValue: 0
