@@ -1,0 +1,238 @@
+Aves collection: a Csound translation (with adjustments) of SND's bird.scm,
+based on bird.clm by bil@ccrma.Stanford.edu .
+
+To use these UDOs please include aves.inc in your orchestra header:
+#include "aves.inc"
+
+The simplest way to use any of these opcoodes for a single call needs no
+arguments. For example:
+
+instr one_cassins_call
+	aOutput = m_aves_cassins_kingbird()
+	outs(aOutput, aOutput)
+endin
+
+The optional iAge argument changes the pitch of the bird call, so it is not
+the least bit based on science or observations. iAge should be tween 0-1, 1
+being the default.
+
+Finally the optional trigger argument can be used to generate multiple bird
+calls in one instrument.
+
+To hear all calls, you may call the test instrument Play_birds:
+schedule("Play_birds" 0, 125)
+which plays each song consecutively. You can use demo.csd, which is setup
+for a samplerate of 48000Hz, if you have the standard 44.1kHz, please change
+the line:
+sr = 48000
+to
+sr = 44100
+
+Following is a complete list of UDOs, with the colloquial names, binomial
+bird names, a wikipedia link and a minimalistic description of the bird's
+habitat, in case of usage in a realistic context.
+
+Syntax for all UDOs:
+abirdAudio m_aves_birdname [iAge [, kTrig]]
+	iAge defaults to 1 (original pitch)
+	kTrig defaults to -1 (single trigger)
+
+List of opcodes:
+; Cassins kingbird (Tyrannus vociferans)
+; https://en.wikipedia.org/wiki/Cassin%27s_kingbird
+; Habitat: rangeland and savanna
+m_aves_cassins_kingbird
+
+; Orchard oriole (Icterus spurius)
+; https://en.wikipedia.org/wiki/Orchard_oriole
+; Habitat: semi-open land with deciduous trees
+m_aves_orchard_oriole
+
+; Chipping sparrow (Spizella passerina)
+; https://en.wikipedia.org/wiki/Chipping_sparrow
+; Habitat: mountains, dry land
+m_aves_chipping_sparrow
+
+; Bobwhite (Colinus virginianus - or other subspecies)
+; https://en.wikipedia.org/wiki/Colinus
+; Habitat: grassland, open woodland, roadsides, wood edges
+m_aves_bobwhite
+
+; Western meadowlark (Sturnella neglecta)
+; https://en.wikipedia.org/wiki/Western_meadowlark
+; Habitat: grasslands, prairies, pastures, abandoned fields
+m_aves_meadowlark
+
+; Scissor-tailed flycatcher (Tyrannus forficatus)
+; https://en.wikipedia.org/wiki/Scissor-tailed_flycatcher
+; Habitat: open shrubbery country with scattered trees
+m_aves_scissor_flycatcher
+
+; Great horned owl (Bubo virginianus)
+; https://en.wikipedia.org/wiki/Great_horned_owl
+; Habitat: trees bordering almost any landscape
+m_aves_great_horned_owl
+
+; Blacck-throated gray warbler (Setophaga nigrescens)
+; https://en.wikipedia.org/wiki/Black-throated_gray_warbler
+; Habitat: various forests with underbrush and scrub lands
+m_aves_gray_warbler
+
+; American yellow warbler (Setophaga petechia)
+; https://en.wikipedia.org/wiki/American_yellow_warbler
+; Habitat: near rivers and most other lands with many small trees
+m_aves_yellow_warbler
+
+; Black-necked stilt (Himantopus mexicanus)
+; https://en.wikipedia.org/wiki/Black-necked_stilt
+; Habitat: near rivers, lakes and in other wetlands
+m_aves_black_stilt
+
+; Chestnut-sided warbler (Setophaga pensylvanica)
+; https://en.wikipedia.org/wiki/Chestnut-sided_warbler
+; Habitat: forests (with scrubs and bushes)
+m_aves_chestnut_warbler
+
+; Grasshopper sparrow (Ammodramus savannarum)
+; https://en.wikipedia.org/wiki/Grasshopper_sparrow
+; Habitat: open fields and prairie
+m_aves_grasshopper_sparrow
+
+; Swamp sparrow (Melospiza georgiana)
+; https://en.wikipedia.org/wiki/Swamp_sparrow
+; Habitat: marshes (including tidal marshes for one subspecies)
+m_aves_swamp_sparrow
+
+; Golden-crowned sparrow (Zonotrichia atricapilla)
+; https://en.wikipedia.org/wiki/Golden-crowned_sparrow
+; Habitat: brushy areas, shrubs
+m_aves_golden_sparrow
+
+; Indigo bunting (Passerina cyanea)
+; https://en.wikipedia.org/wiki/Indigo_bunting
+; Habitat: brushy forest edges, open deciduous woods, farmland
+m_aves_indigo_bunting
+
+; Hooded warbler (Setophaga citrina)
+; https://en.wikipedia.org/wiki/Hooded_warbler
+; Habitat: broadleaved woods with dense underbrush
+m_aves_hooded_warbler
+
+; American Widgeon (Mareca americana)
+; https://en.wikipedia.org/wiki/American_wigeon
+; Habitat: wetlands, northern forests and arcitc river deltas
+m_aves_american_widgeon
+
+; Louisiana waterthrush (Parkesia motacilla)
+; https://en.wikipedia.org/wiki/Louisiana_waterthrush
+; Habitat: near streams
+m_aves_louisiana_waterthrush
+
+; (American) Robin (Turdus migratorius)
+; https://en.wikipedia.org/wiki/American_robin
+; Habitat: woodland, more open farmland, urban areas
+m_aves_robin
+
+; Solitary viero, possibly plumbeous vereo (Vireo plumbeus)
+; https://en.wikipedia.org/wiki/Plumbeous_vireo
+; Habitat: open pine forests
+m_aves_solitary_vireo
+
+; Pigeon hawk (Falco columbarius)
+; https://en.wikipedia.org/wiki/Merlin_(bird)
+; Habitat: varied, preference: mix of low and medium height vegetation with
+;	some trees, avoid dense forests
+m_aves_pigeon_hawk
+
+; Cerulean warbler (Setophaga cerulea)
+; https://en.wikipedia.org/wiki/Cerulean_warbler
+; Habitat: mature decideous forest
+m_aves_cerulean_warbler
+
+; Nashville warbler (Leiothlypis ruficapilla)
+; https://en.wikipedia.org/wiki/Nashville_warbler
+; Habitat: open mixed woods, bog habitats
+m_aves_nashville_warbler
+
+; Eastern phoebe (Sayornis phoebe)
+; https://en.wikipedia.org/wiki/Eastern_phoebe
+; Habitat: urban, woodlands, especially near streams, avoid open land
+m_aves_eastern_phoebe
+
+; Painted bunting (Passerina ciris)
+; https://en.wikipedia.org/wiki/Painted_bunting
+; Habitat: woodlands edges, thickets, brush/scrubs (near rivers)
+m_aves_painted_bunting
+
+; Western flycatcher, either pacific-slope or cordilleran (Empidonax difficilis)
+; https://en.wikipedia.org/wiki/Pacific-slope_flycatcher
+; Habitat: woods and forests (coniferous or deciduous)
+m_aves_western_flycatcher
+
+; Bachman's sparrow (Peucaea aestivalis)
+; https://en.wikipedia.org/wiki/Bachman%27s_sparrow
+; Habitat: areas with dense undergrowth, scrubs, open pine forests
+m_aves_bachmans_sparrow
+
+; Cedar waxwing (Bombycilla cedrorum)
+; https://en.wikipedia.org/wiki/Cedar_waxwing
+; Habitat: edge of woods, open forest
+m_aves_cedar_waxwing
+
+; Baird's sparrow (Centronyx bairdii)
+; https://en.m.wikipedia.org/wiki/Baird%27s_sparrow
+; Habitat: grassland, prairie
+m_aves_bairds_sparrow
+
+; Kentucky warbler (Geothlypis formosa)
+; https://en.wikipedia.org/wiki/Kentucky_warbler
+; Habitat: Deciduous forest
+m_aves_kentucky_warbler
+
+; (eastern?) Rufous-sided towhee (Pipilo erythrophthalmus)
+; https://en.wikipedia.org/wiki/Eastern_towhee
+; Habitat: brushy areas
+m_aves_rufous_towhee
+
+; Prothonotary warbler (Protonotaria citrea)
+; https://en.wikipedia.org/wiki/Prothonotary_warbler
+; Habitat: deciduous forest (hardwood swamps)
+m_aves_prothonotary
+
+; Audubon's warbler (Setophaga auduboni)
+; https://en.wikipedia.org/wiki/Audubon%27s_warbler
+; Habitat: Coniferous and mixed woodland
+m_aves_audubons_warbler
+
+; Lark bunting (Calamospiza melanocorys)
+; https://en.wikipedia.org/wiki/Lark_bunting
+; Habitat: grassland, prairie
+m_aves_lark_bunting
+
+; Eastern bluebird (Sialia sialis)
+; https://en.wikipedia.org/wiki/Eastern_bluebird
+; Habitat: open country near trees, sparse ground cover
+m_aves_eastern_bluebird
+
+; Chuck-will's-widow (Antrostomus carolinensis)
+; https://en.wikipedia.org/wiki/Chuck-will%27s-widow
+; Habitat: near swamps, rocky uplands and pine woods
+m_aves_wills_widow
+
+; Blue gray gnatcatcher (Polioptila caerulea)
+; https://en.wikipedia.org/wiki/Blue-gray_gnatcatcher
+; Habitat: open deciduous woods, shrubland
+m_aves_blue_gray_gnatcatcher
+
+; Black-throated sparrow (Amphispiza bilineata)
+; https://en.wikipedia.org/wiki/Black-throated_sparrow
+; Habitat: arid desert hillsides, scrubland
+m_aves_black_throated_sparrow
+
+; Black-chinned sparrow (Spizella atrogularis)
+; https://en.wikipedia.org/wiki/Black-chinned_sparrow
+; Habitat: pine-juniper woodlands, other shrubland
+m_aves_black_chinned_sparrow
+
+; Gull colony
+m_aves_gull_colony
