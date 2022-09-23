@@ -21,7 +21,7 @@ public class PlantsBehaviour : MonoBehaviour
 
 
     // Trapped Section
-    public Garden garden;
+    Garden garden;
     public int trappedSection;
 
     // Property to update value only when it changes (opposed to every frame)
@@ -59,7 +59,7 @@ public class PlantsBehaviour : MonoBehaviour
         // Subscribing 
         OnVariableChange += VariableChangeHandler;
 
-        garden = GetComponent<Garden>();
+        garden = GameObject.Find("Garden").GetComponent<Garden>();
 
     }
 
