@@ -19,6 +19,11 @@ public class PlantsBehaviour : MonoBehaviour
     [SerializeField] Transform _center;
     [SerializeField] bool calculatingDistance = false;
 
+
+    // Trapped Section
+    public Garden garden;
+    public int trappedSection;
+
     // Property to update value only when it changes (opposed to every frame)
     public float DistanceToCenter
     {
@@ -53,6 +58,9 @@ public class PlantsBehaviour : MonoBehaviour
 
         // Subscribing 
         OnVariableChange += VariableChangeHandler;
+
+        garden = GetComponent<Garden>();
+
     }
 
     private void VariableChangeHandler(float newVal)
@@ -80,9 +88,11 @@ public class PlantsBehaviour : MonoBehaviour
     {
         if (other.gameObject.GetComponent<Garden>())
         {
+            isScaling = false;
+            calculatingDistance = false;
             transform.localScale = startingScale;
             interpolant = 0; //restart
-            calculatingDistance = false;
+            garden.StopTrapped(trappedSection);
         }
     }
 
@@ -99,10 +109,15 @@ public class PlantsBehaviour : MonoBehaviour
 
             transform.localScale = newScale;
 
+            // Play Trapped
+
+            garden.TriggerTrapped(trappedSection);
+
             //optimization
             if (interpolant > 1)
             {
                 isScaling = false;
+                garden.StopTrapped(trappedSection);
             }
         }
     }
