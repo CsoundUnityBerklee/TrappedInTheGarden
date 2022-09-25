@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class ResetStartingPosition : MonoBehaviour
 {
-    private CsoundUnity csoundUnity;
+    private CsoundSender csoundSender;
     private Vector3 startingPos;
-    private float timer = 6f;
+    private float timer = 10f;
     private Rigidbody rb;
 
     // Start is called before the first frame update
@@ -13,7 +13,7 @@ public class ResetStartingPosition : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         startingPos = transform.position;
-        csoundUnity = GetComponentInChildren<CsoundUnity>();
+        csoundSender = GetComponentInChildren<CsoundSender>();
         ResetPositionTimer();
     }
 
@@ -35,7 +35,8 @@ public class ResetStartingPosition : MonoBehaviour
         rb.angularVelocity = new Vector3(0, 0, 0);
         rb.useGravity = false;
         //Reset CsoundUnity
-        csoundUnity.SetChannel("reTrigger", 0); //turns off reTrigger
+        csoundSender.ResetPreset();
+        csoundSender.SetChannelValue(1); //turns off retrigger
         //Reset transform
         transform.position = startingPos;
     }
