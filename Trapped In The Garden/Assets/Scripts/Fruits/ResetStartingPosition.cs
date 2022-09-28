@@ -8,7 +8,7 @@ public class ResetStartingPosition : MonoBehaviour
     private float timer = 6f;
     private Rigidbody rb;
     private LowGravity lowGravity;
-    private float speed = 10f;
+    private float speed = 20f;
     private bool moveTowardsStartingPos = false;
 
     // Start is called before the first frame update
@@ -34,17 +34,13 @@ public class ResetStartingPosition : MonoBehaviour
 
     private void ResetObject()
     {
-        //Reset CsoundUnity
-        csoundUnity.SetChannel("reTrigger", 0); //turns off reTrigger
+        moveTowardsStartingPos = true;
+
         //Reset gravity
         lowGravity.TurnOff();
         //Reset rigidbody
         rb.velocity = new Vector3(0, 0, 0);
-        rb.angularVelocity = new Vector3(0, 0, 0);
         rb.useGravity = false;
-        //Reset transform
-        moveTowardsStartingPos = true;
-        //transform.position = startingPos;
     }
 
     private void Update()
@@ -60,6 +56,10 @@ public class ResetStartingPosition : MonoBehaviour
         if (transform.position == startingPos)
         {
             moveTowardsStartingPos = false;
+            //Reset CsoundUnity
+            csoundUnity.SetChannel("reTrigger", 0); //turns off reTrigger
+            //Reset rigidbody
+            rb.angularVelocity = new Vector3(0, 0, 0);
         }
 
         transform.position = Vector3.MoveTowards(transform.position, startingPos, speed * Time.deltaTime);
