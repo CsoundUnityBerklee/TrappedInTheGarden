@@ -19,12 +19,16 @@ public class KnockFruitOnCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(!collision.gameObject.CompareTag("Hand")) { return; }
-
-        csoundSender.ToggleTrigger();
-        rb.useGravity = true;
-        //rb.AddForce(collision.relativeVelocity * 100, ForceMode.Impulse);
-        //debug.DebugCollisionForce(collision.relativeVelocity.magnitude * 100);
-        reset.ResetPositionTimer();
+        if (collision.gameObject.CompareTag("Hand"))
+        {
+            csoundSender.ToggleTrigger();
+            rb.useGravity = true;
+            reset.ResetPositionTimer();
+        }
+        else if (collision.gameObject.CompareTag("Fruit"))
+        {
+            csoundSender.ToggleTrigger();
+            reset.ResetPositionTimer();
+        }
     }
 }

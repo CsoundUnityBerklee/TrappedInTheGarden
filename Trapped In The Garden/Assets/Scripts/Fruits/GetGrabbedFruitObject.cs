@@ -80,4 +80,14 @@ public class GetGrabbedFruitObject : MonoBehaviour
             canUpdateRotation = false;
         }
     }
+
+    public void VolumeGateOn()
+    {
+        csoundUnity.SetChannel("masterLvl", 0);
+    }
+
+    public void VolumeGateOff()
+    {
+        csoundUnity.SetChannel("masterLvl", 1);
+    }
 }

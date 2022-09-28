@@ -21,6 +21,6 @@ public class CsoundSenderDistanceFromListener : MonoBehaviour
     void Update()
     {
         distance = Vector3.Distance(gameObject.transform.position, listener.transform.position);
-        CsoundMap.MapValueToChannelRange(csoundChannelRange, minDistance, maxDistance, distance, csound);
+        CsoundMap.MapValueToChannelRangeInverted(csoundChannelRange, minDistance, maxDistance, distance, csound);
     }
 }

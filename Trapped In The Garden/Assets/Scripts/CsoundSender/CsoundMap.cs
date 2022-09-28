@@ -34,4 +34,27 @@ public static class CsoundMap
             }
         }
     }
+
+    //Scales the ChannelRange minValue and maxValue and passes it into Csound, mapping them to a defined range.
+    public static void MapValueToChannelRangeInverted(CsoundChannelRangeSO csoundChannels, float minRange, float maxRange, float incomingData, CsoundUnity csoundUnity)
+    {
+        //Cycles through every channel defined in the ChannelRange asset.
+        foreach (CsoundChannelRangeSO.CsoundChannelData data in csoundChannels.channelData)
+        {
+            //Scales the defined minValue and maxValue variables to a range.
+            float value =
+                Mathf.Clamp(ScaleFloat(minRange, maxRange, data.minValue, data.maxValue, incomingData), data.minValue, data.maxValue);
+
+            //Passes the vlaue to Csound
+            if (!data.returnAbsoluteValue)
+            {
+                csoundUnity.SetChannel(data.name, 1-value);
+            }
+            //Passes the absolute value to Csound if the bool is checked for the channel.
+            else
+            {
+                csoundUnity.SetChannel(data.name, Mathf.Abs(1-value));
+            }
+        }
+    }
 }

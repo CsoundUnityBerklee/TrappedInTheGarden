@@ -58,7 +58,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 25
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -68,49 +68,22 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.1
+      time: 0.05
       value: 1
-      inSlope: -10.0039835
-      outSlope: -10.0039835
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.2
-      value: 0.5
-      inSlope: -2.5009959
-      outSlope: -2.5009959
+      time: 0.9772339
+      value: 0.027439117
+      inSlope: 0.032838695
+      outSlope: 0.032838695
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.4
-      value: 0.25
-      inSlope: -0.62524897
-      outSlope: -0.62524897
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.8
-      value: 0.125
-      inSlope: -0.15631224
-      outSlope: -0.15631224
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 0.020776369
-      inSlope: -0.10003988
-      outSlope: -0.10003988
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
+      inWeight: 0.098071285
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -134,8 +107,8 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 0.079193115
+      time: 0.004140854
+      value: 0.11880493
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -644,14 +617,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6163393411262137406}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f9d67077898143d5a14d18e61c7e245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   csoundChannelRange: {fileID: 11400000, guid: fc78906657d1e4b75be6203c9a51aaf6, type: 2}
-  minDistance: 2
-  maxDistance: 20
+  minDistance: 1
+  maxDistance: 25
 --- !u!1 &6163393411755322778
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,13 +637,14 @@ GameObject:
   - component: {fileID: 6163393411754455450}
   - component: {fileID: 6163393411753325402}
   - component: {fileID: 6163393411755354942}
-  - component: {fileID: 6163393411755354941}
+  - component: {fileID: 6492021056134535057}
   - component: {fileID: 6163393411755354943}
   - component: {fileID: 3265039935852553705}
   - component: {fileID: 8486678875199063211}
+  - component: {fileID: 2227499628502658222}
   m_Layer: 8
   m_Name: Fruit_Trapped02
-  m_TagString: Untagged
+  m_TagString: Fruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -757,8 +731,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &6163393411755354941
-SphereCollider:
+--- !u!65 &6492021056134535057
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -768,8 +742,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 30.982227
-  m_Center: {x: 1.6085205, y: 4.756697, z: 0.24981788}
+  m_Size: {x: 40.937664, y: 34.233547, z: 61.786766}
+  m_Center: {x: 0.77, y: 6.250316, z: -0.4746465}
 --- !u!114 &6163393411755354943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -812,19 +786,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6163393411262137347}
-        m_TargetAssemblyTypeName: CsoundSender, Assembly-CSharp
-        m_MethodName: ToggleTrigger
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -868,6 +830,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: CsoundSender, Assembly-CSharp
         m_MethodName: SetChannelValue
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2227499628502658222}
+        m_TargetAssemblyTypeName: LowGravity, Assembly-CSharp
+        m_MethodName: TurnOn
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -945,7 +919,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 5
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 1
   m_RetainTransformParent: 1
@@ -972,5 +946,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63cb2053b24df4cbe861519ff0ae6f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2227499628502658222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6163393411755322778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6979326b13c9a4579987322216a993eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
