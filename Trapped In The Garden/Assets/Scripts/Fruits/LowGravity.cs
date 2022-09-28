@@ -30,7 +30,8 @@ public class LowGravity : MonoBehaviour
     public void TurnOff()
     {
         lowGravity = false;
-        rb.AddForce(-gravityVector, ForceMode.Force);
+        rb.velocity = new Vector3(0, 0, 0);
+        rb.angularVelocity = new Vector3(0, 0, 0);
     }
 
     public void Toggle()

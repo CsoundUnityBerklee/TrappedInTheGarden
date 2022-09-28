@@ -8,7 +8,7 @@ public class ResetStartingPosition : MonoBehaviour
     private float timer = 6f;
     private Rigidbody rb;
     private LowGravity lowGravity;
-    private float speed = 7f;
+    private float speed = 10f;
     private bool moveTowardsStartingPos = false;
 
     // Start is called before the first frame update
@@ -62,6 +62,6 @@ public class ResetStartingPosition : MonoBehaviour
             moveTowardsStartingPos = false;
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, startingPos, speed);
+        transform.position = Vector3.MoveTowards(transform.position, startingPos, speed * Time.deltaTime);
     }
 }
