@@ -3,18 +3,22 @@ using UnityEngine;
 
 public class ResetStartingPosition : MonoBehaviour
 {
-    private CsoundSender csoundSender;
+    private CsoundUnity csoundUnity;
     private Vector3 startingPos;
-    private float timer = 10f;
+    private float timer = 6f;
     private Rigidbody rb;
+    private LowGravity lowGravity;
+    private float speed = 20f;
+    private bool moveTowardsStartingPos = false;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         startingPos = transform.position;
-        csoundSender = GetComponentInChildren<CsoundSender>();
-        ResetPositionTimer();
+        csoundUnity = GetComponentInChildren<CsoundUnity>();
+        lowGravity = GetComponent<LowGravity>();
+        //ResetPositionTimer();
     }
 
     public void ResetPositionTimer()
@@ -30,14 +34,34 @@ public class ResetStartingPosition : MonoBehaviour
 
     private void ResetObject()
     {
+        moveTowardsStartingPos = true;
+
+        //Reset gravity
+        lowGravity.TurnOff();
         //Reset rigidbody
         rb.velocity = new Vector3(0, 0, 0);
-        rb.angularVelocity = new Vector3(0, 0, 0);
         rb.useGravity = false;
-        //Reset CsoundUnity
-        csoundSender.ResetPreset();
-        csoundSender.SetChannelValue(1); //turns off retrigger
-        //Reset transform
-        transform.position = startingPos;
+    }
+
+    private void Update()
+    {
+        if (moveTowardsStartingPos)
+        {
+            MoveTowardsStartingPosition();
+        }
+    }
+
+    private void MoveTowardsStartingPosition()
+    {
+        if (transform.position == startingPos)
+        {
+            moveTowardsStartingPos = false;
+            //Reset CsoundUnity
+            csoundUnity.SetChannel("reTrigger", 0); //turns off reTrigger
+            //Reset rigidbody
+            rb.angularVelocity = new Vector3(0, 0, 0);
+        }
+
+        transform.position = Vector3.MoveTowards(transform.position, startingPos, speed * Time.deltaTime);
     }
 }
