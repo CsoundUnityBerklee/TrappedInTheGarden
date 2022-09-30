@@ -8,13 +8,10 @@ public class KnockFruitOnCollision : MonoBehaviour
     private Rigidbody rb;
     private ResetStartingPosition reset;
 
-    private DebugCollision debug;
-
     private void Awake()
     {
         csoundSender = GetComponentInChildren<CsoundSender>();
         rb = GetComponent<Rigidbody>();
-        debug = FindObjectOfType<DebugCollision>();
     }
 
     private void OnCollisionEnter(Collision collision)
