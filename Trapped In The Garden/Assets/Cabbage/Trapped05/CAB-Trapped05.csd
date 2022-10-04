@@ -1,33 +1,37 @@
 <Cabbage> bounds(0, 0, 0, 0)
-form caption("Trapped05") size(680, 360), guiMode("queue") pluginId("def1")
+form caption("Trapped05rev") size(680, 560), guiMode("queue") pluginId("def1")
 
-button  bounds(202, 64, 86, 55) channel("trigger") text("Trigger") textColour("white")
-hslider bounds(18, 118, 175, 50) channel("dur") range(2, 10, 5, 1, 0.001) text("Dur") textColour("white")
+button  bounds(114, 174, 86, 55) channel("trigger") text("Trigger") textColour("white")
+checkbox bounds(146, 232, 27, 31), channel("reTrigger"), , fontColour:0(255, 255, 255, 255)
+label    bounds(122, 266, 81, 16), text("ReTrigger"), fontColour(255, 255, 255, 255) channel("label9") alpha(0.99)
+hslider bounds(78, 286, 175, 50) channel("reTrigRate") range(0.1, 6, 1, 0.5, 0.001) text("ReTrig Rate") textColour(255, 255, 255, 255)
 
-hslider bounds(20, 4, 158, 50) channel("masterLvl") range(0, 1, 0.7, 1, 0.001) text("Master Lvl") textColour("white")
-hslider bounds(382, 60, 150, 50) channel("amp") range(0, 1, 0.7, 1, 0.001) text("Synth Lvl") textColour(255, 255, 255, 255)
+hslider bounds(66, 58, 175, 50) channel("dur") range(2, 10, 5, 1, 0.001) text("Dur") textColour("white")
+
+hslider bounds(72, 6, 158, 50) channel("masterLvl") range(0, 1, 0.7, 1, 0.001) text("Master Lvl") textColour("white")
+hslider bounds(296, 60, 161, 50) channel("amp") range(0, 1, 0.7, 1, 0.001) text("Synth Lvl") textColour(255, 255, 255, 255)
 
 hslider bounds(298, 112, 160, 52) channel("frq") range(20, 500, 150, 1, 0.001) text("Freq") textColour("white")
-hslider bounds(478, 110, 150, 50) channel("rndFrq") range(1, 5, 2, 1, 0.001) text("RandFreq") textColour("white")
+hslider bounds(462, 114, 160, 50) channel("rndFrq") range(1, 5, 2, 1, 0.001) text("RandFreq") textColour("white")
 
-hslider bounds(24, 170, 160, 52) channel("pan") range(.1, 1, 1, 1, 0.001) text("Synth Pan") textColour("white")
+hslider bounds(462, 60, 160, 52) channel("pan") range(.1, 1, 1, 1, 0.001) text("Synth Pan") textColour("white")
 
-hslider bounds(302, 216, 159, 50) channel("modFrq") range(10, 100, 10, 1, 0.001) text("Mod Frq") textColour("white")
-hslider bounds(480, 218, 150, 50) channel("modAmp") range(100, 1000, 500, 1, 0.001) text("Mod Amp") textColour("white")
-hslider bounds(42, 280, 150, 50) channel("modNdx") range(1, 20, 12, 1, 0.001) text("Mod Indx") textColour("white")
+hslider bounds(300, 214, 159, 50) channel("modFrq") range(10, 100, 10, 1, 0.001) text("Mod Frq") textColour("white")
+hslider bounds(464, 214, 159, 50) channel("modAmp") range(100, 1000, 500, 1, 0.001) text("Mod Amp") textColour("white")
+hslider bounds(390, 264, 150, 50) channel("modNdx") range(1, 20, 12, 1, 0.001) text("Mod Indx") textColour("white")
 
-hslider bounds(246, 280, 150, 50) channel("mstrModRat") range(1, 20, 12, 1, 0.001) text("MastrModRate") textColour("white")
-hslider bounds(452, 280, 150, 50) channel("mstrModDpth") range(1, 20, 1, 1, 0.001) text("MastrModDpth") textColour("white")
+hslider bounds(302, 314, 159, 52) channel("mstrModRat") range(1, 20, 12, 1, 0.001) text("MastrModRate") textColour("white")
+hslider bounds(468, 314, 159, 52) channel("mstrModDpth") range(1, 20, 1, 1, 0.001) text("MastrModDpth") textColour("white")
 
-hslider bounds(300, 164, 159, 50) channel("carRat") range(1, 10, 1, 1, 0.001) text("Car Ratio") textColour("white")
-hslider bounds(478, 160, 150, 55) channel("modRat") range(1, 10, 1, 1, 0.001) text("Mod Ratio") textColour("white")
+hslider bounds(298, 164, 159, 50) channel("carRat") range(1, 10, 1, 1, 0.001) text("Car Ratio") textColour(255, 255, 255, 255)
+hslider bounds(462, 164, 163, 50) channel("modRat") range(1, 10, 1, 1, 0.001) text("Mod Ratio") textColour("white")
 
-hslider bounds(300, 8, 161, 49) channel("rvbSend") range(0, 1, .5, 1, 0.001) text("Rvb Send") textColour("white")
-hslider bounds(464, 8, 150, 50) channel("rvbPan") range(.01, 34, 25, 1, 0.001) text("Rvb Pan") textColour("white")
+hslider bounds(296, 8, 161, 49) channel("rvbSend") range(0, 1, .5, 1, 0.001) text("Rvb Send") textColour("white")
+hslider bounds(462, 10, 161, 50) channel("rvbPan") range(.01, 34, 25, 1, 0.001) text("Rvb Pan") textColour("white")
 
-combobox bounds(84, 58, 100, 25), populate("*.snaps"), channelType("string") automatable(0) channel("combo31")  value("1")
-filebutton bounds(20, 58, 60, 25), text("Save", "Save"), populate("*.snaps", "test"), mode("named preset") channel("filebutton32")
-filebutton bounds(20, 86, 60, 25), text("Remove", "Remove"), populate("*.snaps", "test"), mode("remove preset") channel("filebutton33")
+combobox bounds(138, 118, 100, 25), populate("*.snaps"), channelType("string") automatable(0) channel("combo31")  value("1") text("init", "high Drop", "rise up", "ripping", "riseUp2", "another")
+filebutton bounds(74, 118, 60, 25), text("Save", "Save"), populate("*.snaps", "test"), mode("named preset") channel("filebutton32")
+filebutton bounds(74, 146, 60, 25), text("Remove", "Remove"), populate("*.snaps", "test"), mode("remove preset") channel("filebutton33")
 </Cabbage>
 
 <CsoundSynthesizer>
