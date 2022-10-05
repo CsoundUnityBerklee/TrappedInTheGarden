@@ -1,7 +1,8 @@
 <Cabbage> bounds(0, 0, 0, 0)
 form caption("Trapped02rev") size(650, 400), guiMode("queue") pluginId("def1")
 
-button  bounds(20, 122, 86, 55) channel("trigger") text("Trigger", "Trigger") 
+button  bounds(20, 122, 86, 55) channel("trigger") text("Trigger", "Trigger")
+ 
 checkbox bounds(50, 182, 27, 25), channel("reTrigger"), , fontColour:0(255, 255, 255, 255)
 label    bounds(22, 210, 80, 18), text("ReTrigger"), fontColour(255, 255, 255, 255) channel("label9") alpha(0.99)
 hslider bounds(12, 234, 175, 50) channel("reTrigRate") range(.1, 6, 1, .5, 0.001) text("ReTrig Rate") textColour("white")
@@ -57,22 +58,17 @@ giSine  ftgen  1, 0, 8192, 10, 1
 giFun15 ftgen 15, 0, 8192,  9, 1, 1, 90
 
 
-instr 1
-
-    
+instr 1  
     iDur = chnget:i("dur")
     iNote = chnget:i("note")*rnd(chnget:i("rndNote"))
     iAmp = chnget:i("amp")
 
     kTrig   chnget "trigger"
     kReTrig chnget "reTrigger"
-
-    
     if kReTrig == 1 then
         kRndH randh chnget:k("reTrigRate")*chnget:k("macro4") * .4, 4
         kTrig metro chnget:k("reTrigRate")*chnget:k("macro4") + kRndH
     endif
-
 
     if changed(kTrig) == 1 then
         event "i", "Trapped02", 0, iDur, cpsmidinn(iNote), iAmp 
