@@ -22,6 +22,7 @@ public class KnockFruitOnCollision : MonoBehaviour
             csoundSender.ToggleTrigger();
             rb.useGravity = true;
             reset.ResetPositionTimer();
+            print("HAND COLLISION");
         }
         else if (collision.gameObject.CompareTag("Fruit"))
         {

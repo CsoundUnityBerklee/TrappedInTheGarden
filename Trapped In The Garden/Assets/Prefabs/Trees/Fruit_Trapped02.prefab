@@ -58,7 +58,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 25
+  MaxDistance: 35
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -77,8 +77,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.9772339
-      value: 0.027439117
+      time: 0.979126
+      value: 0.9468727
       inSlope: 0.032838695
       outSlope: 0.032838695
       tangentMode: 0
@@ -623,7 +623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csoundChannelRange: {fileID: 11400000, guid: fc78906657d1e4b75be6203c9a51aaf6, type: 2}
   minDistance: 1
-  maxDistance: 25
+  maxDistance: 35
 --- !u!1 &6163393411755322778
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +729,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!65 &6492021056134535057
 BoxCollider:
   m_ObjectHideFlags: 0
