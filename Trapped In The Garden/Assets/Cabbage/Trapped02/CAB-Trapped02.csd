@@ -66,16 +66,17 @@ instr 1
 
     kTrig   chnget "trigger"
     kReTrig chnget "reTrigger"
+
+    
     if kReTrig == 1 then
         kRndH randh chnget:k("reTrigRate")*chnget:k("macro4") * .4, 4
         kTrig metro chnget:k("reTrigRate")*chnget:k("macro4") + kRndH
     endif
 
+
     if changed(kTrig) == 1 then
         event "i", "Trapped02", 0, iDur, cpsmidinn(iNote), iAmp 
     endif
-    
-
 endin
 
 
