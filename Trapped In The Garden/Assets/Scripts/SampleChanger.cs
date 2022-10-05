@@ -22,17 +22,14 @@ public class SampleChanger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (!_source.isPlaying)
+        if (!_source.isPlaying && other.gameObject.GetComponent<GravityMechanic>())
         {
-            if (other.gameObject.GetComponent<GravityMechanic>())
-            {
                 string objectName = other.gameObject.name;
                 int.TryParse(objectName, out idNumber);
 
                 _source.clip = _clips[idNumber];
                 Debug.Log("Hola");
                 _source.Play();
-            }
         }
     }
 

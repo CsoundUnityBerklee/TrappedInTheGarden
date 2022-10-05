@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7784763597929212035}
   - component: {fileID: 3490102744611585363}
   - component: {fileID: 6220811234772978402}
-  - component: {fileID: 2120391749880125716}
+  - component: {fileID: 6487057614695613129}
   m_Layer: 0
   m_Name: Sample 3
   m_TagString: Untagged
@@ -112,7 +112,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!114 &2120391749880125716
+--- !u!114 &6487057614695613129
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
