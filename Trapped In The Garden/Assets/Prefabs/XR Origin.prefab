@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 847669071967187176}
   - component: {fileID: 847669071967187177}
   - component: {fileID: 847669071967187178}
-  - component: {fileID: 3685021129371575908}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Hand
@@ -94,26 +93,10 @@ SphereCollider:
   m_GameObject: {fileID: 847669071967187180}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &3685021129371575908
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847669071967187180}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &847669072024844654
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +143,6 @@ GameObject:
   - component: {fileID: 847669072089666453}
   - component: {fileID: 847669072089666454}
   - component: {fileID: 847669072089666455}
-  - component: {fileID: 3348583169953443502}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Hand
@@ -242,26 +224,10 @@ SphereCollider:
   m_GameObject: {fileID: 847669072089666457}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &3348583169953443502
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847669072089666457}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &847669072772247206
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,7 +1030,7 @@ MonoBehaviour:
   m_Camera: {fileID: 847669072801727681}
   m_OriginBaseGameObject: {fileID: 847669073118648690}
   m_CameraFloorOffsetObject: {fileID: 847669072024844654}
-  m_RequestedTrackingOriginMode: 0
+  m_RequestedTrackingOriginMode: 2
   m_CameraYOffset: 1.1176
 --- !u!114 &847669073118648655
 MonoBehaviour:
