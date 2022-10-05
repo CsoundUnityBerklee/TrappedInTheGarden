@@ -16,6 +16,7 @@ public class SampleChanger : MonoBehaviour
     void Start()
     {
         _source = GetComponent<AudioSource>();
+        PositionSamples();
         
     }
 
@@ -29,6 +30,7 @@ public class SampleChanger : MonoBehaviour
                 int.TryParse(objectName, out idNumber);
 
                 _source.clip = _clips[idNumber];
+                Debug.Log("Hola");
                 _source.Play();
             }
         }
@@ -36,6 +38,23 @@ public class SampleChanger : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        if (other.gameObject.GetComponent<GravityMechanic>())
+        {
+            _source.Stop();
+        }
+    }
 
+    void PositionSamples()
+    {
+        for(int i = 0; i < _clips.Length; i++)
+        {
+            float posX = Random.Range(-60, 60);
+            float posZ = Random.Range(-60, 60);
+
+            Vector3 randomPos = new Vector3(posX, this.transform.position.y, posZ);
+            GameObject newSample = Instantiate(sampleObjects[Random.Range(0, sampleObjects.Length)], randomPos, this.transform.rotation);
+
+            newSample.name = i.ToString();
+        }
     }
 }
