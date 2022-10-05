@@ -11,6 +11,7 @@ public class GetGrabbedFruitObject : MonoBehaviour
     private CsoundUnity csoundUnity;
 
     private bool canUpdateRotation = true;
+    private bool rotationToggle = true;
 
     // Start is called before the first frame update
     void Awake()
@@ -44,26 +45,6 @@ public class GetGrabbedFruitObject : MonoBehaviour
         }
     }
 
-    public void UpdateCsoundRotation(bool update)
-    {
-        if (csoundTransformSender == null) { return; }
-
-        if (!update && canUpdateRotation == false)
-        {
-            //csoundSender.SetChannelValue(1); //turns off retrigger
-            csoundUnity.SetChannel("reTrigger", 0);
-            csoundTransformSender.UpdateRotation(false);
-            canUpdateRotation = true;
-        }
-        else if(canUpdateRotation == true)
-        {
-            csoundTransformSender.UpdateRotation(true);
-            csoundUnity.SetChannel("reTrigger", 1);
-            //csoundSender.SetChannelValue(0); //turns on retrigger
-            canUpdateRotation = false;
-        }
-    }
-
     public void VolumeGateOn()
     {
         csoundUnity.SetChannel("masterLvl", 0);
@@ -72,5 +53,21 @@ public class GetGrabbedFruitObject : MonoBehaviour
     public void VolumeGateOff()
     {
         csoundUnity.SetChannel("masterLvl", 1);
+    }
+
+    public void ToggleRotation()
+    {
+        if (rotationToggle)
+        {
+            csoundTransformSender.UpdateRotation(true);
+            csoundUnity.SetChannel("reTrigger", 1);
+            rotationToggle = false;
+        }
+        else
+        {
+            csoundUnity.SetChannel("reTrigger", 0);
+            csoundTransformSender.UpdateRotation(false);
+            rotationToggle = true;
+        }
     }
 }

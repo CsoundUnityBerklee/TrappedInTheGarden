@@ -12,6 +12,7 @@ public class KnockFruitOnCollision : MonoBehaviour
     {
         csoundSender = GetComponentInChildren<CsoundSender>();
         rb = GetComponent<Rigidbody>();
+        reset = GetComponent<ResetStartingPosition>();
     }
 
     private void OnCollisionEnter(Collision collision)

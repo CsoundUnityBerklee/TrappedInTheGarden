@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: T02_Macro4
   m_EditorClassIdentifier: 
   channelData:
-  - name: macro2
+  - name: macro4
     minValue: 0.4
     maxValue: 10
     returnAbsoluteValue: 0
