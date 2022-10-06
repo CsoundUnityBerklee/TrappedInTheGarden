@@ -67,7 +67,12 @@ public class Slider : MonoBehaviour
 
        float rawValue = Mathf.Clamp(transform.position.y, _min, _max); // clamps slider values into the permitted range
 
+<<<<<<< Updated upstream
         transform.position = new Vector3(transform.position.x, rawValue, transform.position.z); // physical movement of slider
+=======
+        transform.position = new Vector3(xOriginalPos, rawValue, zOrigialPos); // physical movement of slider
+        transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
+>>>>>>> Stashed changes
 
         Elevation = 0.01f + Mathf.InverseLerp(_min, _max, rawValue) * _offset; 
 
