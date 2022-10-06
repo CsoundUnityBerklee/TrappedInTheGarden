@@ -18,6 +18,7 @@ public class SampleChanger : MonoBehaviour
         _source = GetComponent<AudioSource>();
         PositionSamples();
         
+        
     }
 
     void OnTriggerEnter(Collider other)
@@ -28,7 +29,6 @@ public class SampleChanger : MonoBehaviour
                 int.TryParse(objectName, out idNumber);
 
                 _source.clip = _clips[idNumber];
-                Debug.Log("Hola");
                 _source.Play();
         }
     }
@@ -48,7 +48,7 @@ public class SampleChanger : MonoBehaviour
             float posX = Random.Range(-60, 60);
             float posZ = Random.Range(-60, 60);
 
-            Vector3 randomPos = new Vector3(posX, this.transform.position.y, posZ);
+            Vector3 randomPos = new Vector3(posX, this.transform.position.y + 0.5f, posZ);
             GameObject newSample = Instantiate(sampleObjects[Random.Range(0, sampleObjects.Length)], randomPos, this.transform.rotation);
 
             newSample.name = i.ToString();

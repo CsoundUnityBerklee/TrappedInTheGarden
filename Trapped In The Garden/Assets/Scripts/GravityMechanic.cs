@@ -4,31 +4,31 @@ using UnityEngine;
 
 public class GravityMechanic : MonoBehaviour
 {
-    //    Rigidbody rb;
+    Rigidbody rb;
 
-    //    // Start is called before the first frame update
-    //    void Start()
-    //    {
-    //        rb = GetComponent<Rigidbody>();
-    //    }
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
-    //    void OnTriggerEnter(Collider other)
-    //    {
-    //        if (other.gameObject.GetComponent<GravityZone>())
-    //        {
-    //            rb.useGravity = true;
-    //            rb.isKinematic = true;
-    //        }
-    //    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<GravityZone>())
+        {
+            rb.useGravity = true;
+            rb.isKinematic = true;
+        }
+    }
 
-    //    void OnTriggerExit(Collider other)
-    //    {
-    //        if (other.gameObject.GetComponent<GravityZone>())
-    //        {
-    //            rb.useGravity = false;
-    //            rb.isKinematic = false;
-    //        }
-    //    }
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.GetComponent<GravityZone>())
+        {
+            rb.useGravity = false;
+            rb.isKinematic = false;
+        }
+    }
 
 
 }

@@ -12,6 +12,10 @@ public class Slider : MonoBehaviour
     // Variable that will be sent to RealtimeRotatingObject
     float elevation;
 
+    // Lock X & Z
+    [SerializeField] float xOriginalPos, zOrigialPos;
+
+
 
     // Csound
     [SerializeField] CsoundUnity csound;
@@ -54,6 +58,8 @@ public class Slider : MonoBehaviour
         // Subscribing 
         OnVariableChange += VariableChangeHandler;
 
+       
+
 
     }
 
@@ -67,7 +73,7 @@ public class Slider : MonoBehaviour
 
        float rawValue = Mathf.Clamp(transform.position.y, _min, _max); // clamps slider values into the permitted range
 
-        transform.position = new Vector3(transform.position.x, rawValue, transform.position.z); // physical movement of slider
+        transform.position = new Vector3(xOriginalPos, rawValue, zOrigialPos); // physical movement of slider
 
         Elevation = 0.01f + Mathf.InverseLerp(_min, _max, rawValue) * _offset; 
 
