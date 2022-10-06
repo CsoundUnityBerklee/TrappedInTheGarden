@@ -12,6 +12,7 @@ public class KnockFruitOnCollision : MonoBehaviour
     {
         csoundSender = GetComponentInChildren<CsoundSender>();
         rb = GetComponent<Rigidbody>();
+        reset = GetComponent<ResetStartingPosition>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -21,6 +22,7 @@ public class KnockFruitOnCollision : MonoBehaviour
             csoundSender.ToggleTrigger();
             rb.useGravity = true;
             reset.ResetPositionTimer();
+            print("HAND COLLISION");
         }
         else if (collision.gameObject.CompareTag("Fruit"))
         {

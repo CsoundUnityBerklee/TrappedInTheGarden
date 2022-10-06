@@ -58,7 +58,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 25
+  MaxDistance: 35
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -77,8 +77,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.9772339
-      value: 0.027439117
+      time: 0.979126
+      value: 0.9468727
       inSlope: 0.032838695
       outSlope: 0.032838695
       tangentMode: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
   _csoundFileGUID: 5cb846f25e3774862978d2643fc45d95
   _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped02rev\")
     size(650, 400), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(20,
-    122, 86, 55) channel(\"trigger\") text(\"Trigger\", \"Trigger\") \r\ncheckbox
+    122, 86, 55) channel(\"trigger\") text(\"Trigger\", \"Trigger\")\r\n \r\ncheckbox
     bounds(50, 182, 27, 25), channel(\"reTrigger\"), , fontColour:0(255, 255, 255,
     255)\r\nlabel    bounds(22, 210, 80, 18), text(\"ReTrigger\"), fontColour(255,
     255, 255, 255) channel(\"label9\") alpha(0.99)\r\nhslider bounds(12, 234, 175,
@@ -209,16 +209,16 @@ MonoBehaviour:
     or Spectral Content (on X asis)\r\n; macro3 = Volume and Verb (on Z axis)\r\n;
     macro4 = Rate (on Rotation)\r\n\r\n<CsInstruments>\r\n\r\nksmps = 32\r\nnchnls
     = 2\r\n0dbfs = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine  ftgen  1, 0, 8192, 10,
-    1\r\ngiFun15 ftgen 15, 0, 8192,  9, 1, 1, 90\r\n\r\n\r\ninstr 1\r\n\r\n    \r\n   
-    iDur = chnget:i(\"dur\")\r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
+    1\r\ngiFun15 ftgen 15, 0, 8192,  9, 1, 1, 90\r\n\r\n\r\ninstr 1  \r\n    iDur
+    = chnget:i(\"dur\")\r\n    iNote = chnget:i(\"note\")*rnd(chnget:i(\"rndNote\"))\r\n   
     iAmp = chnget:i(\"amp\")\r\n\r\n    kTrig   chnget \"trigger\"\r\n    kReTrig
-    chnget \"reTrigger\"\r\n\r\n    \r\n    if kReTrig == 1 then\r\n        kRndH
-    randh chnget:k(\"reTrigRate\")*chnget:k(\"macro4\") * .4, 4\r\n        kTrig
-    metro chnget:k(\"reTrigRate\")*chnget:k(\"macro4\") + kRndH\r\n    endif\r\n\r\n\r\n   
-    if changed(kTrig) == 1 then\r\n        event \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote),
-    iAmp \r\n    endif\r\nendin\r\n\r\n\r\ninstr Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp 
-    = chnget:i(\"amp\")             \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\niNumHarmonics
-    = chnget:i(\"numHarmonics\")\r\niSweepRate    = chnget:i(\"sweepRate\")\r\nip10           
+    chnget \"reTrigger\"\r\n    if kReTrig == 1 then\r\n        kRndH randh chnget:k(\"reTrigRate\")*chnget:k(\"macro4\")
+    * .4, 4\r\n        kTrig metro chnget:k(\"reTrigRate\")*chnget:k(\"macro4\")
+    + kRndH\r\n    endif\r\n\r\n    if changed(kTrig) == 1 then\r\n        event
+    \"i\", \"Trapped02\", 0, iDur, cpsmidinn(iNote), iAmp \r\n    endif\r\nendin\r\n\r\n\r\ninstr
+    Trapped02\r\n\r\niDur  = chnget:i(\"dur\")\r\niAmp  = chnget:i(\"amp\")            
+    \r\niNote = chnget:i(\"note\")+rnd(chnget:i(\"rndNote\"))\r\niNumHarmonics =
+    chnget:i(\"numHarmonics\")\r\niSweepRate    = chnget:i(\"sweepRate\")\r\nip10           
     midic7    25, .75, .15        ; CONTROLLER 25 = ARPEGGIO SPEED\r\n\r\nkShakeRate
     = chnget:k(\"shakeRate\")\r\n                                                         
     \r\nk1             randi     1, 30                              \r\nk2            
@@ -502,8 +502,7 @@ MonoBehaviour:
     debugTrigger: 0
     triggerValue: 0
   ChannelValues:
-    setChannelValuesList:
-    - {fileID: 11400000, guid: 4662cc1babfe5460eb5961d3e1da3a1a, type: 2}
+    setChannelValuesList: []
     channelValueIndexOnStart: 0
     setChannelValueOnStart: 0
     debugChannelsValues: 0
@@ -624,7 +623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csoundChannelRange: {fileID: 11400000, guid: fc78906657d1e4b75be6203c9a51aaf6, type: 2}
   minDistance: 1
-  maxDistance: 25
+  maxDistance: 35
 --- !u!1 &6163393411755322778
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,7 +692,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 47c38f3ace9c94bf59bf49494d16e340, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -730,7 +729,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!65 &6492021056134535057
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -786,7 +785,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6163393411262137347}
+        m_TargetAssemblyTypeName: CsoundSender, Assembly-CSharp
+        m_MethodName: ToggleTrigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
