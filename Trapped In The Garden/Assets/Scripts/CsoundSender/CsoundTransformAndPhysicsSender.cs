@@ -48,8 +48,8 @@ public class CsoundTransformAndPhysicsSender : MonoBehaviour
         {
             rigidbody = referenceObject.GetComponent<Rigidbody>();
 
-            //if (rigidbody == null)
-                //Debug.LogWarning("No Rigidbody component attached to " + referenceObject.name + ". This might lead to errors if you're using either the SpeedSender or AngularSpeedSender functions.");
+            if (rigidbody == null)
+                Debug.LogWarning("No Rigidbody component attached to " + referenceObject.name + ". This might lead to errors if you're using either the SpeedSender or AngularSpeedSender functions.");
         }
 
         //Gets the CsoundUnity component attached to the object.

@@ -40,7 +40,6 @@ public class ResetStartingPosition : MonoBehaviour
         lowGravity.TurnOff();
         //Reset rigidbody
         rb.velocity = new Vector3(0, 0, 0);
-        rb.angularVelocity = new Vector3(0, 0, 0);
         rb.useGravity = false;
     }
 
@@ -59,6 +58,8 @@ public class ResetStartingPosition : MonoBehaviour
             moveTowardsStartingPos = false;
             //Reset CsoundUnity
             csoundUnity.SetChannel("reTrigger", 0); //turns off reTrigger
+            //Reset rigidbody
+            rb.angularVelocity = new Vector3(0, 0, 0);
         }
 
         transform.position = Vector3.MoveTowards(transform.position, startingPos, speed * Time.deltaTime);

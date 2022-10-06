@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Hand
   - Fruit
-  - Sample Player
   layers:
   - Default
   - TransparentFX
