@@ -1,34 +1,50 @@
 <Cabbage> bounds(0, 0, 0, 0)
-form caption("Trapped11") size(650, 300), guiMode("queue") pluginId("def1")
+form caption("Trapped11rev") size(650, 600), guiMode("queue") pluginId("def1")
 
-button  bounds(16, 60, 101, 44) channel("trigger") text("Trigger") textColour("white")
+button  bounds(42, 126, 101, 44) channel("trigger") text("Trigger") textColour("white")
+checkbox bounds(72, 176, 27, 28), channel("reTrigger"), , fontColour:0(255, 255, 255, 255)
+label    bounds(30, 212, 114, 22), text("ReTrigger"), fontColour(255, 255, 255, 255) channel("label9")
+hslider bounds(8, 238, 175, 50) channel("reTrigRate") range(.02, 20, 2, 1, 0.001) text("ReTrig Rate") textColour("white")
 
-hslider bounds(122, 56, 150, 50) channel("dur") range(3, 8, 5, 1, 0.001) text("Dur") textColour("white")
+hslider bounds(128, 62, 150, 50) channel("dur") range(3, 8, 5, 1, 0.001) text("Dur") textColour("white")
 hslider bounds(328, 66, 150, 50) channel("note") range(23, 98, 60, 1, 0.001) text("MIDI NN") textColour("white")
 hslider bounds(486, 66, 150, 50) channel("rndNote") range(0, 8, 3, 1, 0.001) text("Rnd NN") textColour("white")
 
-hslider bounds(454, 8, 150, 50) channel("amp") range(0, 1, .6, 1, 0.001) text("Synth Lvl") textColour("white")
+hslider bounds(384, 8, 150, 50) channel("amp") range(0, 1, .6, 1, 0.001) text("Synth Lvl") textColour("white")
 
 hslider bounds(214, 120, 162, 50) channel("mstrRate") range(10, 4000, 185, 1, 0.001) text("MasterRate") textColour("white")
 hslider bounds(384, 120, 150, 50) channel("mstrDpth") range(0, 40, 3, 1, 0.001) text("MasterDepth") textColour("white")
 
-hslider bounds(134, 176, 150, 50) channel("delaySend") range(0, 1, .76, 1, 0.001) text("Delay Send") textColour("white")
-hslider bounds(300, 178, 150, 50) channel("loopTime") range(.0005, 3.65, .78, 1, 0.001) text("Delay Time") textColour("white")
+hslider bounds(164, 178, 150, 50) channel("delaySend") range(0, 1, .76, 1, 0.001) text("Delay Send") textColour("white")
+hslider bounds(314, 178, 150, 50) channel("loopTime") range(.0005, 3.65, .78, 1, 0.001) text("Delay Time") textColour("white")
 hslider bounds(466, 178, 150, 50) channel("feedbasck") range(.5, 5.65, 3, 1, 0.001) text("Delay FeedB") textColour("white")
 
 hslider bounds(208, 238, 150, 50) channel("rvbSend") range(0, 1, .35, 1, 0.001) text("Rvb Send") textColour("white")
 hslider bounds(374, 236, 150, 50) channel("rvbPan") range(0, 11, .2, 1, 0.001) text("Rvb Pan") textColour("white")
 
-hslider bounds(294, 8, 150, 50) channel("masterLvl") range(0, 1, 0.7, 1, 0.001) text("Master Lvl") textColour("white")
+hslider bounds(224, 8, 150, 50) channel("masterLvl") range(0, 1, 0.7, 1, 0.001) text("Master Lvl") textColour("white")
 
-combobox bounds(90, 126, 100, 25), populate("*.snaps"), channelType("string") automatable(0) channel("combo31") text("sizzle", "burble") value("1")
-filebutton bounds(28, 126, 60, 25), text("Save", "Save"), populate("*.snaps", "test"), mode("named preset") channel("filebutton32")
-filebutton bounds(28, 156, 60, 25), text("Remove", "Remove"), populate("*.snaps", "test"), mode("remove preset") channel("filebutton33")
+hslider bounds(38, 354, 272, 50) channel("macro1") range(.1, 6, 1, .5, 0.001) text("M1y-pitch") textColour(255, 255, 255, 255)
+hslider bounds(38, 406, 272, 50) channel("macro2") range(1, 20, 5, .5, 0.001) text("M2x-filt") textColour(255, 255, 255, 255)
+hslider bounds(326, 354, 272, 55) channel("macro3") range(0, 1, .8, .5, 0.001) text("M3z-volVrb") textColour(255, 255, 255, 255)
+hslider bounds(326, 410, 272, 50) channel("macro4") range(.3, 10, 2, .4, 0.001) text("M4rot-Rate") textColour(255, 255, 255, 255)
+
+combobox bounds(82, 26, 100, 25), populate("*.snaps"), channelType("string") automatable(0) channel("combo31") text("sizzle", "burble", "high sigh", "trickle", "mid drone", "low2MidTurbulance", "init") value("1")
+filebutton bounds(20, 26, 60, 25), text("Save", "Save"), populate("*.snaps", "test"), mode("named preset") channel("filebutton32")
+filebutton bounds(20, 56, 60, 25), text("Remove", "Remove"), populate("*.snaps", "test"), mode("remove preset") channel("filebutton33")
 </Cabbage>
+
 <CsoundSynthesizer>
+
 <CsOptions>
 -n -dm0
 </CsOptions>
+
+; macro1 = Pitch (on Y axis)
+; macro2 = Filter or Spectral Content (on X asis)
+; macro3 = Volume and Verb (on Z axis)
+; macro4 = Rate (on Rotation)
+
 <CsInstruments>
 ksmps = 64
 nchnls = 2
@@ -46,7 +62,15 @@ instr 1
     iNote = chnget:i("frq")+rnd(chnget:i("rndNote"))
     iFrq = cpsmidinn(iNote)
     iAmp = chnget:i("amp")
+
     kTrig chnget "trigger"
+    kReTrig chnget "reTrigger"
+
+    if kReTrig == 1 then
+        kRndH randh chnget:k("reTrigRate")*chnget:k("macro4")*0.4, 4
+        kTrig metro chnget:k("reTrigRate")*chnget:k("macro4")+kRndH
+    endif    
+        
     if changed(kTrig) == 1 then
         event "i", "Trapped11", 0, iDur, iFrq, iAmp
     endif
@@ -68,35 +92,40 @@ k1             expseg    1, ip3 * .5, 40, ip3 * .5, 2
 k2             expseg    10, ip3 * .72, 35, ip3 * .28, 6
 k3             linen     ip6, ip3 * .333, ip3, ip3 * .333
 k4             randh     k1*kDepth, (k2*kRate)+rnd(12), .5
-a4             oscil     k3, kFrq + (kFrq * .05) + k4, 1, .1
+a4             oscil     k3, (kFrq + (kFrq * .05) + k4) * chnget:k("macro1"), 1, .1
      
 k5             linseg    .4, ip3 * .9, 26, ip3 * .1, 0
 k6             linseg    8, ip3 * .24, 20, ip3 * .76, 2
 k7             linen     ip6, ip3 * .5, ip3, ip3 * .46
 k8             randh     k5*kDepth, (k6*kRate)+rnd(10), .4
-a3             oscil     k7, kFrq + (kFrq * .03) + k8, 14, .3
+a3             oscil     k7, (kFrq + (kFrq * .03) + k8) * chnget:k("macro1"), 14, .3
 
 k9             expseg    1, ip3 * .7, 50, ip3 * .3, 2
 k10            expseg    10, ip3 * .3, 45, ip3 * .7, 6
 k11            linen     ip6, ip3 * .25, ip3, ip3 * .25
 k12            randh     k9*kDepth, (k10*kRate)+rnd(3), .5
-a2             oscil     k11, kFrq + (kFrq * .02) + k12, 1, .1
+a2             oscil     k11, (kFrq + (kFrq * .02) + k12) * chnget:k("macro1"), 1, .1
 
 k13            linseg    .4, ip3 * .6, 46, ip3 * .4, 0
 k14            linseg    18, ip3 * .1, 50, ip3 * .9, 2
 k15            linen     ip6, ip3 * .2, ip3, ip3 * .3
 k16            randh     k13*kDepth, (k14*kRate)+rnd(4), .8
-a1             oscil     k15, kFrq + (kFrq * .01) + k16, 14, .3
+a1             oscil     k15, (kFrq + (kFrq * .01) + k16) * chnget:k("macro1"), 14, .3
 
 kgate         transeg   1,ip3,0,0
 amix           =        (a1 + a2 + a3 + a4) * kgate
 aL             =        a1 + a3
 aR             =        a2 + a4
 
-              outs      aL * chnget:k("masterLvl"), aR * chnget:k("masterLvl")
+aFltL         moogladder2  aL, 200 * chnget:k("macro2"), .8
+aFltR         moogladder2  aR, 200 * chnget:k("macro2"), .8
+
+aMix            =  aFltL + aFltR
+
+              outs      aFltL * chnget:k("masterLvl") * chnget:k("macro3") , aFltR * chnget:k("masterLvl") * chnget:k("macro3") 
                 
-garvb          =         garvb + (amix * chnget:k("rvbSend")) 
-gadel          =         gadel + (amix * chnget:k("delaySend")) 
+garvb          =         garvb + (aMix * chnget:k("rvbSend") * (1-chnget:k("macro3"))) 
+gadel          =         gadel + (aMix * chnget:k("delaySend") * (1-chnget:k("macro3"))) 
                
 endin
 
@@ -106,7 +135,7 @@ kFeedback      =         chnget:k("feedback")
 iLoopTime      =         chnget:i("loopTime")
 aL             comb      gadel, kFeedback*rnd(1), iLoopTime+rnd(.8)
 aR             comb      gadel, kFeedback*rnd(1), iLoopTime+rnd(.5)
-               outs      aL*chnget:k("masterLvl"), aR*chnget:k("masterLvl")
+               outs      aL*chnget:k("masterLvl") * chnget:k("macro3") , aR*chnget:k("masterLvl") * chnget:k("macro3") 
 gadel          =         0
                endin
 
@@ -116,7 +145,7 @@ k1             oscil     .5, chnget:k("rvbPan"), 1
 k2             =         .5 + k1
 k3             =         1 - k2
 asig           reverb    garvb, 3.1
-               outs      (asig * k2) * chnget:k("masterLvl"), ((asig * k3) * (-1)) * chnget:k("masterLvl")
+               outs      (asig * k2) * chnget:k("masterLvl") * chnget:k("macro3") , ((asig * k3) * (-1)) * chnget:k("masterLvl") * chnget:k("macro3") 
 garvb          =         0
                endin
 
