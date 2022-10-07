@@ -1,0 +1,773 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5161089790463365691
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2506547694481049161, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6138fa93eb231407db270c85516e4feb, type: 2}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.725
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.09812912
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.44830903
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6003383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.6549684
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -44.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 2060.122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 608.704
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694483052681, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_Name
+      value: Fruit_Trapped09
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967760, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: InstrumentPresets.presetList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 54dc0f689598f46adb6b0d428892c8ee,
+        type: 2}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _csoundAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 740a5927887d04345a1dab14a0c92627,
+        type: 3}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _csoundString
+      value: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped09rev\") size(650,
+        450), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(70, 72,
+        101, 44) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\ncheckbox
+        bounds(104, 122, 27, 28), channel(\"reTrigger\"), , fontColour:0(255, 255,
+        255, 255)\r\nlabel    bounds(64, 152, 114, 22), text(\"ReTrigger\"), fontColour(255,
+        255, 255, 255) channel(\"label9\")\r\nhslider bounds(38, 176, 175, 50) channel(\"reTrigRate\")
+        range(.02, 20, 2, 1, 0.001) text(\"ReTrig Rate\") textColour(\"white\")\r\n\r\nhslider
+        bounds(330, 52, 150, 50) channel(\"dur\") range(2, 9, 4, 1, 0.001) text(\"Dur\")
+        textColour(\"white\")\r\nhslider bounds(240, 110, 150, 50) channel(\"note\")
+        range(20, 80, 50, 1, 0.001) text(\"MIDI NN\") textColour(\"white\")\r\nhslider
+        bounds(398, 110, 150, 50) channel(\"rndNote\") range(0, 8, 3, 1, 0.001) text(\"Rnd
+        NN\") textColour(\"white\")\r\n\r\nhslider bounds(482, 52, 150, 50) channel(\"amp\")
+        range(0, 1, .6, 1, 0.001) text(\"Synth Lvl\") textColour(\"white\")\r\n\r\nhslider
+        bounds(276, 164, 162, 50) channel(\"rndRate\") range(100, 400, 185, 1, 0.001)
+        text(\"RndRate\") textColour(\"white\")\r\nhslider bounds(442, 164, 150,
+        50) channel(\"rndAmp\") range(0, 10, 3.3, 1, 0.001) text(\"RndAmp\") textColour(\"white\")\r\n\r\nhslider
+        bounds(336, 236, 150, 50) channel(\"delaySend\") range(0, 1, .76, 1, 0.001)
+        text(\"Delay Send\") textColour(\"white\")\r\nhslider bounds(488, 236, 150,
+        50) channel(\"delayTime\") range(.001, 5, .08, 1, 0.001) text(\"Delay Time\")
+        textColour(\"white\")\r\n\r\nhslider bounds(20, 238, 150, 50) channel(\"rvbSend\")
+        range(0, 1, .45, 1, 0.001) text(\"Rvb Send\") textColour(\"white\")\r\nhslider
+        bounds(174, 238, 150, 50) channel(\"rvbPan\") range(0, 6, 4, 1, 0.001) text(\"Rvb
+        Pan\") textColour(\"white\")\r\n\r\nhslider bounds(178, 52, 150, 50) channel(\"masterLvl\")
+        range(0, 1, 0.9, 1, 0.001) text(\"Master Lvl\") textColour(\"white\")\r\n\r\nhslider
+        bounds(46, 302, 272, 50) channel(\"macro1\") range(1, 40, 1, .5, 0.001) text(\"M1y-pitch\")
+        textColour(255, 255, 255, 255)\r\nhslider bounds(46, 354, 272, 50) channel(\"macro2\")
+        range(1, 20, 5, .5, 0.001) text(\"M2x-filt\") textColour(255, 255, 255, 255)\r\nhslider
+        bounds(330, 300, 272, 50) channel(\"macro3\") range(0, 1, .8, .5, 0.001)
+        text(\"M3z-volVrb\") textColour(255, 255, 255, 255)\r\nhslider bounds(330,
+        356, 272, 50) channel(\"macro4\") range(.2, 10, 2, .4, 0.001) text(\"M4rot-Rate\")
+        textColour(255, 255, 255, 255)\r\n\r\ncombobox bounds(78, 12, 100, 25), populate(\"*.snaps\"),
+        channelType(\"string\") automatable(0) channel(\"combo31\") text(\"Low Pad1\",
+        \"Lower - Breathing\", \"Lower\", \"Higher + Rough\", \"Low Pad2\", \"Medium
+        Pad\") value(\"1\")\r\nfilebutton bounds(16, 12, 60, 25), text(\"Save\",
+        \"Save\"), populate(\"*.snaps\", \"test\"), mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton
+        bounds(16, 42, 60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\",
+        \"test\"), mode(\"remove preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+        -dm0\r\n</CsOptions>\r\n\r\n; macro1 = Pitch (on Y axis)\r\n; macro2 = Filter
+        or Spectral Content (on X asis)\r\n; macro3 = Volume and Verb (on Z axis)\r\n;
+        macro4 = Rate (on Rotation)\r\n\r\n<CsInstruments>\r\n; Initialize the global
+        variables. \r\nksmps = 32\r\nnchnls = 2\r\n0dbfs = 1\r\n\r\ngarvb         
+        init      0\r\ngadel          init      0\r\n\r\ngiSine ftgen 1, 0, 8192,
+        10, 1\r\ngiWav2 ftgen 2, 0, 8192, 10, 10, 8, 0, 6, 0, 4, 0, 1\r\ngiWav3 ftgen
+        3, 0, 8192, 10, 10, 0, 5, 5, 0, 4, 3, 0, 1\r\ngiWav4 ftgen 4, 0, 8192, 10,
+        10, 0, 9, 0, 0, 8, 0, 7, 0, 4, 0, 2, 0, 1\r\n\r\ngkRevPan init 4\r\n\r\ninstr
+        1\r\n    iDur = chnget:i(\"dur\")\r\n \r\n    iNote = chnget:i(\"frq\")+rnd(chnget:i(\"rndNote\"))\r\n   
+        iFrq = cpsmidinn(iNote)\r\n    iAmp = chnget:i(\"amp\")\r\n    \r\n    kTrig
+        chnget \"trigger\"\r\n    kReTrig chnget \"reTrigger\"\r\n\r\n    if kReTrig
+        == 1 then\r\n        kRndH randh chnget:k(\"reTrigRate\")*chnget:k(\"macro4\")*0.4,
+        4\r\n        kTrig metro chnget:k(\"reTrigRate\")*chnget:k(\"macro4\")+kRndH\r\n   
+        endif\r\n    \r\n    if changed(kTrig) == 1 then\r\n        event \"i\",
+        \"Trapped09\", 0, iDur, iFrq, iAmp\r\n    endif\r\nendin\r\n\r\n\r\ninstr    
+        Trapped09\r\n\r\nip3    = chnget:i(\"dur\")\r\n\r\niamp   = chnget:i(\"amp\")*.2\r\n             
+        \r\nkNote  = chnget:k(\"note\")+rnd(chnget:i(\"rndNote\"))\r\nkFrq   = cpsmidinn(kNote)*.25\r\n\r\nkRndAmp 
+        = chnget:k(\"rndAmp\")\r\nkRndFrq  = chnget:k(\"rndRate\")\r\n                                                                                       
+        \r\nk2             randh     kRndAmp, kRndFrq, .1                     \r\nk3            
+        randh     kRndAmp * .98, kRndFrq * .91, .2             \r\nk4            
+        randh     kRndAmp * 1.2, kRndFrq * .96, .3            \r\nk5            
+        randh     kRndAmp * .9, kRndFrq * 1.3     \r\n                       \r\nkenv          
+        linen    iamp, ip3 *.2, ip3, ip3 * .8  \r\n\r\na1             oscil     kenv,
+        (kFrq + k2) * chnget:k(\"macro1\"), giSine, .2             \r\na2            
+        oscil     kenv * .91, ((kFrq + .004) + k3) * chnget:k(\"macro1\"), giWav2,
+        .3\r\na3             oscil     kenv * .85, ((kFrq + .006) + k4) * chnget:k(\"macro1\"),
+        giWav3, .5\r\na4             oscil     kenv * .95, ((kFrq + .009) + k5) *
+        chnget:k(\"macro1\"), giWav4, .8\r\n\r\naL             =        a1 + a3\r\naR            
+        =        a2 + a4\r\n\r\naFltL         moogladder2  aL, 200 * chnget:k(\"macro2\"),
+        .8\r\naFltR         moogladder2  aR, 200 * chnget:k(\"macro2\"), .8\r\n\r\nkgate        
+        transeg   1, ip3, 0, 0 \r\naMix           =        (aFltL + aFltR) * kgate\r\n\r\n             
+        outs      aFltL * chnget:k(\"masterLvl\") * chnget:k(\"macro3\"), aFltR *
+        chnget:k(\"masterLvl\") * chnget:k(\"macro3\")\r\n                \r\ngarvb         
+        =         garvb + (aMix * chnget:k(\"rvbSend\") * (1-chnget:k(\"macro3\")))
+        \r\ngadel          =         gadel + (aMix * chnget:k(\"delaySend\") * (1-chnget:k(\"macro3\")))
+        \r\n               \r\nendin\r\n\r\n               instr     Delay\r\n              
+        denorm    gadel\r\nip3    = chnget:i(\"dur\")\r\nkgate          expseg   
+        1, ip3*.7, 1, ip3*.3, .0001\r\nasig           delay     gadel, chnget:i(\"delayTime\")\r\nasig
+        = asig*kgate\r\nkgate adsr .01,.01,.9,.1\r\n               outs      asig*chnget:k(\"masterLvl\")
+        * kgate  * chnget:k(\"macro3\"), asig*chnget:k(\"masterLvl\") * kgate  *
+        chnget:k(\"macro3\")\r\ngadel          =         0\r\n               endin\r\n\r\n\r\n              
+        instr     Reverb \r\n               denorm    garvb                   \r\nk1            
+        oscil     .5, chnget:k(\"rvbPan\"), 1\r\nk2             =         .5 + k1\r\nk3            
+        =         1 - k2\r\nasig           reverb    garvb, 3.1\r\nkgate adsr .01,.01,.9,.1\r\n              
+        outs      (asig * k2) * chnget:k(\"masterLvl\") * kgate  * chnget:k(\"macro3\"),
+        ((asig * k3) * (-1)) * chnget:k(\"masterLvl\") * kgate  * chnget:k(\"macro3\")\r\ngarvb         
+        =         0\r\n               endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes
+        Csound to run for about 7000 years...\r\nf0 z\r\n;starts instrument 1 and
+        runs it for a week\r\ni1 0 [60*60*24*7] \r\ni \"Delay\" 0 [60*60*24*7]\r\ni
+        \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _csoundFileGUID
+      value: 740a5927887d04345a1dab14a0c92627
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _csoundFileName
+      value: CAB-Trapped09.csd
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.size
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _currentPresetLoadFolder
+      value: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+        In The Garden/Assets/Cabbage/Trapped09/Presets
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _currentPresetSaveFolder
+      value: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+        In The Garden/Assets/Cabbage/Trapped09/Presets
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[1].max
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[2].max
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[3].max
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[3].min
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[4].max
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[4].min
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[5].max
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[5].min
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[6].max
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[6].min
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[7].max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[7].min
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[8].max
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[8].min
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[9].max
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[10].max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[10].min
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[11].max
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[11].min
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[12].max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[12].min
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[13].max
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[13].min
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[14].max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[14].min
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[15].max
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[15].min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[16].max
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[16].min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[17].min
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[18].max
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[18].min
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[19].max
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[1].text
+      value: Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[1].type
+      value: button
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[20].max
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[21].max
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[21].min
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[2].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[2].type
+      value: checkbox
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[3].text
+      value: ReTrig Rate
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[5].text
+      value: MIDI NN
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[6].text
+      value: Rnd NN
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[7].text
+      value: Synth Lvl
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[8].text
+      value: RndRate
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[8].type
+      value: hslider
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[9].text
+      value: RndAmp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[9].type
+      value: hslider
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[10].text
+      value: Delay Send
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[11].text
+      value: Delay Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[12].text
+      value: Rvb Send
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[13].text
+      value: Rvb Pan
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[14].text
+      value: Master Lvl
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[15].text
+      value: M1y-pitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[16].text
+      value: M2x-filt
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[17].text
+      value: M3z-volVrb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[18].text
+      value: M4rot-Rate
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[19].text
+      value: Low Pad1, Lower - Breathing, Lower, Higher + Rough, Low Pad2, Medium
+        Pad
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[19].type
+      value: combobox
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[20].text
+      value: Save, Save
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[20].type
+      value: filebutton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[21].text
+      value: Remove, Remove
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[21].type
+      value: filebutton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[2].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[3].value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[4].value
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[5].value
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[6].value
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[7].value
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[8].value
+      value: 185
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[9].value
+      value: 3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[10].value
+      value: 0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[11].value
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[12].value
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[13].value
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[14].value
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[15].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[16].value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[17].value
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[18].value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[19].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[20].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[21].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[0].caption
+      value: Trapped09rev
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[1].channel
+      value: trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[2].channel
+      value: reTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[3].channel
+      value: reTrigRate
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[5].channel
+      value: note
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[6].channel
+      value: rndNote
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[7].channel
+      value: amp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[8].channel
+      value: rndRate
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[9].channel
+      value: rndAmp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[10].channel
+      value: delaySend
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[11].channel
+      value: delayTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[12].channel
+      value: rvbSend
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[13].channel
+      value: rvbPan
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[14].channel
+      value: masterLvl
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[15].channel
+      value: macro1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[16].channel
+      value: macro2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[17].channel
+      value: macro3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[18].channel
+      value: macro4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[19].channel
+      value: combo31
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[20].channel
+      value: filebutton32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[21].channel
+      value: filebutton33
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[19].options.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[19].options.Array.data[0]
+      value: LowPad1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[19].options.Array.data[1]
+      value: Lower-Breathing
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[19].options.Array.data[2]
+      value: Lower
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[19].options.Array.data[3]
+      value: Higher+Rough
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[19].options.Array.data[4]
+      value: LowPad2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[19].options.Array.data[5]
+      value: MediumPad
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967762, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -6723332161769060175, guid: 33aef14e891e44557934992ef89f48b1,
+        type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2d97896df567649b9a8c5246ee22bed6, type: 3}

@@ -1,0 +1,683 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8154629929719330292
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2506547694481049161, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95500962bf98840d38b252e617255d66, type: 2}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.725
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.09812912
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.44830903
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6003383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.6549684
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -44.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 2060.122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 608.704
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694483052681, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_Name
+      value: Fruit_Trapped08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967760, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: InstrumentPresets.presetList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1c231518a083c42e5ba1635c616b34c0,
+        type: 2}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _csoundAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: df649fc9e2891454080f963114a96cee,
+        type: 3}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _csoundString
+      value: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped08rev\") size(650,
+        450), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(34, 158,
+        86, 55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\ncheckbox
+        bounds(60, 218, 27, 28), channel(\"reTrigger\"), , fontColour:0(255, 255,
+        255, 255)\r\nlabel    bounds(18, 250, 114, 22), text(\"ReTrigger\"), fontColour(255,
+        255, 255, 255) channel(\"label9\")\r\nhslider bounds(4, 284, 175, 50) channel(\"reTrigRate\")
+        range(.02, 20, 2, 1, 0.001) text(\"ReTrig Rate\") textColour(\"white\")\r\n\r\nhslider
+        bounds(18, 86, 175, 50) channel(\"dur\") range(2, 9, 3, 1, 0.001) text(\"Dur\")
+        textColour(\"white\")\r\n\r\nhslider bounds(178, 8, 158, 50) channel(\"masterLvl\")
+        range(0, 1, 0.7, 1, 0.001) text(\"Master Lvl\") textColour(\"white\")\r\nhslider
+        bounds(486, 8, 150, 50) channel(\"verbLvl\") range(0, 1, 0.5, 1, 0.001) text(\"Verb
+        Lvl\") textColour(\"white\")\r\nhslider bounds(336, 8, 150, 50) channel(\"amp\")
+        range(0, 1, 0.7, 1, 0.001) text(\"Synth Lvl\") textColour(255, 255, 255,
+        255)\r\n\r\nhslider bounds(216, 64, 160, 52) channel(\"frq\") range(20, 2000,
+        1000, 1, 0.001) text(\"Freq\") textColour(\"white\")\r\nhslider bounds(388,
+        64, 150, 50) channel(\"rndFrq\") range(1, 4, 2, 1, 0.001) text(\"RandFreq\")
+        textColour(\"white\")\r\n\r\nhslider bounds(154, 176, 168, 51) channel(\"fltRange\")
+        range(.5, 2, 1, 1, 0.001) text(\"FilterPeak\") textColour(\"white\")\r\nhslider
+        bounds(326, 176, 161, 51) channel(\"fltCF\") range(10, 5000, 1800, 1, 0.001)
+        text(\"FilterCF\") textColour(\"white\")\r\nhslider bounds(492, 178, 151,
+        50) channel(\"fltBW\") range(.04, .1, .05, 1, 0.001) text(\"FilterBW\") textColour(\"white\")\r\n\r\nhslider
+        bounds(152, 232, 168, 48) channel(\"masterRate\") range(.5, 2, 1, 1, 0.001)
+        text(\"MasterRate\") textColour(\"white\")\r\nhslider bounds(326, 232, 159,
+        50) channel(\"rndRate1\") range(.1, 32, 13, 1, 0.001) text(\"RndRate1\")
+        textColour(\"white\")\r\nhslider bounds(492, 234, 150, 50) channel(\"rndRate2\")
+        range(.1, 32, 10, 1, 0.001) text(\"RndRate2\") textColour(\"white\")\r\n\r\nhslider
+        bounds(216, 120, 161, 50) channel(\"rvbSend\") range(0, 1, .15, 1, 0.001)
+        text(\"Rvb Send\") textColour(\"white\")\r\nhslider bounds(386, 120, 150,
+        50) channel(\"rvbPan\") range(.001, 9, .9, 1, 0.001) text(\"Rvb Pan\") textColour(\"white\")\r\n\r\nhslider
+        bounds(48, 332, 272, 50) channel(\"macro1\") range(.1, 5, 5, .5, 0.001) text(\"M1y-pitch\")
+        textColour(255, 255, 255, 255)\r\nhslider bounds(48, 384, 272, 50) channel(\"macro2\")
+        range(1, 30, 5, .5, 0.001) text(\"M2x-filt\") textColour(255, 255, 255, 255)\r\nhslider
+        bounds(332, 330, 272, 50) channel(\"macro3\") range(0, 1, .8, .5, 0.001)
+        text(\"M3z-volVrb\") textColour(255, 255, 255, 255)\r\nhslider bounds(332,
+        386, 272, 50) channel(\"macro4\") range(.4, 10, 2, .4, 0.001) text(\"M4rot-Rate\")
+        textColour(255, 255, 255, 255)\r\n\r\ncombobox bounds(70, 10, 100, 25), populate(\"*.snaps\"),
+        channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\")
+        text(\"Init\", \"Slower Verb - Slow Noise\", \"Lower, Slower, Pong\", \"Trudging\",
+        \"Swirling\", \"Grooving (a bit)\", \"SubtleSweep\", \"Jittering2\")\r\nfilebutton
+        bounds(6, 10, 60, 25), text(\"Save\", \"Save\"), populate(\"*.snaps\", \"test\"),
+        mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton bounds(6,
+        38, 60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\", \"test\"),
+        mode(\"remove preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+        -dm0\r\n</CsOptions>\r\n\r\n; macro1 = Pitch (on Y axis)\r\n; macro2 = Filter
+        or Spectral Content (on X asis)\r\n; macro3 = Volume and Verb (on Z axis)\r\n;
+        macro4 = Rate (on Rotation)\r\n\r\n<CsInstruments>\r\nksmps = 32\r\nnchnls
+        = 2\r\n0dbfs = 1\r\n\r\ngarvb  init  0\r\n\r\ngiSine ftgen 1, 0, 8192, 10,
+        1\r\ngiFun20 ftgen 20, 0, 16, -2, 0, 30, 40, 45, 50, 40, 30, 20, 10, 5, 4,
+        3, 2, 1, 0, 0, 0\r\ngiFun21 ftgen 21, 0, 16, -2, 0, 20, 15, 10, 9, 8, 7,
+        6, 5, 4, 3, 2, 1, 0, 0\r\n\r\ngkRevPan init 6\r\n\r\ninstr 1\r\n    iDur
+        = chnget:i(\"dur\")\r\n    iFrq = chnget:i(\"frq\")*rnd(chnget:i(\"rndFrq\"))\r\n   
+        iAmp = chnget:i(\"amp\")\r\n    \r\n    kTrig chnget \"trigger\"\r\n    kReTrig
+        chnget \"reTrigger\"\r\n\r\n    if kReTrig == 1 then\r\n        kRndH randh
+        chnget:k(\"reTrigRate\")*chnget:k(\"macro4\")*0.4, 4\r\n        kTrig metro
+        chnget:k(\"reTrigRate\")*chnget:k(\"macro4\")+kRndH\r\n    endif\r\n\r\n   
+        if changed(kTrig) == 1 then\r\n        event \"i\", \"Trapped08\", 0, iDur,
+        iFrq, iAmp \r\n    endif\r\nendin\r\n\r\n\r\n            instr     Trapped08\r\n\r\niFunLen    
+        = 16\r\n\r\niDur        = chnget:i(\"dur\")\r\n\r\niAmp        = chnget:i(\"amp\")\r\n             
+        \r\niFrq        = chnget:i(\"frq\")*rnd(chnget:i(\"rndFrq\"))\r\n\r\nkMastrRat  
+        = chnget:k(\"masterRate\")\r\niRndRate1   = chnget:i(\"rndRate1\")\r\niRndRate2  
+        = chnget:i(\"rndRate2\")\r\n\r\nkFltRange = chnget:k(\"fltRange\")\r\niFltCF   
+        = chnget:i(\"fltCF\")\r\nkFltBW    = chnget:k(\"fltBW\")                                                                                       
+        \r\n\r\nanoise         rand      .4                                                                                                   
+        \r\n\r\nk1             transeg   iFrq, iDur, 0, iFltCF                    
+        \r\nk2             transeg   iRndRate1, iDur, 0, iRndRate1 * .93             
+        \r\nk3             phasor    k2 * kMastrRat  * chnget:k(\"macro1\")                         
+        \r\nk4             table     k3 * iFunLen, giFun20                                            
+        \r\naflt1          butterbp  anoise, k1 * kFltRange * chnget:k(\"macro1\"),
+        20 + (k4 * k1 * kFltBW), 1         \r\n\r\nk5             linsegr   iFltCF
+        * .9, iDur * .8, iFrq * 1.4, iDur * .2, iFrq * 1.4\r\nk6             transeg  
+        iRndRate2 * .97, iDur, 0, iRndRate2\r\nk7             phasor    k6 * kMastrRat 
+        * chnget:k(\"macro1\")\r\nk8             tablei    k7 * iFunLen, giFun21\r\naflt2         
+        butterbp  anoise, k5 * kFltRange  * chnget:k(\"macro1\"), 30 + (k8 * k5 *
+        (kFltBW * .9)), 1\r\n\r\nk11            linenr    iAmp, .015, iDur, .85\r\na3            
+        =         aflt1 * k11\r\na5             =         aflt2 * k11\r\n\r\nk9            
+        randh     1, k2\r\naL          =         ((a3 * k9) * .7) + ((a5 * k9) *
+        .3)     \r\nk10            randh     1, k6\r\naR         =         ((a3 *
+        k10) * .3) + ((a5 * k10) * .7)\r\n\r\n\r\naFltL         moogladder2  aL,
+        200 * chnget:k(\"macro2\"), .8\r\naFltR         moogladder2  aR, 200 * chnget:k(\"macro2\"),
+        .8\r\n\r\n\r\nkgate         transeg   1, iDur, 0, 0 \r\naMix           =       
+        (aFltL + aFltR) * kgate\r\n\r\n             outs      aFltL * chnget:k(\"masterLvl\")
+        * chnget:k(\"macro3\"), aFltR * chnget:k(\"masterLvl\") * chnget:k(\"macro3\")\r\n            
+        \r\ngarvb          =         garvb + (aMix * chnget:k(\"rvbSend\") * (1-chnget:k(\"macro3\")))
+        \r\n \r\n               endin\r\n\r\n               instr     Reverb \r\n              
+        denorm    garvb                   \r\nk1             oscil     .5, chnget:k(\"rvbPan\"),
+        1\r\nk2             =         .5 + k1\r\nk3             =         1 - k2\r\nasig          
+        reverb    garvb, 3.1\r\n               outs      (asig * k2) * chnget:k(\"verbLvl\")
+        * chnget:k(\"masterLvl\") * chnget:k(\"macro3\"), ((asig * k3) * (-1)) *
+        chnget:k(\"verbLvl\") * chnget:k(\"masterLvl\") * chnget:k(\"macro3\")\r\ngarvb         
+        =         0\r\n               endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes
+        Csound to run for about 7000 years...\r\nf0 z\r\n;starts instrument 1 and
+        runs it for a week\r\ni1 0 [60*60*24*7] \r\ni \"Reverb\" 0 [60*60*24*7] 
+        \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _csoundFileGUID
+      value: df649fc9e2891454080f963114a96cee
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _csoundFileName
+      value: CAB-Trapped08.csd
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _currentPresetLoadFolder
+      value: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+        In The Garden/Assets/Cabbage/Trapped08/Presets
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[1].max
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[2].max
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[3].max
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[3].min
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[4].max
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[4].min
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[5].max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[5].min
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[6].max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[6].min
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[7].max
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[7].min
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[8].max
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[8].min
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[9].max
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[9].min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[10].max
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[10].min
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[11].max
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[11].min
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[12].max
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[12].min
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[13].max
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[13].min
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[14].max
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[14].min
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[15].max
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[15].min
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[17].max
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[18].max
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[19].max
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[1].text
+      value: Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[1].type
+      value: button
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[21].min
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[22].max
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[22].min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[2].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[2].type
+      value: checkbox
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[3].text
+      value: ReTrig Rate
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[5].text
+      value: Master Lvl
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[6].text
+      value: Verb Lvl
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[7].text
+      value: Synth Lvl
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[8].text
+      value: Freq
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[8].type
+      value: hslider
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[9].text
+      value: RandFreq
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[9].type
+      value: hslider
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[10].text
+      value: FilterPeak
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[11].text
+      value: FilterCF
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[12].text
+      value: FilterBW
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[13].text
+      value: MasterRate
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[14].text
+      value: RndRate1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[15].text
+      value: RndRate2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[22].text
+      value: Init, Slower Verb - Slow Noise, Lower, Slower, Pong, Trudging, Swirling,
+        Grooving (a bi
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[2].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[3].value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[4].value
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[5].value
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[6].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[7].value
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[8].value
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[9].value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[10].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[11].value
+      value: 1800
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[12].value
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[13].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[14].value
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[15].value
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[16].value
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[17].value
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[18].value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[0].caption
+      value: Trapped08rev
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[1].channel
+      value: trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[2].channel
+      value: reTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[3].channel
+      value: reTrigRate
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[5].channel
+      value: masterLvl
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[6].channel
+      value: verbLvl
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[7].channel
+      value: amp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[8].channel
+      value: frq
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[9].channel
+      value: rndFrq
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[10].channel
+      value: fltRange
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[11].channel
+      value: fltCF
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[12].channel
+      value: fltBW
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[13].channel
+      value: masterRate
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[14].channel
+      value: rndRate1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[15].channel
+      value: rndRate2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[22].options.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[22].options.Array.data[0]
+      value: Init
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[22].options.Array.data[1]
+      value: SlowerVerb-SlowNoise
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[22].options.Array.data[2]
+      value: Lower
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[22].options.Array.data[3]
+      value: Slower
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[22].options.Array.data[4]
+      value: Pong
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[22].options.Array.data[5]
+      value: Trudging
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[22].options.Array.data[6]
+      value: Swirling
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.data[22].options.Array.data[7]
+      value: Grooving(abi
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967762, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -4218384143899540674, guid: 33aef14e891e44557934992ef89f48b1,
+        type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2d97896df567649b9a8c5246ee22bed6, type: 3}

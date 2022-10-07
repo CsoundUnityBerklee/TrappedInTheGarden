@@ -80,7 +80,7 @@ PrefabInstance:
     - target: {fileID: 4205494661938133880, guid: 838941d2b963942b48291800da23a089,
         type: 3}
       propertyPath: m_Name
-      value: Fruit_Trapped07
+      value: Fruit_Trapped07 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4205494661940061624, guid: 838941d2b963942b48291800da23a089,
         type: 3}
@@ -783,6 +783,12 @@ PrefabInstance:
       propertyPath: InstrumentPresets.presetList.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: e39370067e0b74541b84915bd628556a,
+        type: 2}
+    - target: {fileID: 4205494662556046051, guid: 838941d2b963942b48291800da23a089,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 8053203188775462596, guid: 33aef14e891e44557934992ef89f48b1,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 838941d2b963942b48291800da23a089, type: 3}

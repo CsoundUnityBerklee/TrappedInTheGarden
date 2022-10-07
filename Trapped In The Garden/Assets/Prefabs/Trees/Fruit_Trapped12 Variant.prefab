@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6614933009461070540
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2506547694481049161, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c117d972b56484f2686a7247d1f0f408, type: 2}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.725
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.09812912
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.44830903
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6003383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.6549684
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -44.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 2060.122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694482949289, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 608.704
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694483052681, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: m_Name
+      value: Fruit_Trapped12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967760, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: InstrumentPresets.presetList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 90986a40c93634c95bcf4ccb4347bd46,
+        type: 2}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _csoundAsset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _csoundString
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _csoundFileGUID
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _csoundFileName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _channels.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _currentPresetLoadFolder
+      value: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+        In The Garden/Assets/Cabbage/Trapped12/Presets
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967761, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: _currentPresetSaveFolder
+      value: /Users/caiojmini/Documents/_CaioDocs/Unity/CsoundUnity/CsoundUnityBerklee/TrappedInTheGarden/Trapped
+        In The Garden/Assets/Cabbage/Trapped12/Presets
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506547694811967762, guid: 2d97896df567649b9a8c5246ee22bed6,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -4746333114382524269, guid: 33aef14e891e44557934992ef89f48b1,
+        type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2d97896df567649b9a8c5246ee22bed6, type: 3}
