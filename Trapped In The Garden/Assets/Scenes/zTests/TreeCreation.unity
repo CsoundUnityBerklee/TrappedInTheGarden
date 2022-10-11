@@ -399,6 +399,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Trapped02_Automatic
       objectReference: {fileID: 0}
+    - target: {fileID: 7259280341383411964, guid: 464baabce125f4d71a959e2ca0c08f5c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 464baabce125f4d71a959e2ca0c08f5c, type: 3}
 --- !u!1 &744852391
@@ -591,7 +596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 2103649951}
-  m_MoveSpeed: 1
+  m_MoveSpeed: 4
   m_EnableStrafe: 1
   m_UseGravity: 1
   m_GravityApplicationMode: 1
@@ -682,6 +687,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Trapped06_Automatic
       objectReference: {fileID: 0}
+    - target: {fileID: 8911693881968758538, guid: 02f8c2e78038b44f389840d85600edb9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8911693881968758549, guid: 02f8c2e78038b44f389840d85600edb9,
         type: 3}
       propertyPath: m_RootOrder
@@ -751,6 +761,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Trapped11_Automatic
       objectReference: {fileID: 0}
+    - target: {fileID: 4888750034030591878, guid: 1cede42863e224af38aac04b8818f1bb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4888750034030591897, guid: 1cede42863e224af38aac04b8818f1bb,
         type: 3}
       propertyPath: m_RootOrder
@@ -819,6 +834,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tree_Trapped08_Automatic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6023574006160460937, guid: 36470b9a4dcc6455f81077f425fb201d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6023574006160460950, guid: 36470b9a4dcc6455f81077f425fb201d,
         type: 3}
@@ -944,6 +964,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Trapped07_Automatic
       objectReference: {fileID: 0}
+    - target: {fileID: 6727312566965816053, guid: 26677a35c07ac41f1b077d1873176c64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26677a35c07ac41f1b077d1873176c64, type: 3}
 --- !u!1001 &5533187762826271470
@@ -957,6 +982,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tree_Trapped03_Automatic
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916065323647477741, guid: 814ee4c825c1444ffb4d6b5e80098806,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2916065323647477746, guid: 814ee4c825c1444ffb4d6b5e80098806,
         type: 3}
@@ -1082,6 +1112,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Trapped10_Automatic
       objectReference: {fileID: 0}
+    - target: {fileID: 3011532575862408285, guid: e9cb78921c11e42819c122eab099392f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9cb78921c11e42819c122eab099392f, type: 3}
 --- !u!1001 &6999991221679433364
@@ -1095,6 +1130,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tree_Trapped04_Automatic
+      objectReference: {fileID: 0}
+    - target: {fileID: 403868143543619397, guid: 7a6aa4d70907c4727b87eb3a72c85088,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 403868143543619418, guid: 7a6aa4d70907c4727b87eb3a72c85088,
         type: 3}
@@ -1220,6 +1260,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Trapped09_Automatic
       objectReference: {fileID: 0}
+    - target: {fileID: 760477382609446480, guid: a84857e4c06f94febb005fddb6244d5a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a84857e4c06f94febb005fddb6244d5a, type: 3}
 --- !u!1001 &8498308648765947078
@@ -1289,6 +1334,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Trapped05_Automatic
       objectReference: {fileID: 0}
+    - target: {fileID: 1246982193210772601, guid: d3fbd651b881140198c120437a7a75f6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3fbd651b881140198c120437a7a75f6, type: 3}
 --- !u!1001 &8549385721773822196
@@ -1302,6 +1352,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tree_Trapped12_Automatic
+      objectReference: {fileID: 0}
+    - target: {fileID: 1304812466633124806, guid: 900205682c6d0434683e7970ef2e5386,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1304812466633124825, guid: 900205682c6d0434683e7970ef2e5386,
         type: 3}

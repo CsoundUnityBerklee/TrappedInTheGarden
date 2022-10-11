@@ -49,7 +49,7 @@ public class CsoundSender : MonoBehaviour
 
         Debug.Log("CSOUND INITIALIZED");
 
-        ////Calls SetPreset if setPresetOnStart is true.
+        //Calls SetPreset if setPresetOnStart is true.
         if (InstrumentPresets.setPresetOnStart)
             SetPreset(InstrumentPresets.presetIndexOnStart);
 
