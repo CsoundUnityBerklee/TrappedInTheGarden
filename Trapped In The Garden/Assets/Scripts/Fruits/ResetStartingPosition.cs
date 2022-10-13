@@ -8,7 +8,8 @@ public class ResetStartingPosition : MonoBehaviour
     private float timer = 5f;
     private Rigidbody rb;
     private LowGravity lowGravity;
-    private float speed = 20f;
+    private float speed = 5f;
+    private float speedIncrement = 0.35f;
     private bool moveTowardsStartingPos = false;
 
     // Start is called before the first frame update
@@ -18,7 +19,6 @@ public class ResetStartingPosition : MonoBehaviour
         startingPos = transform.position;
         csoundUnity = GetComponentInChildren<CsoundUnity>();
         lowGravity = GetComponent<LowGravity>();
-        //ResetPositionTimer();
     }
 
     public void ResetPositionTimer()
@@ -41,6 +41,7 @@ public class ResetStartingPosition : MonoBehaviour
         //Reset rigidbody
         rb.velocity = new Vector3(0, 0, 0);
         rb.angularVelocity = new Vector3(0, 0, 0);
+
         rb.useGravity = false;
     }
 
@@ -61,6 +62,7 @@ public class ResetStartingPosition : MonoBehaviour
             csoundUnity.SetChannel("reTrigger", 0); //turns off reTrigger
         }
 
+        speed += speedIncrement;
         transform.position = Vector3.MoveTowards(transform.position, startingPos, speed * Time.deltaTime);
     }
 }

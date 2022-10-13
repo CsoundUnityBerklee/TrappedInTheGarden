@@ -5,7 +5,6 @@ using UnityEngine;
 public class LowGravity : MonoBehaviour
 {
     private Rigidbody rb;
-    private Vector3 gravityVector = new Vector3(0, 7, 0);
     bool lowGravity = false;
 
     // Start is called before the first frame update
@@ -13,27 +12,18 @@ public class LowGravity : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (!lowGravity) { return; }
-
-        rb.AddForce(gravityVector, ForceMode.Force);
-    }
-
     public void TurnOn()
     {
         lowGravity = true;
-        rb.useGravity = false;
+        StartCoroutine(DisableRbGravity());
     }
 
     public void TurnOff()
     {
         lowGravity = false;
         rb.useGravity = false;
-        rb.velocity = new Vector3(0, 0, 0);
-        rb.angularVelocity = new Vector3(0, 0, 0);
+        //rb.velocity = new Vector3(0, 0, 0);
+        //rb.angularVelocity = new Vector3(0, 0, 0);
     }
 
     public void Toggle()
@@ -42,5 +32,11 @@ public class LowGravity : MonoBehaviour
             TurnOff();
         else
             TurnOn();
+    }
+
+    private IEnumerator DisableRbGravity()
+    {
+        yield return new WaitForSeconds(0.2f);
+        rb.useGravity = false;
     }
 }
