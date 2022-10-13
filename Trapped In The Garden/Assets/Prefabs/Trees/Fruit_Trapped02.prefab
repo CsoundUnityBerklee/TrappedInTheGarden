@@ -511,7 +511,8 @@ MonoBehaviour:
     debugTrigger: 0
     triggerValue: 0
   ChannelValues:
-    setChannelValuesList: []
+    setChannelValuesList:
+    - {fileID: 11400000, guid: 4662cc1babfe5460eb5961d3e1da3a1a, type: 2}
     channelValueIndexOnStart: 0
     setChannelValueOnStart: 0
     debugChannelsValues: 0

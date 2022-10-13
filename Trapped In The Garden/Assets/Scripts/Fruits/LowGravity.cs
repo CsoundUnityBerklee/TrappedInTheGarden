@@ -24,13 +24,13 @@ public class LowGravity : MonoBehaviour
 
     public void TurnOn()
     {
-        //lowGravity = true;
+        lowGravity = true;
         rb.useGravity = false;
     }
 
     public void TurnOff()
     {
-        //lowGravity = false;
+        lowGravity = false;
         rb.useGravity = false;
         rb.velocity = new Vector3(0, 0, 0);
         rb.angularVelocity = new Vector3(0, 0, 0);

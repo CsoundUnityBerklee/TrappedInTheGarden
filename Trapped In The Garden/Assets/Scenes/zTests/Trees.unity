@@ -652,9 +652,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7305289060051376998, guid: 514e207b3280c4484929b5cfe57ae88a,
         type: 3}
+      propertyPath: joystickPressEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7305289060051376998, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
       propertyPath: joystickPressEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1345997249}
+    - target: {fileID: 8540778156202688707, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: joystickPressEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8540778156202688707, guid: 514e207b3280c4484929b5cfe57ae88a,
         type: 3}
       propertyPath: joystickPressEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
