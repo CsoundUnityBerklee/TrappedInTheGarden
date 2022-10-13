@@ -5,7 +5,7 @@ public class ResetStartingPosition : MonoBehaviour
 {
     private CsoundUnity csoundUnity;
     private Vector3 startingPos;
-    private float timer = 6f;
+    private float timer = 2f;
     private Rigidbody rb;
     private LowGravity lowGravity;
     private float speed = 20f;

@@ -58,7 +58,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 35
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -77,8 +77,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.979126
-      value: 0.9468727
+      time: 1
+      value: 0.08148193
       inSlope: 0.032838695
       outSlope: 0.032838695
       tangentMode: 0
@@ -140,8 +140,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.32092524
-      value: 0.9994569
+      time: 0.4044366
+      value: 0.99630594
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
     setXPositionTo: 2
     setYPositionTo: 0
     setZPositionTo: 3
-    posVectorRangesMax: {x: 0.5, y: 3.5, z: 0}
+    posVectorRangesMax: {x: 0.7, y: 3.5, z: 0}
     posVectorRangesMin: {x: -0.3, y: 1.5, z: 0}
     csoundChannelsPosX: {fileID: 11400000, guid: 84c411543dd644a9da83a98784411607,
       type: 2}
@@ -616,7 +616,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6163393411262137406}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f9d67077898143d5a14d18e61c7e245, type: 3}
   m_Name: 

@@ -15,5 +15,5 @@ MonoBehaviour:
   channelData:
   - name: macro2
     minValue: 1
-    maxValue: 20
+    maxValue: 40
     returnAbsoluteValue: 0

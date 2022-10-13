@@ -5,8 +5,8 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/zTests/TreeCreation.unity
+  - enabled: 1
+    path: Assets/Scenes/zTests/TreeCreation02-05.unity
     guid: 1f36f7e45f13a43f5a561f088ffb477b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2b17d46d4379947238e6056fd6aa558f,
