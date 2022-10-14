@@ -61,11 +61,13 @@ public class GetGrabbedFruitObject : MonoBehaviour
         {
             csoundTransformSender.UpdateRotation(true);
             csoundUnity.SetChannel("reTrigger", 1);
+            csoundUnity.SetChannel("masterLvl", 0.25f);
             rotationToggle = false;
         }
         else
         {
             csoundUnity.SetChannel("reTrigger", 0);
+            csoundUnity.SetChannel("masterLvl", 1f);
             csoundTransformSender.UpdateRotation(false);
             rotationToggle = true;
         }
