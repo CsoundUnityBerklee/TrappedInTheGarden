@@ -47,12 +47,12 @@ public class GetGrabbedFruitObject : MonoBehaviour
 
     public void VolumeGateOn()
     {
-        csoundUnity.SetChannel("masterLvl", 0);
+        StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 0.1f, 0, 0));
     }
 
     public void VolumeGateOff()
     {
-        csoundUnity.SetChannel("masterLvl", 1);
+        StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 0.5f, 0, 1));
     }
 
     public void ToggleRotation()
@@ -61,13 +61,13 @@ public class GetGrabbedFruitObject : MonoBehaviour
         {
             csoundTransformSender.UpdateRotation(true);
             csoundUnity.SetChannel("reTrigger", 1);
-            csoundUnity.SetChannel("masterLvl", 0.25f);
+            StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 0.05f, 0, 0.15f));
             rotationToggle = false;
         }
         else
         {
             csoundUnity.SetChannel("reTrigger", 0);
-            csoundUnity.SetChannel("masterLvl", 1f);
+            StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 3, 2f, 1f));
             csoundTransformSender.UpdateRotation(false);
             rotationToggle = true;
         }

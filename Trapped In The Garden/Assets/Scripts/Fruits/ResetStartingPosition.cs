@@ -11,6 +11,7 @@ public class ResetStartingPosition : MonoBehaviour
     private float speed = 5f;
     private float speedIncrement = 0.35f;
     private bool moveTowardsStartingPos = false;
+    private CsoundSenderDistanceFromListener csoundDistance;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class ResetStartingPosition : MonoBehaviour
         startingPos = transform.position;
         csoundUnity = GetComponentInChildren<CsoundUnity>();
         lowGravity = GetComponent<LowGravity>();
+        csoundDistance = GetComponentInChildren<CsoundSenderDistanceFromListener>();
     }
 
     public void ResetPositionTimer()
@@ -60,9 +62,16 @@ public class ResetStartingPosition : MonoBehaviour
             moveTowardsStartingPos = false;
             //Reset CsoundUnity
             csoundUnity.SetChannel("reTrigger", 0); //turns off reTrigger
+            csoundDistance.TurnOff();
+            StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 3, 2f, 1f));
         }
 
         speed += speedIncrement;
         transform.position = Vector3.MoveTowards(transform.position, startingPos, speed * Time.deltaTime);
+    }
+
+    public void LowerVolueOnThrow()
+    {
+        StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 0.05f, 0, 0.15f));
     }
 }
