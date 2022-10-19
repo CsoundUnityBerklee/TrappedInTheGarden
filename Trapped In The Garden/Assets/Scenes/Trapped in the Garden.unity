@@ -5604,6 +5604,8 @@ GameObject:
   - component: {fileID: 1246905586}
   - component: {fileID: 1246905585}
   - component: {fileID: 1246905584}
+  - component: {fileID: 1246905589}
+  - component: {fileID: 1246905588}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -5966,6 +5968,129 @@ MonoBehaviour:
   m_MoveObjectIn: 14
   m_MoveObjectOut: 15
   m_PoseProvider: {fileID: 0}
+--- !u!114 &1246905588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246905582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99fb187cf3e76401aaf1f460ae5d37b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerCharacteristics: 320
+  primaryButtonValue: 0
+  secondaryButtonValue: 0
+  triggerValue: 0
+  gripValue: 0
+  triggerButtonValue: 0
+  gripButtonValue: 0
+  joystickValue: {x: 0, y: 0}
+  joystickClickValue: 0
+  primaryButtonPressEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1246905589}
+        m_TargetAssemblyTypeName: GetGrabbedFruitObject, Assembly-CSharp
+        m_MethodName: ToggleRotation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  primaryButtonReleaseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  secondaryButtonPressEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1246905589}
+        m_TargetAssemblyTypeName: GetGrabbedFruitObject, Assembly-CSharp
+        m_MethodName: VolumeGateOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  secondaryButtonReleaseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1246905589}
+        m_TargetAssemblyTypeName: GetGrabbedFruitObject, Assembly-CSharp
+        m_MethodName: VolumeGateOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerButtonPressEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1246905589}
+        m_TargetAssemblyTypeName: GetGrabbedFruitObject, Assembly-CSharp
+        m_MethodName: UpdateCsoundPosition
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  triggerButtonReleaseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1246905589}
+        m_TargetAssemblyTypeName: GetGrabbedFruitObject, Assembly-CSharp
+        m_MethodName: UpdateCsoundPosition
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  gripButtonPressEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  gripButtonReleaseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  joystickPressEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  joystickReleaseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1246905589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246905582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c320ad8818a404c18bdd264ba351a02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1269298632
 GameObject:
   m_ObjectHideFlags: 0
@@ -11622,6 +11747,8 @@ GameObject:
   - component: {fileID: 1784982107}
   - component: {fileID: 1784982106}
   - component: {fileID: 1784982105}
+  - component: {fileID: 1784982110}
+  - component: {fileID: 1784982109}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -11984,6 +12111,129 @@ MonoBehaviour:
   m_MoveObjectIn: 14
   m_MoveObjectOut: 15
   m_PoseProvider: {fileID: 0}
+--- !u!114 &1784982109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784982103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99fb187cf3e76401aaf1f460ae5d37b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerCharacteristics: 576
+  primaryButtonValue: 0
+  secondaryButtonValue: 0
+  triggerValue: 0
+  gripValue: 0
+  triggerButtonValue: 0
+  gripButtonValue: 0
+  joystickValue: {x: 0, y: 0}
+  joystickClickValue: 0
+  primaryButtonPressEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1784982110}
+        m_TargetAssemblyTypeName: GetGrabbedFruitObject, Assembly-CSharp
+        m_MethodName: ToggleRotation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  primaryButtonReleaseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  secondaryButtonPressEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1784982110}
+        m_TargetAssemblyTypeName: GetGrabbedFruitObject, Assembly-CSharp
+        m_MethodName: VolumeGateOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  secondaryButtonReleaseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1784982110}
+        m_TargetAssemblyTypeName: GetGrabbedFruitObject, Assembly-CSharp
+        m_MethodName: VolumeGateOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerButtonPressEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1784982110}
+        m_TargetAssemblyTypeName: GetGrabbedFruitObject, Assembly-CSharp
+        m_MethodName: UpdateCsoundPosition
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  triggerButtonReleaseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1784982110}
+        m_TargetAssemblyTypeName: GetGrabbedFruitObject, Assembly-CSharp
+        m_MethodName: UpdateCsoundPosition
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  gripButtonPressEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  gripButtonReleaseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  joystickPressEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  joystickReleaseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1784982110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784982103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c320ad8818a404c18bdd264ba351a02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1788129779 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ef002ddca11787b41a014a71a6884805,
@@ -14388,6 +14638,168 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1882631510, guid: 514e207b3280c4484929b5cfe57ae88a, type: 3}
+      propertyPath: m_ValidColorGradient.key0.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882631510, guid: 514e207b3280c4484929b5cfe57ae88a, type: 3}
+      propertyPath: m_ValidColorGradient.key0.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882631511, guid: 514e207b3280c4484929b5cfe57ae88a, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882631511, guid: 514e207b3280c4484929b5cfe57ae88a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882631511, guid: 514e207b3280c4484929b5cfe57ae88a, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882631511, guid: 514e207b3280c4484929b5cfe57ae88a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 1882631511, guid: 514e207b3280c4484929b5cfe57ae88a, type: 3}
+      propertyPath: m_Parameters.numCapVertices
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882631511, guid: 514e207b3280c4484929b5cfe57ae88a, type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882631511, guid: 514e207b3280c4484929b5cfe57ae88a, type: 3}
+      propertyPath: m_Parameters.numCornerVertices
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882631511, guid: 514e207b3280c4484929b5cfe57ae88a, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882631511, guid: 514e207b3280c4484929b5cfe57ae88a, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882631511, guid: 514e207b3280c4484929b5cfe57ae88a, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882631511, guid: 514e207b3280c4484929b5cfe57ae88a, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696818, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696818, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696818, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696818, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 847669071430696818, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_Parameters.numCapVertices
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696818, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696818, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_Parameters.numCornerVertices
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696818, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696818, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696818, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696818, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696819, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696819, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 251276606}
+    - target: {fileID: 847669071430696819, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_RayOriginTransform
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696819, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_HapticHoverEnterDuration
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696819, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_HapticHoverEnterIntensity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696819, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_HapticSelectEnterDuration
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696819, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_PlayHapticsOnHoverEntered
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696819, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_HapticSelectEnterIntensity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696819, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_PlayHapticsOnSelectEntered
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696820, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669071430696820, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.g
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 847669073118648653, guid: 514e207b3280c4484929b5cfe57ae88a,
         type: 3}
       propertyPath: m_RootOrder
@@ -14447,6 +14859,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: XR Origin (Direct Interactor & Fruit Interactivity)
+      objectReference: {fileID: 0}
+    - target: {fileID: 847669073118648690, guid: 514e207b3280c4484929b5cfe57ae88a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 514e207b3280c4484929b5cfe57ae88a, type: 3}

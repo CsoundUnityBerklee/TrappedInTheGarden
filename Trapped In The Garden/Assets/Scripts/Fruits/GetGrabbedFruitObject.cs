@@ -5,9 +5,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class GetGrabbedFruitObject : MonoBehaviour
 {
-    private XRDirectInteractor interactor;
+    private XRRayInteractor interactor;
     private CsoundTransformAndPhysicsSender csoundTransformSender;
-    private CsoundSender csoundSender;
     private CsoundUnity csoundUnity;
 
     private bool canUpdateRotation = true;
@@ -16,19 +15,19 @@ public class GetGrabbedFruitObject : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        interactor = GetComponent<XRDirectInteractor>();
+        interactor = GetComponent<XRRayInteractor>();
     }
 
-    public void GetGrabbedFruitCsound()
-    {
-        csoundTransformSender = interactor.selectTarget.GetComponentInChildren<CsoundTransformAndPhysicsSender>();
-        csoundSender = interactor.selectTarget.GetComponentInChildren<CsoundSender>();
-        csoundUnity = interactor.selectTarget.GetComponentInChildren<CsoundUnity>();
-    }
+    //public void GetGrabbedFruitCsound()
+    //{
+    //    csoundTransformSender = interactor.selectTarget.GetComponentInChildren<CsoundTransformAndPhysicsSender>();
+    //    csoundUnity = interactor.selectTarget.GetComponentInChildren<CsoundUnity>();
+    //}
 
     public void ResetReferences()
     {
         csoundTransformSender = null;
+        csoundUnity = null;
     }
 
     public void UpdateCsoundPosition(bool update)
@@ -70,6 +69,15 @@ public class GetGrabbedFruitObject : MonoBehaviour
             StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 3, 2f, 1f));
             csoundTransformSender.UpdateRotation(false);
             rotationToggle = true;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Fruit"))
+        {
+            csoundTransformSender = collision.gameObject.GetComponentInChildren<CsoundTransformAndPhysicsSender>();
+            csoundUnity = collision.gameObject.GetComponentInChildren<CsoundUnity>();
         }
     }
 }
