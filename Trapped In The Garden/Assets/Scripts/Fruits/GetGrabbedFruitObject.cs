@@ -18,11 +18,11 @@ public class GetGrabbedFruitObject : MonoBehaviour
         interactor = GetComponent<XRRayInteractor>();
     }
 
-    //public void GetGrabbedFruitCsound()
-    //{
-    //    csoundTransformSender = interactor.selectTarget.GetComponentInChildren<CsoundTransformAndPhysicsSender>();
-    //    csoundUnity = interactor.selectTarget.GetComponentInChildren<CsoundUnity>();
-    //}
+    public void GetGrabbedFruitCsound()
+    {
+        csoundTransformSender = interactor.selectTarget.GetComponentInChildren<CsoundTransformAndPhysicsSender>();
+        csoundUnity = interactor.selectTarget.GetComponentInChildren<CsoundUnity>();
+    }
 
     public void ResetReferences()
     {
@@ -69,15 +69,6 @@ public class GetGrabbedFruitObject : MonoBehaviour
             StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 3, 2f, 1f));
             csoundTransformSender.UpdateRotation(false);
             rotationToggle = true;
-        }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.CompareTag("Fruit"))
-        {
-            csoundTransformSender = collision.gameObject.GetComponentInChildren<CsoundTransformAndPhysicsSender>();
-            csoundUnity = collision.gameObject.GetComponentInChildren<CsoundUnity>();
         }
     }
 }
