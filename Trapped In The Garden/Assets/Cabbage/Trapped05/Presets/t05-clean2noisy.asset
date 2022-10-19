@@ -41,7 +41,7 @@ MonoBehaviour:
     caption: 
     min: 2
     max: 10
-    value: 6.15
+    value: 2
     skew: 0
     increment: 0
     options: []
@@ -215,4 +215,4 @@ MonoBehaviour:
     skew: 0
     increment: 0
     options: []
-  _drawChannels: 0
+  _drawChannels: 1
