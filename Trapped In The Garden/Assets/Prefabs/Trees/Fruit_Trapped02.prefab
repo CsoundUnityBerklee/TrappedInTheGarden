@@ -496,7 +496,7 @@ MonoBehaviour:
     presetList:
     - {fileID: 11400000, guid: 39764bbc541324842a51f27e76012539, type: 2}
     presetIndexOnStart: 0
-    setPresetOnStart: 0
+    setPresetOnStart: 1
     debugPresets: 0
     presetCurrentIndex: 0
   ScoreEvents:
