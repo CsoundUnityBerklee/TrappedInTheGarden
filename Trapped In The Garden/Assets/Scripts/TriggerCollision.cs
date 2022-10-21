@@ -30,7 +30,7 @@ public class TriggerCollision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        var player = other.GetComponent<PlantsBehaviour>();
+        var player = other.GetComponent<FFTSeletorObject>();
         if (player)
         {
             
@@ -42,7 +42,7 @@ public class TriggerCollision : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        var player = other.GetComponent<PlantsBehaviour>();
+        var player = other.GetComponent<FFTSeletorObject>();
         if (player)
         {
 

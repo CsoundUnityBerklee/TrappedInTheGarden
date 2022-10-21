@@ -89,18 +89,20 @@ iwintype    table    3, giFFTattributes1 + i(katt_table) - 1
 /* INPUT */
 kinput chnget "sound"
 if kinput=1 then
-aInL, aInR	diskin2 "./sounds/drums1.aif", chnget:k("speed"), 0, chnget:i("loop")
+aInL, aInR	diskin2 "./soundsS/am_traffic.aif", chnget:k("speed"), 0, chnget:i("loop")
 elseif kinput=2 then
-aInL, aInR	diskin2 "./sounds/brahms.aif", chnget:k("speed"), 0, chnget:i("loop")
+aInL, aInR	diskin2 "./soundsS/dl_TomekPans.wav", chnget:k("speed"), 0, chnget:i("loop")
 elseif kinput=3 then
-aInL, aInR	diskin2 "./sounds/cage.aif", chnget:k("speed"), 0, chnget:i("loop")
+aInL, aInR	diskin2 "./soundsS/dl_TomekBowls.aif", chnget:k("speed"), 0, chnget:i("loop")
 elseif kinput=4 then
-aInL, aInR	diskin2 "./sounds/bus.aif", chnget:k("speed"), 0, chnget:i("loop")
+aInL, aInR	diskin2 "./soundsS/am_blackbird.aif", chnget:k("speed"), 0, chnget:i("loop")
 elseif kinput=5 then
-aInL, aInR	diskin2 "./sounds/pad.aif", chnget:k("speed"), 0, chnget:i("loop")
+aInL, aInR	diskin2 "./soundsS/am_fire.wav", chnget:k("speed"), 0, chnget:i("loop")
 else
-aInL, aInR	diskin2 "./sounds/drums2.aif", chnget:k("speed"), 0, chnget:i("loop")
+aInL, aInR	diskin2 "./soundsS/am_dog.aif", chnget:k("speed"), 0, chnget:i("loop")
 endif
+
+
 
 aLR = aInL+aInR
 

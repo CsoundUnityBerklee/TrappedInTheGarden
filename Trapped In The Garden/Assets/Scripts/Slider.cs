@@ -28,7 +28,7 @@ public class Slider : MonoBehaviour
     [SerializeField] CsoundUnity csound;
     [SerializeField] string nameOfGameObject;
     [SerializeField] string [] parameters;
-    [SerializeField] float [] _offset;
+    [SerializeField] float [] _multiplier;
 
 
 
@@ -49,7 +49,7 @@ public class Slider : MonoBehaviour
 
                 for (int i = 0; i < parameters.Length; i++)
                 {
-                    csound.SetChannel(parameters[i], sliderDistance * _offset[i]);
+                    csound.SetChannel(parameters[i], sliderDistance * _multiplier[i]);
                 }
                  
             }   
