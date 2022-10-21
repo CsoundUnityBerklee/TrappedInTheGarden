@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FruitParticles : MonoBehaviour
 {
+    private ParticleSystem particles;
+    
     // Start is called before the first frame update
     void Start()
     {
