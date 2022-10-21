@@ -8,6 +8,7 @@ TagManager:
   - Fruit
   - Sample Player
   - FruitPosition
+  - FFTSelector
   layers:
   - Default
   - TransparentFX
