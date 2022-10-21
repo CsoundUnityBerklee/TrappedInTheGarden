@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Trapped in the Garden.unity
-    guid: 3c7fa7c2a052141dd8efeb0a77af494c
+    path: Assets/Scenes/zTests/MixedTrees.unity
+    guid: 0aa59a6f432ff470caf323294e93b7bf
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2b17d46d4379947238e6056fd6aa558f,
       type: 2}

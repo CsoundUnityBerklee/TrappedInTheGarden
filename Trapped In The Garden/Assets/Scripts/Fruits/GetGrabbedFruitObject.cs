@@ -16,6 +16,7 @@ public class GetGrabbedFruitObject : MonoBehaviour
     private Material fruitMaterial;
     private Renderer fruitRenderer;
     private Color fruitColor;
+    private FruitVisualEffects fruitVfx;
 
     // Start is called before the first frame update
     void Awake()
@@ -30,6 +31,7 @@ public class GetGrabbedFruitObject : MonoBehaviour
         fruitRenderer = interactor.selectTarget.GetComponent<Renderer>();
         fruitMaterial = fruitRenderer.material;
         fruitColor = fruitMaterial.color;
+        fruitVfx = interactor.selectTarget.GetComponent<FruitVisualEffects>();
     }
 
     public void ResetReferences()
@@ -47,10 +49,12 @@ public class GetGrabbedFruitObject : MonoBehaviour
         if (!update)
         {
             csoundTransformSender.UpdatePosition(false);
+            fruitVfx.StopParticles01();
         }
         else if(update)
         {
             csoundTransformSender.UpdatePosition(true);
+            fruitVfx.PlayParticles01();
         }
     }
 
@@ -58,12 +62,14 @@ public class GetGrabbedFruitObject : MonoBehaviour
     {
         StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 0.1f, 0, 0));
         StartCoroutine(FadeAlpha(0.1f, 0, 0.25f));
+        fruitVfx.StopParticles01();
     }
 
     public void VolumeGateOff()
     {
         StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 0.5f, 0, 1));
         StartCoroutine(FadeAlpha(0.5f, 0, 1));
+        fruitVfx.PlayParticles01();
     }
 
     public void ToggleRotation()
