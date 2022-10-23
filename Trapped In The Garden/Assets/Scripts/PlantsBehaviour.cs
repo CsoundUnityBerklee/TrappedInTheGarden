@@ -15,9 +15,9 @@ public class PlantsBehaviour : MonoBehaviour
 
 
     // Distance
-    float distanceToCenter;
-    [SerializeField] Transform _center;
-    [SerializeField] bool calculatingDistance = false;
+    //float distanceToCenter;
+    //[SerializeField] Transform _center;
+    //[SerializeField] bool calculatingDistance = false;
 
 
     // Trapped Section
@@ -48,7 +48,7 @@ public class PlantsBehaviour : MonoBehaviour
         if (other.gameObject.GetComponent<Garden>())
         {
             isScaling = true;
-            calculatingDistance = true;
+            //calculatingDistance = true;
         }         
     }
 
@@ -57,7 +57,7 @@ public class PlantsBehaviour : MonoBehaviour
         if (other.gameObject.GetComponent<Garden>())
         {
             isScaling = false;
-            calculatingDistance = false;
+            //calculatingDistance = false;
             transform.localScale = startingScale;
             interpolant = 0; //restart
             garden.StopTrapped(trappedSection);
