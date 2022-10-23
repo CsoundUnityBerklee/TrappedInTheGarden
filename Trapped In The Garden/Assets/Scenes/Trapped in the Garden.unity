@@ -490,7 +490,7 @@ MonoBehaviour:
   zOrigialPos: -0.276
   yOriginalPos: 0
   csound: {fileID: 392447664}
-  nameOfGameObject: Sampler-pvs
+  nameOfGameObject: CsoundUnity-PVS
   parameters:
   - blurTime
   - blurRate
@@ -5109,7 +5109,7 @@ MonoBehaviour:
   zOrigialPos: -0.276
   yOriginalPos: 0
   csound: {fileID: 392447664}
-  nameOfGameObject: Sampler
+  nameOfGameObject: CsoundUnity-PVS
   parameters:
   - speed
   _multiplier:
@@ -5445,7 +5445,7 @@ MonoBehaviour:
   zOrigialPos: -0.828
   yOriginalPos: 0
   csound: {fileID: 392447664}
-  nameOfGameObject: Sampler-pvs
+  nameOfGameObject: CsoundUnity-PVS
   parameters:
   - masterLvl
   _multiplier:
@@ -14963,7 +14963,7 @@ MonoBehaviour:
   zOrigialPos: -0.276
   yOriginalPos: 0
   csound: {fileID: 392447664}
-  nameOfGameObject: Sampler-pvs
+  nameOfGameObject: CsoundUnity-PVS
   parameters:
   - verbLvl
   _multiplier:
@@ -16613,7 +16613,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1746998539
 Transform:
   m_ObjectHideFlags: 0
@@ -18082,7 +18082,7 @@ MonoBehaviour:
   zOrigialPos: -0.276
   yOriginalPos: 0
   csound: {fileID: 392447664}
-  nameOfGameObject: Sampler-pvs
+  nameOfGameObject: CsoundUnity-PVS
   parameters:
   - mix
   _multiplier:
