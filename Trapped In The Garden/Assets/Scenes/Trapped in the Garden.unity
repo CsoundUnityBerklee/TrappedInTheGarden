@@ -8856,6 +8856,7 @@ GameObject:
   m_Component:
   - component: {fileID: 953647965}
   - component: {fileID: 953647964}
+  - component: {fileID: 953647966}
   m_Layer: 0
   m_Name: Forrest Background SFX
   m_TagString: Untagged
@@ -8975,6 +8976,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &953647966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953647963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ea4da62c70345448e1f60ff0fd120e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  freqBand:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  _startScale: 0
+  _scale: 100
+  UseBuffer: 1
+  bufferSpeedA: 0
+  bufferSpeedB: 0
+  numberOfSamples: 02000000040000000800000010000000
+  SamplePrefabs:
+  - {fileID: 2875735396943246472, guid: 3f7fc71ce04534f2d9f50f96eb9fafff, type: 3}
+  - {fileID: 345835290246898158, guid: 2c3bcc924f3cb48a196b39979ed55756, type: 3}
+  - {fileID: 7616635739002683348, guid: 0a4351a8147d740e4b55591e2b21dba1, type: 3}
+  - {fileID: 2875735396943246472, guid: 2aa3b77cd4559472591f4ec53cc8b661, type: 3}
+  Distance: 3c000000500000006400000078000000
 --- !u!4 &958947247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6359349546650433815, guid: 003a821736bf9411f8c15efc157562aa,
