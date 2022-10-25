@@ -43,7 +43,7 @@ public class VelocityToPitch : MonoBehaviour
         {
             Vector3 velocity = rb.velocity;
             float processedVel = velocity.magnitude;
-            _source.pitch = Mathf.Clamp(processedVel, 0.1f, 2f);
+            _source.pitch = Mathf.Clamp(processedVel, 0.5f, 2f);
         }
       
     }

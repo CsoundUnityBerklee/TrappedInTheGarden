@@ -20,9 +20,9 @@ public class StarManager : MonoBehaviour
     {
         for (int i = 0; i < numberOfStars; i++)
         {
-            float X = Random.Range(-50, 30);
-            float Y = Random.Range(-5, 30);
-            float Z = Random.Range(-50, 30);
+            float X = Random.Range(-30, 30);
+            float Y = Random.Range(0, 25);
+            float Z = Random.Range(-30, 30);
 
             GameObject CopiedObject = Instantiate(_stars[(int)Random.Range(0, _stars.Length)], new Vector3(X, Y, Z), Quaternion.identity);
 

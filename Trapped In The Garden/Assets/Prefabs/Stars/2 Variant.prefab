@@ -15,7 +15,7 @@ PrefabInstance:
     - target: {fileID: 554202451396980299, guid: 0d9d796be16654310832a25214ebc3d0,
         type: 3}
       propertyPath: m_Name
-      value: 2
+      value: 2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 554202451396980303, guid: 0d9d796be16654310832a25214ebc3d0,
         type: 3}

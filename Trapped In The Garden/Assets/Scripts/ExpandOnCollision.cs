@@ -14,7 +14,7 @@ public class ExpandOnCollision : MonoBehaviour
             
             Expand = true;
             //Destroy(this.gameObject.GetComponent<Rigidbody>());
-            Destroy(this.gameObject, 10f);
+            Destroy(this.gameObject, 15f);
             gameObject.GetComponent<Collider>().isTrigger = true;
         }
 
