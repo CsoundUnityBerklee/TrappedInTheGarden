@@ -165,7 +165,7 @@ public class FFTGrandManager : MonoBehaviour
                 {
                     if (UseBuffer == true)
                     {
-                        _samplesAsObjects[f][g].transform.localScale = new Vector3(10, (_bandBuffer[f][g] * 10) + _startScale, 10); 
+                        _samplesAsObjects[f][g].transform.localScale = new Vector3(20, (_bandBuffer[f][g] * 10) + _startScale, 20); 
                     }
                     else
                     {
