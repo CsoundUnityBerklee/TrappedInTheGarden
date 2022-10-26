@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SampleSelector : MonoBehaviour
 {
-    [SerializeField] CsoundUnity _csound;
+    [SerializeField] CsoundUnity [] _csound;
+    [SerializeField] string [] _objects;
     [Tooltip("Ids must go from 1 to the number of samples that are present inside the csd")]
     [SerializeField] int _id;
 
@@ -12,26 +13,42 @@ public class SampleSelector : MonoBehaviour
     private void Start()
     {
         //_csound = GetComponent<CsoundUnity>();
-        _csound.SetChannel("dur", 500);
+        for (int i = 0; i < 2; i++)
+        {
+            _csound[i] = GameObject.Find(_objects[i]).GetComponent<CsoundUnity>();
+            _csound[i].SetChannel("dur", 500);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<SampleHolder>())
+        if (other.gameObject.GetComponent<SampleHolderPVS>())
         {
-            Debug.Log("Entered");
-            _csound.SetChannel("sound", _id); // Select correct sound
-            _csound.SetChannel("trigger", _csound.GetChannel("trigger") == 1 ? 0 : 1);
+            
+            _csound[0].SetChannel("sound", _id); // Select correct sound
+            _csound[0].SetChannel("trigger", _csound[0].GetChannel("trigger") == 1 ? 0 : 1);
+        }
+        else if (other.gameObject.GetComponent<SampleHolderFlooper>())
+        {
+            _csound[1].SetChannel("sound", _id); // Select correct sound
+            _csound[1].SetChannel("trigger", _csound[1].GetChannel("trigger") == 1 ? 0 : 1);
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.GetComponent<SampleHolder>())
+        if (other.gameObject.GetComponent<SampleHolderPVS>())
         {
-            Debug.Log("ByeBye!");
-            _csound.SetChannel("sound", _id); // Select correct sound
-            _csound.SetChannel("stop", _csound.GetChannel("stop") == 1 ? 0 : 1);
+            
+            _csound[0].SetChannel("sound", _id); // Select correct sound
+            _csound[0].SetChannel("stop", _csound[0].GetChannel("stop") == 1 ? 0 : 1);
+        }
+
+        else if (other.gameObject.GetComponent<SampleHolderFlooper>())
+        {
+            _csound[1].SetChannel("sound", _id); // Select correct sound
+            _csound[1].SetChannel("stop", _csound[1].GetChannel("stop") == 1 ? 0 : 1);
+
         }
     }
 }
