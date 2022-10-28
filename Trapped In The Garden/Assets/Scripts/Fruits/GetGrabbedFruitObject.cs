@@ -49,12 +49,11 @@ public class GetGrabbedFruitObject : MonoBehaviour
         if (!update)
         {
             csoundTransformSender.UpdatePosition(false);
-            fruitVfx.StopParticles01();
         }
         else if(update)
         {
             csoundTransformSender.UpdatePosition(true);
-            fruitVfx.PlayParticles01();
+            //fruitVfx.PlayParticlesBurst();
         }
     }
 
@@ -62,14 +61,18 @@ public class GetGrabbedFruitObject : MonoBehaviour
     {
         StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 0.1f, 0, 0));
         StartCoroutine(FadeAlpha(0.1f, 0, 0.25f));
-        fruitVfx.StopParticles01();
+        fruitVfx.StopParticleLoop();
     }
 
     public void VolumeGateOff()
     {
         StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 0.5f, 0, 1));
         StartCoroutine(FadeAlpha(0.5f, 0, 1));
-        fruitVfx.PlayParticles01();
+
+        if (!rotationToggle)
+        {
+            fruitVfx.PlayParticleLoop();
+        }
     }
 
     public void ToggleRotation()
@@ -78,7 +81,8 @@ public class GetGrabbedFruitObject : MonoBehaviour
         {
             csoundTransformSender.UpdateRotation(true);
             csoundUnity.SetChannel("reTrigger", 1);
-            StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 0.05f, 0, 0.15f));
+            StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 0.05f, 0, 0.1f));
+            fruitVfx.PlayParticleLoop();
             rotationToggle = false;
         }
         else
@@ -86,6 +90,7 @@ public class GetGrabbedFruitObject : MonoBehaviour
             csoundUnity.SetChannel("reTrigger", 0);
             StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 3, 2f, 1f));
             csoundTransformSender.UpdateRotation(false);
+            fruitVfx.StopParticleLoop();
             rotationToggle = true;
         }
     }

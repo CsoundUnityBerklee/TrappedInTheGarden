@@ -6,28 +6,40 @@ public class FruitVisualEffects : MonoBehaviour
 {
     private Material material;
     private TrailRenderer trail;
-    private ParticleSystem particles01;
-    private ParticleSystemRenderer particlesRenderer01;
+    public ParticleSystem particlesBurst, particlesLoop;
+    private ParticleSystemRenderer particlesRendererBurst, particlesRendererLoop;
 
     // Start is called before the first frame update
     void Awake()
     {
         material = GetComponent<Renderer>().material;
+
         trail = GetComponent<TrailRenderer>();
         trail.material = material;
 
-        particles01 = GetComponentInChildren<ParticleSystem>();
-        particlesRenderer01 = GetComponentInChildren<ParticleSystemRenderer>();
-        particlesRenderer01.sharedMaterial = material;
+        particlesRendererBurst = particlesBurst.gameObject.GetComponent<ParticleSystemRenderer>();
+        particlesRendererBurst.sharedMaterial = material;
+        particlesRendererBurst.trailMaterial = material;
+
+        particlesRendererLoop = particlesLoop.gameObject.GetComponent<ParticleSystemRenderer>();
+        particlesRendererLoop.sharedMaterial = material;
+        particlesRendererLoop.trailMaterial = material;
     }
 
-    public void PlayParticles01()
+    public void PlayParticlesBurst()
     {
-        particles01.Play();
+        particlesBurst.gameObject.SetActive(true);  
+        particlesBurst.Play();
     }
 
-    public void StopParticles01()
+    public void PlayParticleLoop()
     {
-        particles01.Stop();
+        particlesLoop.gameObject.SetActive(true);
+        particlesLoop.Play();
+    }
+
+    public void StopParticleLoop()
+    {
+        particlesLoop.Stop();
     }
 }
