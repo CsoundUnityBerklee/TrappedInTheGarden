@@ -24,6 +24,14 @@ public class GetGrabbedFruitObject : MonoBehaviour
         interactor = GetComponent<XRRayInteractor>();
     }
 
+    private void LateUpdate()
+    {
+        if (!rotationToggle)
+        {
+            fruitVfx.TieToRotation();
+        }
+    }
+
     public void GetGrabbedFruitCsound()
     {
         csoundTransformSender = interactor.selectTarget.GetComponentInChildren<CsoundTransformAndPhysicsSender>();
@@ -53,7 +61,6 @@ public class GetGrabbedFruitObject : MonoBehaviour
         else if(update)
         {
             csoundTransformSender.UpdatePosition(true);
-            //fruitVfx.PlayParticlesBurst();
         }
     }
 
@@ -88,7 +95,7 @@ public class GetGrabbedFruitObject : MonoBehaviour
         else
         {
             csoundUnity.SetChannel("reTrigger", 0);
-            StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 3, 2f, 1f));
+            StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 3, 3.5f, 1f));
             csoundTransformSender.UpdateRotation(false);
             fruitVfx.StopParticleLoop();
             rotationToggle = true;

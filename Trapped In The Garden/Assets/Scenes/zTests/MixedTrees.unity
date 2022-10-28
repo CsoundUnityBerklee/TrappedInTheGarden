@@ -339,22 +339,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 883545217, guid: 50ce2f0db7ae040ad881e8494fab7876, type: 3}
-      propertyPath: prewarm
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 883545217, guid: 50ce2f0db7ae040ad881e8494fab7876, type: 3}
-      propertyPath: lengthInSec
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 883545217, guid: 50ce2f0db7ae040ad881e8494fab7876, type: 3}
-      propertyPath: InitialModule.maxNumParticles
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 883545217, guid: 50ce2f0db7ae040ad881e8494fab7876, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 6163393411755322778, guid: 50ce2f0db7ae040ad881e8494fab7876,
         type: 3}
       propertyPath: m_Name
