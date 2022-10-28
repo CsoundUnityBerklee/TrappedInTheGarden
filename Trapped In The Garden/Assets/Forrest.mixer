@@ -29,7 +29,8 @@ AudioMixerController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Forrest
-  m_OutputGroup: {fileID: 0}
+  m_OutputGroup: {fileID: -6661299702176196224, guid: 77e8b89f4521b42149ea74a20d9b0a43,
+    type: 2}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}

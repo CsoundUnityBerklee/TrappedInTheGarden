@@ -344,6 +344,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit_Trapped02
       objectReference: {fileID: 0}
+    - target: {fileID: 6163393411755322778, guid: 50ce2f0db7ae040ad881e8494fab7876,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6163393411755749818, guid: 50ce2f0db7ae040ad881e8494fab7876,
         type: 3}
       propertyPath: m_RootOrder
