@@ -59,7 +59,7 @@ filebutton bounds(14, 98, 60, 25), text("Remove", "Remove"), populate("*.snaps",
 -n -d
 </CsOptions>
 <CsInstruments>
-sr = 48000
+
 ksmps = 32
 nchnls = 2
 0dbfs = 1
@@ -89,18 +89,14 @@ giFun22 ftgen 22, 0, 4097, -7, 0, 4096, 1  ; Ramp up
 giFun23 ftgen 23, 0, 4097, 19, .5, 1, 0, 0 ; Half Sine
 
 instr 1
-
-    
   kDur = chnget:k("dur")
     kTrig chnget "trigger"
-    printk2 kTrig, 2, 1
     if changed(kTrig) == 1 then
         event "i", "Flooper", 0, kDur
         kTrig = 0
     endif
     
     kStop chnget "stop"
-    printk2 kStop, 2, 1
     if changed(kStop) == 1 then
        turnoff2 "Flooper", 0, 1
        kStop = 0
@@ -112,14 +108,14 @@ instr Flooper
 
 Sfile1   = "./sounds/am_pinsM.wav"
 Sfile2   = "./sounds/am_dogM.aif"
-Sfile3  = "./sounds/dl_TomekBowlsM.aif"
+Sfile3   = "./sounds/am_trafficM.aif"
 Sfile4   = "./sounds/am_blackbirdM.aif"
 Sfile5   = "./sounds/am_fireM.wav"
 Sfile6   = "./sounds/sp_hellorcbBerkleeM.aif"
 Sfile7   = "./sounds/mu_PerotinM.wav"
 Sfile8   = "./sounds/mu_brahmsM.aif"
 Sfile9   = "./sounds/dl_TomekPansM.wav"
-
+Sfile10  = "./sounds/dl_TomekBowlsM.aif"
 
 
 giSmp1   ftgen  1, 0, 0, 1,  Sfile1, 0, 0, 0
@@ -484,20 +480,3 @@ i "Reverb" 0 [60*60*24*7]
 i "FXpan" 0 [60*60*24*7]
 </CsScore>
 </CsoundSynthesizer>
-<bsbPanel>
- <label>Widgets</label>
- <objectName/>
- <x>100</x>
- <y>100</y>
- <width>320</width>
- <height>240</height>
- <visible>true</visible>
- <uuid/>
- <bgcolor mode="nobackground">
-  <r>255</r>
-  <g>255</g>
-  <b>255</b>
- </bgcolor>
-</bsbPanel>
-<bsbPresets>
-</bsbPresets>
