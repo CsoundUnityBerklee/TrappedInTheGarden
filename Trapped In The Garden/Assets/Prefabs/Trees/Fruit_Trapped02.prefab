@@ -9712,8 +9712,8 @@ AudioSource:
       inWeight: 0.28772035
       outWeight: 0.24542384
     - serializedVersion: 3
-      time: 0.7415733
-      value: 0.2851329
+      time: 0.70418924
+      value: 0.19347337
       inSlope: -0.9302364
       outSlope: -0.9302364
       tangentMode: 0
