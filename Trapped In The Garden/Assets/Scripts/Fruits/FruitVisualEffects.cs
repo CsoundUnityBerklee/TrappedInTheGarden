@@ -9,6 +9,12 @@ public class FruitVisualEffects : MonoBehaviour
     public ParticleSystem particlesBurst, particlesLoop;
     private ParticleSystemRenderer particlesRendererBurst, particlesRendererLoop;
 
+    //Rotation
+    private CsoundChannelRangeSO channel;
+    private CsoundTransformAndPhysicsSender csoundPhysics;
+    private float minMaxParticles = 8f, maxMaxParticles = 100f;
+    private float minSpeed = 0.7f, maxSpeed = 2f;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -24,6 +30,8 @@ public class FruitVisualEffects : MonoBehaviour
         particlesRendererLoop = particlesLoop.gameObject.GetComponent<ParticleSystemRenderer>();
         particlesRendererLoop.sharedMaterial = material;
         particlesRendererLoop.trailMaterial = material;
+
+        channel = csoundPhysics.RotationSender.csoundChannelsRotationZ;
     }
 
     public void PlayParticlesBurst()
@@ -41,5 +49,16 @@ public class FruitVisualEffects : MonoBehaviour
     public void StopParticleLoop()
     {
         particlesLoop.Stop();
+    }
+
+    public void TieToRotation()
+    {
+        var main = particlesLoop.main;
+        //Max particles
+        float scaledMaxParticles = CsoundMap.ScaleFloat(0, 360, minMaxParticles, maxMaxParticles, csoundPhysics.RotationSender.zAxisValue);
+        main.maxParticles = (int)scaledMaxParticles;
+        //Playback speed
+        float scaledSpeed = CsoundMap.ScaleFloat(0, 360, minSpeed, maxSpeed, csoundPhysics.RotationSender.zAxisValue);
+        main.simulationSpeed = scaledSpeed;
     }
 }
