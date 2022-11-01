@@ -1745,7 +1745,7 @@ PrefabInstance:
     - target: {fileID: 1315798596209715407, guid: d167ac2be6c1b455cb7d0ddd4134d47c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1315798596209715407, guid: d167ac2be6c1b455cb7d0ddd4134d47c,
         type: 3}
@@ -1838,7 +1838,7 @@ Transform:
   - {fileID: 906320195}
   - {fileID: 1926250353}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &184639186
 PrefabInstance:
@@ -2002,7 +2002,7 @@ PrefabInstance:
     - target: {fileID: 4112667709140624733, guid: efffc1c966cb44dac81b9f797fd8e23a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4112667709140624733, guid: efffc1c966cb44dac81b9f797fd8e23a,
         type: 3}
@@ -2300,7 +2300,8 @@ AudioSource:
   m_GameObject: {fileID: 241262071}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 77e8b89f4521b42149ea74a20d9b0a43,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: e151c5dfcf015451bb5ccf70dd51a9a2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2583,7 +2584,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251855853
 GameObject:
@@ -4235,7 +4236,7 @@ Transform:
   - {fileID: 1514629401}
   - {fileID: 1283921685}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &406549527
 GameObject:
@@ -4631,7 +4632,7 @@ Transform:
   - {fileID: 1874970424}
   - {fileID: 1582458394}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &602032665 stripped
 GameObject:
@@ -4752,7 +4753,7 @@ PrefabInstance:
     - target: {fileID: 5418980044207484369, guid: ba5399f09a45a4c75821eb668f99a420,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5418980044207484369, guid: ba5399f09a45a4c75821eb668f99a420,
         type: 3}
@@ -5043,7 +5044,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &645402320
 PrefabInstance:
@@ -6117,7 +6118,7 @@ Transform:
   - {fileID: 705496455}
   - {fileID: 215355288}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &738411799 stripped
 GameObject:
@@ -6298,7 +6299,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 215.85901, y: -30, z: 0}
 --- !u!114 &759833792
 MonoBehaviour:
@@ -8093,7 +8094,7 @@ PrefabInstance:
     - target: {fileID: 2755670025941630482, guid: b910382d647444a5eab092ca95c3c0dc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2755670025941630482, guid: b910382d647444a5eab092ca95c3c0dc,
         type: 3}
@@ -8271,7 +8272,7 @@ Transform:
   - {fileID: 629949681}
   - {fileID: 1979542084}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &850997058 stripped
 Transform:
@@ -9188,7 +9189,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &958947247 stripped
 Transform:
@@ -9242,7 +9243,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &965225336
 MonoBehaviour:
@@ -9272,7 +9273,8 @@ AudioSource:
   m_GameObject: {fileID: 965225333}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 77e8b89f4521b42149ea74a20d9b0a43,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -9792,7 +9794,7 @@ PrefabInstance:
     - target: {fileID: 3733008926584836632, guid: 6e62a4effb31347beb8b9e64063a27d5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3733008926584836632, guid: 6e62a4effb31347beb8b9e64063a27d5,
         type: 3}
@@ -10054,7 +10056,7 @@ PrefabInstance:
     - target: {fileID: 6359349546650433815, guid: 003a821736bf9411f8c15efc157562aa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 6359349546650433815, guid: 003a821736bf9411f8c15efc157562aa,
         type: 3}
@@ -10158,7 +10160,7 @@ Transform:
   - {fileID: 767364522}
   - {fileID: 1834898578}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 163.543, z: 0}
 --- !u!1 &1070542660
 GameObject:
@@ -10592,7 +10594,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1149212384
 PrefabInstance:
@@ -10835,7 +10837,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1172064878
 GameObject:
@@ -12783,7 +12785,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1376778809 stripped
 MonoBehaviour:
@@ -13402,7 +13404,7 @@ Transform:
   - {fileID: 1089603010}
   - {fileID: 1830246794}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1434106019
 GameObject:
@@ -13446,7 +13448,7 @@ Transform:
   - {fileID: 1932535887}
   - {fileID: 865506192}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1435723073 stripped
 Transform:
@@ -14120,7 +14122,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1516910229
 MonoBehaviour:
@@ -14203,6 +14205,614 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 060c6905cbfcb604aa70b0104e423aeb, type: 3}
+--- !u!1 &1521377352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1521377355}
+  - component: {fileID: 1521377354}
+  - component: {fileID: 1521377353}
+  - component: {fileID: 1521377356}
+  - component: {fileID: 1521377357}
+  m_Layer: 0
+  m_Name: StartCue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1521377353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521377352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logCsoundOutput: 0
+  mute: 0
+  processClipAudio: 0
+  loudVolumeWarning: 1
+  loudWarningThreshold: 10
+  csoundScore: 
+  environmentSettings: []
+  _csoundFileGUID: 993b9ae659a1942e69a603f5de133495
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\r\nform caption(\"Trapped04rev\")
+    size(650, 700), guiMode(\"queue\") pluginId(\"def1\")\r\n\r\nbutton  bounds(290,
+    106, 86, 55) channel(\"trigger\") text(\"Trigger\") textColour(\"white\")\r\ncheckbox
+    bounds(320, 166, 27, 31), channel(\"reTrigger\"), , fontColour:0(255, 255, 255,
+    255)\r\nlabel    bounds(288, 198, 81, 16), text(\"ReTrigger\"), fontColour(255,
+    255, 255, 255) channel(\"label9\") alpha(0.99)\r\nhslider bounds(248, 218, 175,
+    50) channel(\"reTrigRate\") range(0.1, 6, 1, 0.5, 0.001) text(\"ReTrig Rate\")
+    textColour(255, 255, 255, 255)\r\n\r\nhslider bounds(388, 140, 175, 50) channel(\"dur\")
+    range(.5, 4, 1, 1, 0.001) text(\"Dur\") textColour(\"white\")\r\n\r\nhslider
+    bounds(254, 2, 158, 50) channel(\"masterLvl\") range(0, 1, 0.7, 1, 0.001) text(\"Master
+    Lvl\") textColour(\"white\")\r\nhslider bounds(96, 52, 158, 50) channel(\"synthNoiseMix\")
+    range(0, 1, 0.8, 1, 0.001) text(\"Syn/Nse Mix\") textColour(\"white\")\r\nhslider
+    bounds(254, 52, 160, 50) channel(\"amp\") range(0, 1, 0.5, 1, 0.001) text(\"Synth
+    Lvl\") textColour(255, 255, 255, 255)\r\n\r\nhslider bounds(412, 52, 150, 50)
+    channel(\"rvbLvl\") range(0, 1, 0.5, 1, 0.001) text(\"Verb Lvl\") textColour(\"white\")\r\nhslider
+    bounds(98, 502, 161, 50) channel(\"rvbSend\") range(0, 1, .15, 1, 0.001) text(\"Rvb
+    Send\") textColour(\"white\")\r\nhslider bounds(270, 502, 150, 50) channel(\"rvbPanRate\")
+    range(.001, 9, .9, 1, 0.001) text(\"RvbPanRate\") textColour(\"white\")\r\nhslider
+    bounds(430, 502, 150, 50) channel(\"rvbRndRate\") range(1, 3, 1, 1, 0.001) text(\"RvbRndRate\")
+    textColour(\"white\")\r\n\r\nhslider bounds(174, 282, 160, 52) channel(\"carFrq\")
+    range(20, 3000, 1100, 1, 0.001) text(\"CarFrq\") textColour(\"white\")\r\nhslider
+    bounds(334, 282, 159, 52) channel(\"carRndFrq\") range(1, 4, 1, 1, 0.001) text(\"CarRndFrq\")
+    textColour(\"white\")\r\n\r\nhslider bounds(96, 340, 160, 52) channel(\"modFrq\")
+    range(1, 3000, 13, 1, 0.001) text(\"ModFrq\") textColour(\"white\")\r\nhslider
+    bounds(258, 340, 150, 50) channel(\"modRndFrq\") range(1, 4, 1, 1, 0.001) text(\"ModRndFrq\")
+    textColour(\"white\")\r\nhslider bounds(434, 338, 150, 50) channel(\"modAmp\")
+    range(.2, 500, .6, 1, 0.001) text(\"ModAmp\") textColour(\"white\")\r\n\r\nhslider
+    bounds(112, 396, 161, 51) channel(\"fltSweepStart\") range(40, 7000, 3000, 1,
+    0.001) text(\"FltSwpSt\") textColour(\"white\")\r\nhslider bounds(276, 396, 161,
+    51) channel(\"fltRndStart\") range(1, 2, 1, 1, 0.001) text(\"FltRndSt\") textColour(\"white\")\r\nhslider
+    bounds(112, 446, 161, 51) channel(\"fltSweepEnd\") range(40, 7000, 1000, 1, 0.001)
+    text(\"FltSwpNd\") textColour(\"white\")\r\nhslider bounds(276, 446, 161, 51)
+    channel(\"fltRndEnd\") range(1, 2, 1, 1, 0.001) text(\"FltRndNd\") textColour(\"white\")\r\nhslider
+    bounds(446, 422, 151, 50) channel(\"fltBW\") range(20, 40, 35, 1, 0.001) text(\"FltBW\")
+    textColour(\"white\")\r\n\r\nhslider bounds(56, 570, 272, 50) channel(\"macro1\")
+    range(.1, 3, .2, .5, 0.001) text(\"M1y-pitch\") textColour(255, 255, 255, 255)\r\nhslider
+    bounds(56, 622, 272, 50) channel(\"macro2\") range(1, 20, 5, .5, 0.001) text(\"M2x-filt\")
+    textColour(255, 255, 255, 255)\r\nhslider bounds(332, 570, 272, 50) channel(\"macro3\")
+    range(0, 1, .8, .5, 0.001) text(\"M3z-volVrb\") textColour(255, 255, 255, 255)\r\nhslider
+    bounds(332, 626, 272, 50) channel(\"macro4\") range(.4, 10, 2, .4, 0.001) text(\"M4rot-Rate\")
+    textColour(255, 255, 255, 255)\r\n\r\ncombobox bounds(178, 136, 100, 25), populate(\"*.snaps\"),
+    channelType(\"string\") automatable(0) channel(\"combo31\")  value(\"1\") text(\"Noisy
+    Down\", \"Bells with some Noise\", \"Med Bells with Noise in Mid\", \"RandomNoiseSweeps\",
+    \"Noise Warble\", \"NoiseWarble2\", \"Noise Down\", \"Wacky\", \"Wacky2\", \"Bells
+    with RandFilts\")\r\nfilebutton bounds(114, 136, 60, 25), text(\"Save\", \"Save\"),
+    populate(\"*.snaps\", \"test\"), mode(\"named preset\") channel(\"filebutton32\")\r\nfilebutton
+    bounds(114, 164, 60, 25), text(\"Remove\", \"Remove\"), populate(\"*.snaps\",
+    \"test\"), mode(\"remove preset\") channel(\"filebutton33\")\r\n</Cabbage>\r\n\r\n<CsoundSynthesizer>\r\n\r\n<CsOptions>\r\n-n
+    -dm0\r\n</CsOptions>\r\n\r\n; macro1 = Pitch (on Y axis)\r\n; macro2 = Filter
+    or Spectral Content (on X asis)\r\n; macro3 = Volume and Verb (on Z axis)\r\n;
+    macro4 = Rate (on Rotation)\r\n\r\n<CsInstruments>\r\nksmps = 32\r\nnchnls =
+    2\r\n0dbfs = 1\r\n\r\ngaRvb  init  0\r\n\r\ngiFn01 ftgen  1, 0, 8192, 10, 1\r\ngiFn15
+    ftgen 15, 0, 8192,  9, 1, 1, 90\r\n\r\n\r\ninstr 1   \r\n    kTrig   chnget \"trigger\"\r\n   
+    kReTrig chnget \"reTrigger\"\r\n        if kReTrig == 1 then\r\n            kRndH
+    randh chnget:k(\"reTrigRate\")*chnget:k(\"macro4\") * .4, 4\r\n            kTrig
+    metro chnget:k(\"reTrigRate\")*chnget:k(\"macro4\") + kRndH\r\n        endif\r\n\r\n       
+    if changed(kTrig) == 1 then\r\n            event \"i\", \"Trapped04\", 0, chnget:i(\"dur\")
+    \r\n        endif       \r\nendin\r\n\r\n\r\n            instr     Trapped04\r\n\r\niDur       
+    = chnget:i(\"dur\")\r\niAmp        = chnget:i(\"amp\")            \r\nkCarFrq    
+    = chnget:k(\"carFrq\")*rnd(chnget:i(\"carRndFrq\"))\r\nkModFrq     = chnget:k(\"modFrq\")*rnd(chnget:i(\"modRndFrq\"))\r\nkModAmp    
+    = chnget:k(\"modAmp\")*rnd(10)\r\n\r\niFltSwpStrt   = chnget:i(\"fltSweepStart\")*rnd(chnget:i(\"fltRndStart\"))\r\niFltSwpEnd   
+    = chnget:i(\"fltSweepEnd\")*rnd(chnget:i(\"fltRndEnd\")) \r\nkFltBW        =
+    chnget:k(\"fltBW\")\r\n\r\nkSweep         expon     iFltSwpStrt, iDur, iFltSwpEnd                   
+    \r\naNoise         rand      .4                         \r\naFltNoise      reson    
+    aNoise, kSweep, kSweep / kFltBW, 1  \r\n          \r\naMod           oscil    
+    kModAmp, kModFrq, 1, .1               \r\nkEnv           expon     iAmp, iDur,
+    .001 \r\naCar           oscil     kEnv, (kCarFrq + aMod) * chnget:k(\"macro1\"),
+    15\r\n\r\n\r\n;               outs      (aFltNoise * .8) + aCar, (aFltNoise *
+    .6) + (aCar * .7)\r\n\r\n                                                                                     
+    \r\n;kgate         transeg   1, iDur, 0, 0 \r\n;amix           =        (aL +
+    aR) * kgate\r\n\r\naMix         ntrpol   aCar, aFltNoise, chnget:k(\"synthNoiseMix\") 
+    ; synth-noise mix   \r\n\r\naMix         moogladder2  aMix, 200 * chnget:k(\"macro2\"),
+    .8\r\n\r\n             outs      aMix * chnget:k(\"masterLvl\") * chnget:k(\"macro3\"),
+    aMix * chnget:k(\"masterLvl\") * chnget:k(\"macro3\")\r\n                                              
+    \r\ngaRvb          =         gaRvb + (aMix * chnget:k(\"rvbSend\") * (1-chnget:k(\"macro3\")))
+    \r\n\r\n               endin\r\n\r\n               instr     Reverb \r\n              
+    denorm    gaRvb                   \r\nk1             oscil     .5, chnget:k(\"rvbPanRate\")*rnd(chnget:k(\"rvbRndRate\")),
+    1\r\nk2             =         .5 + k1\r\nk3             =         1 - k2\r\naSig          
+    reverb    gaRvb, 2.5\r\n                           outs      (aSig * k2) * chnget:k(\"rvbLvl\")
+    * chnget:k(\"masterLvl\") * chnget:k(\"macro3\"), ((aSig * k3) * (-1)) * chnget:k(\"rvbLvl\")
+    * chnget:k(\"masterLvl\") * chnget:k(\"macro3\")\r\ngaRvb          =        
+    0\r\n               endin\r\n\r\n</CsInstruments>\r\n<CsScore>\r\n;causes Csound
+    to run for about 7000 years...\r\nf0 z\r\n;starts instrument 1 and runs it for
+    a week\r\ni1 0 [60*60*24*7]  \r\ni \"Reverb\" 0 [60*60*24*7]  \r\n</CsScore>\r\n</CsoundSynthesizer>\r\n\r\n"
+  _csoundFileName: CAB-Trapped04.csd
+  _csoundAsset: {fileID: 102900000, guid: 993b9ae659a1942e69a603f5de133495, type: 3}
+  _channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Trapped04rev
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: button
+    channel: trigger
+    text: Trigger
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: checkbox
+    channel: reTrigger
+    text: 
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: reTrigRate
+    text: ReTrig Rate
+    caption: 
+    min: 0.1
+    max: 6
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: dur
+    text: Dur
+    caption: 
+    min: 0.5
+    max: 4
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: masterLvl
+    text: Master Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.7
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: synthNoiseMix
+    text: Syn/Nse Mix
+    caption: 
+    min: 0
+    max: 1
+    value: 0.8
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: amp
+    text: Synth Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbLvl
+    text: Verb Lvl
+    caption: 
+    min: 0
+    max: 1
+    value: 0.5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbSend
+    text: Rvb Send
+    caption: 
+    min: 0
+    max: 1
+    value: 0.15
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbPanRate
+    text: RvbPanRate
+    caption: 
+    min: 0.001
+    max: 9
+    value: 0.9
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: rvbRndRate
+    text: RvbRndRate
+    caption: 
+    min: 1
+    max: 3
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: carFrq
+    text: CarFrq
+    caption: 
+    min: 20
+    max: 3000
+    value: 1100
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: carRndFrq
+    text: CarRndFrq
+    caption: 
+    min: 1
+    max: 4
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: modFrq
+    text: ModFrq
+    caption: 
+    min: 1
+    max: 3000
+    value: 13
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: modRndFrq
+    text: ModRndFrq
+    caption: 
+    min: 1
+    max: 4
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: modAmp
+    text: ModAmp
+    caption: 
+    min: 0.2
+    max: 500
+    value: 0.6
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: fltSweepStart
+    text: FltSwpSt
+    caption: 
+    min: 40
+    max: 7000
+    value: 3000
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: fltRndStart
+    text: FltRndSt
+    caption: 
+    min: 1
+    max: 2
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: fltSweepEnd
+    text: FltSwpNd
+    caption: 
+    min: 40
+    max: 7000
+    value: 1000
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: fltRndEnd
+    text: FltRndNd
+    caption: 
+    min: 1
+    max: 2
+    value: 1
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: fltBW
+    text: FltBW
+    caption: 
+    min: 20
+    max: 40
+    value: 35
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: macro1
+    text: M1y-pitch
+    caption: 
+    min: 0.1
+    max: 3
+    value: 0.2
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: macro2
+    text: M2x-filt
+    caption: 
+    min: 1
+    max: 20
+    value: 5
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: macro3
+    text: M3z-volVrb
+    caption: 
+    min: 0
+    max: 1
+    value: 0.8
+    skew: 0
+    increment: 0
+    options: []
+  - type: hslider
+    channel: macro4
+    text: M4rot-Rate
+    caption: 
+    min: 0.4
+    max: 10
+    value: 2
+    skew: 0
+    increment: 0
+    options: []
+  - type: combobox
+    channel: combo31
+    text: Noisy Down, Bells with some Noise, Med Bells with Noise in Mid, RandomNoiseSweeps,
+      Noise Warble, NoiseWarble2, Noise Down, Wacky, Wacky2, Bells with RandFilts
+    caption: 
+    min: 1
+    max: 10
+    value: 0
+    skew: 0
+    increment: 0
+    options:
+    - NoisyDown
+    - BellswithsomeNoise
+    - MedBellswithNoiseinMid
+    - RandomNoiseSweeps
+    - NoiseWarble
+    - NoiseWarble2
+    - NoiseDown
+    - Wacky
+    - Wacky2
+    - BellswithRandFilts
+  - type: filebutton
+    channel: filebutton32
+    text: Save, Save
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: filebutton
+    channel: filebutton33
+    text: Remove, Remove
+    caption: 
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  _availableAudioChannels: []
+  _drawCsoundString: 0
+  _drawTestScore: 0
+  _drawSettings: 0
+  _drawChannels: 0
+  _drawAudioChannels: 0
+  _drawPresets: 0
+  _drawPresetsLoad: 0
+  _drawPresetsSave: 0
+  _showRuntimeEnvironmentPath: 0
+  _currentPreset: 
+  _currentPresetSaveFolder: 
+  _currentPresetLoadFolder: 
+--- !u!82 &1521377354
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521377352}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1521377355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521377352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 80, y: 15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1521377356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521377352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6065213f15ea94c9db431da18c1bc49f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  csoundUnity: {fileID: 0}
+  InstrumentPresets:
+    presetList:
+    - {fileID: 11400000, guid: 5a4416aeda54f4a6f8a72255726ec729, type: 2}
+    presetIndexOnStart: 0
+    setPresetOnStart: 1
+    debugPresets: 0
+    presetCurrentIndex: 0
+  ScoreEvents:
+    scoreEventsList: []
+    sendScoreEventOnStart: 0
+    scoreEventIndexOnStart: 0
+    debugScoreEvents: 0
+    scoreEventCurrentIndex: 0
+  ChannelTrigger:
+    triggerChannelName: trigger
+    triggerOnStart: 0
+    debugTrigger: 0
+    triggerValue: 0
+  ChannelValues:
+    setChannelValuesList: []
+    channelValueIndexOnStart: 0
+    setChannelValueOnStart: 0
+    debugChannelsValues: 0
+    channelValueCurrentIndex: 0
+  RandomChannelValues:
+    randomValueChannelsList: []
+    randomValueIndexOnStart: 0
+    setChannelRandomValuesOnStart: 0
+    debugRandomChannelsValues: 0
+    randomValueCurrentIndex: 0
+--- !u!114 &1521377357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521377352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a4a5cd1bc424c6aa8858c1df0fce8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 77e8b89f4521b42149ea74a20d9b0a43, type: 2}
 --- !u!1001 &1523088307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16598,7 +17208,7 @@ PrefabInstance:
     - target: {fileID: 6182889586184740467, guid: 21047ce34dc9b429e83d0ccbb2f226ea,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 6182889586184740467, guid: 21047ce34dc9b429e83d0ccbb2f226ea,
         type: 3}
@@ -16813,7 +17423,7 @@ Transform:
   - {fileID: 1314631642}
   - {fileID: 29665263}
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1713189420
 BoxCollider:
@@ -17293,7 +17903,7 @@ Transform:
   - {fileID: 392447663}
   - {fileID: 1429542728}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1749461411
 GameObject:
@@ -18617,7 +19227,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1805495385
 GameObject:
@@ -18714,7 +19324,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1808033770
 GameObject:
@@ -18843,7 +19453,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1820998326
 GameObject:
@@ -19210,7 +19820,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1829244453
 PrefabInstance:
@@ -19227,7 +19837,7 @@ PrefabInstance:
     - target: {fileID: 3423197328993622374, guid: 3683e2a97706f44f3b1991487f1250d4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3423197328993622374, guid: 3683e2a97706f44f3b1991487f1250d4,
         type: 3}
@@ -21484,7 +22094,7 @@ Transform:
   m_Children:
   - {fileID: 241262072}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2067932948
 PrefabInstance:
@@ -22005,7 +22615,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2107411877
 PrefabInstance:
@@ -22101,7 +22711,7 @@ PrefabInstance:
     - target: {fileID: 847669073118648653, guid: 514e207b3280c4484929b5cfe57ae88a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 847669073118648653, guid: 514e207b3280c4484929b5cfe57ae88a,
         type: 3}
