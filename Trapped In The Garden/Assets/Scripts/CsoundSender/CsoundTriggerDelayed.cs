@@ -8,7 +8,7 @@ public class CsoundTriggerDelayed : MonoBehaviour
     private CsoundSender csoundSender;
     public AudioMixer mixer;
     private string masterVolumeParameter = "MasterVolume";
-    private float initialDelay = 20f;
+    private float initialDelay = 15f;
 
     // Start is called before the first frame update
     void Awake()

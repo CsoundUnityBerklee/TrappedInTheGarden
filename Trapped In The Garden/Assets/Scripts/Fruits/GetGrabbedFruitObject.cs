@@ -88,7 +88,7 @@ public class GetGrabbedFruitObject : MonoBehaviour
         {
             csoundTransformSender.UpdateRotation(true);
             csoundUnity.SetChannel("reTrigger", 1);
-            StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 0.05f, 0, 0.2f));
+            StartCoroutine(InterpolateCsoundChannelValue.LerpChannelValue(csoundUnity, "masterLvl", 0.05f, 0, 0.13f));
             fruitVfx.PlayParticleLoop();
             rotationToggle = false;
         }
