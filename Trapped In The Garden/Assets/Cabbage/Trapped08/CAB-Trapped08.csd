@@ -60,6 +60,8 @@ giFun21 ftgen 21, 0, 16, -2, 0, 20, 15, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 0
 
 gkRevPan init 6
 
+maxalloc "Trapped08", 13
+
 instr 1
     iDur = chnget:i("dur")
     iFrq = chnget:i("frq")*rnd(chnget:i("rndFrq"))

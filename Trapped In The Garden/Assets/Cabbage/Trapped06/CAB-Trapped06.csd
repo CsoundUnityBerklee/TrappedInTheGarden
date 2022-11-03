@@ -49,6 +49,8 @@ gaRvb  init  0
 giFn01 ftgen  1, 0, 8192, 10, 1
 giFn19 ftgen 19, 0,   8,  2, 1, 7, 10, 7, 6, 5, 4, 2
 
+maxalloc "Trapped06", 13
+
 instr 1
     iDur = chnget:i("dur")
 
