@@ -57,6 +57,7 @@ garvb  init  0
 giSine  ftgen  1, 0, 8192, 10, 1
 giFun15 ftgen 15, 0, 8192,  9, 1, 1, 90
 
+maxalloc "Trapped02", 25
 
 instr 1  
     iDur = chnget:i("dur")

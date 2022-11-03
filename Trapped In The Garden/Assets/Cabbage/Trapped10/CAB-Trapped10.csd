@@ -64,6 +64,8 @@ giFun2 ftgen 2, 0, 8192, 10, 1, .8, 0, .6, 0, .4, 0, .01
 giFun3 ftgen 3, 0, 8192, 10, 1,  0, .5, .2, 0, .4, .3, 0, .01
 giFun4 ftgen 4, 0, 8192, 10, 1,  0, .9, 0, 0, .8, 0, .7, 0, .4, 0, .2, 0, .01
 
+maxalloc "Trapped10", 25
+
 instr 1
     iDur = chnget:i("dur") 
     iFrq = chnget:i("frq") + rnd(chnget:i("rndFrq"))

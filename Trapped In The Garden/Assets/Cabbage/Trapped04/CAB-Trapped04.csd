@@ -61,6 +61,8 @@ gaRvb  init  0
 giFn01 ftgen  1, 0, 8192, 10, 1
 giFn15 ftgen 15, 0, 8192,  9, 1, 1, 90
 
+maxalloc "Trapped04", 20
+
 
 instr 1   
     kTrig   chnget "trigger"

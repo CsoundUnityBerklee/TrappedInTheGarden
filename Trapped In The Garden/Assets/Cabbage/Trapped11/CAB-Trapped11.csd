@@ -56,6 +56,8 @@ gadel          init      0
 giFn01 ftgen 1, 0, 8192, 10, 1
 giFn14 ftgen 14, 0, 512, 9, 1, 3, 0, 3, 1, 0, 9, .333, 180
 
+maxalloc "Trapped11", 20
+
 instr 1
     iDur = chnget:i("dur")
  

@@ -60,6 +60,8 @@ giWav4 ftgen 4, 0, 8192, 10, 10, 0, 9, 0, 0, 8, 0, 7, 0, 4, 0, 2, 0, 1
 
 gkRevPan init 4
 
+maxalloc "Trapped09", 13
+
 instr 1
     iDur = chnget:i("dur")
  
