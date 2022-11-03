@@ -106,16 +106,16 @@ endin
 
 instr Flooper
 
-Sfile1   = "./sounds/am_pinsM.wav"
-Sfile2   = "./sounds/am_dogM.aif"
-Sfile3   = "./sounds/am_trafficM.aif"
-Sfile4   = "./sounds/am_blackbirdM.aif"
-Sfile5   = "./sounds/am_fireM.wav"
-Sfile6   = "./sounds/sp_hellorcbBerkleeM.aif"
-Sfile7   = "./sounds/mu_PerotinM.wav"
-Sfile8   = "./sounds/mu_brahmsM.aif"
-Sfile9   = "./sounds/dl_TomekPansM.wav"
-Sfile10  = "./sounds/dl_TomekBowlsM.aif"
+Sfile1   = "./samplers/flo1.aif"
+Sfile2   =  "./samplers/flo2.aif"
+Sfile3   =  "./samplers/flo3.aif"
+Sfile4   =  "./samplers/flo4.aif"
+Sfile5   = "./samplers/flo5.aif"
+Sfile6   =  "./samplers/flo6.wav"
+Sfile7   = "./samplers/flo1.aif"
+Sfile8   = "./samplers/flo1.aif"
+Sfile9   = "./samplers/flo1.aif"
+Sfile10  = "./samplers/flo1.aif"
 
 
 giSmp1   ftgen  1, 0, 0, 1,  Sfile1, 0, 0, 0
@@ -480,3 +480,20 @@ i "Reverb" 0 [60*60*24*7]
 i "FXpan" 0 [60*60*24*7]
 </CsScore>
 </CsoundSynthesizer>
+<bsbPanel>
+ <label>Widgets</label>
+ <objectName/>
+ <x>100</x>
+ <y>100</y>
+ <width>320</width>
+ <height>240</height>
+ <visible>true</visible>
+ <uuid/>
+ <bgcolor mode="nobackground">
+  <r>255</r>
+  <g>255</g>
+  <b>255</b>
+ </bgcolor>
+</bsbPanel>
+<bsbPresets>
+</bsbPresets>

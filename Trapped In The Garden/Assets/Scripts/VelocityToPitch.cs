@@ -19,11 +19,14 @@ public class VelocityToPitch : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<GravityZone>())
-        {
+        if (other.gameObject.GetComponent<GetControllerButtonValues>())
             _source.Play();
+
+        if (other.gameObject.GetComponent<GravityZone>())
             calculateVelocity = true;
-        }
+
+
+
             
     }
 
@@ -42,9 +45,16 @@ public class VelocityToPitch : MonoBehaviour
         if (calculateVelocity)
         {
             Vector3 velocity = rb.velocity;
-            float processedVel = velocity.magnitude;
-            _source.pitch = Mathf.Clamp(processedVel, 0.5f, 2f);
+            float processedVel = Map(velocity.magnitude, 0f, 5f, 0.5f, 3.5f);
+            _source.pitch = Mathf.Clamp(processedVel, -2f, 2f);
         }
       
     }
+
+    // Map Function
+    float Map(float x, float in_min, float in_max, float out_min, float out_max)
+    {
+        return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+    }
+
 }

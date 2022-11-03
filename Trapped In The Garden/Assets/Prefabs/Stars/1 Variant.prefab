@@ -7,6 +7,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 554202451396980288, guid: 95058f6692d8a4a5c89c101aafd7df00,
+        type: 3}
+      propertyPath: m_Pitch
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 554202451396980288, guid: 95058f6692d8a4a5c89c101aafd7df00,
+        type: 3}
+      propertyPath: Spatialize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 554202451396980288, guid: 95058f6692d8a4a5c89c101aafd7df00,
+        type: 3}
+      propertyPath: SpatializePostEffects
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 554202451396980294, guid: 95058f6692d8a4a5c89c101aafd7df00,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ad07b4f05c284408b36746fe283bd07, type: 2}
     - target: {fileID: 554202451396980297, guid: 95058f6692d8a4a5c89c101aafd7df00,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
