@@ -22,30 +22,35 @@ public class Sequencer : MonoBehaviour
         {
             _source.clip = _clips[0];
             _source.volume = Vector3.Distance(other.transform.position, _source.transform.position)/2f;
+            _source.pitch = Random.Range(0.5f, 2);
             _source.Play();
         }
         else if (other.gameObject.CompareTag(_tags[1]))
         {
             _source.clip = _clips[0];
             _source.volume = Vector3.Distance(other.transform.position, _source.transform.position) / 2f;
+            _source.pitch = Random.Range(0.5f, 2);
             _source.Play();
         }
         else if (other.gameObject.CompareTag(_tags[2]))
         {
             _source.clip = _clips[2];
             _source.volume = Vector3.Distance(other.transform.position, _source.transform.position) / 2f;
+            _source.pitch = Random.Range(0.5f, 2);
             _source.Play();
         }
         else if (other.gameObject.CompareTag(_tags[3]))
         {
             _source.clip = _clips[3];
             _source.volume = Vector3.Distance(other.transform.position, _source.transform.position) / 2f;
+            _source.pitch = Random.Range(0.5f, 2);
             _source.Play();
         }
         else
         {
             _source.clip = _clips[4];
             _source.volume = Vector3.Distance(other.transform.position, _source.transform.position) / 2f;
+            _source.pitch = Random.Range(0.5f, 2);
             _source.Play();
         }
     }
