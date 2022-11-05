@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Trapped in the Garden.unity
     guid: 3c7fa7c2a052141dd8efeb0a77af494c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TG4-Original.unity
     guid: 4fce6b7030f9a4354a1c8d1d52e9de9e
+  - enabled: 1
+    path: Assets/Scenes/TG1.unity
+    guid: 78f83758c2cba48a98dcf4806effbf98
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2b17d46d4379947238e6056fd6aa558f,
       type: 2}
